@@ -93,6 +93,37 @@ def _try_upload_to_drive(output_dir: str, outlet_name: str, applicator: str = ""
         print(f"  {YELLOW}\u26a0 Hanya {ok}/{len(files)} file berhasil diunggah ke Drive.{RESET}")
 
 
+def parse_multi_select(input_str, max_val):
+    """
+    Parses comma-separated values and ranges (e.g., "1,3,5-7")
+    Returns a set of 0-based indices.
+    """
+    indices = set()
+    parts = [p.strip() for p in input_str.split(',')]
+    for part in parts:
+        if not part:
+            continue
+        if '-' in part:
+            try:
+                start_str, end_str = part.split('-', 1)
+                start = int(start_str.strip())
+                end = int(end_str.strip())
+                if start <= end:
+                    for i in range(start, end + 1):
+                        if 1 <= i <= max_val:
+                            indices.add(i - 1)
+            except ValueError:
+                continue
+        else:
+            try:
+                i = int(part)
+                if 1 <= i <= max_val:
+                    indices.add(i - 1)
+            except ValueError:
+                continue
+    return sorted(list(indices))
+
+
 
 def banner():
     print(f"\033[90m=================================================================\033[0m")
@@ -165,7 +196,7 @@ def interactive_menu():
             print(f"    {YELLOW}[b  ]{RESET} Kembali ke pemilihan aplikator")
             print()
             
-            choice = input(f"  {BOLD}Pilih nomor outlet (atau 'all'/'new'/'b'):{RESET} ").strip()
+            choice = input(f"  {BOLD}Pilih nomor outlet (misal: 1,3,5-7 atau 'all'/'new'/'b'):{RESET} ").strip()
             if choice.lower() == 'b':
                 state = "applicator"
             elif choice.lower() == 'all':
@@ -198,13 +229,11 @@ def interactive_menu():
                     selected_outlet = filtered_outlets
                     state = "confirm_all"
             else:
-                try:
-                    idx = int(choice) - 1
-                    if 0 <= idx < len(unique_outlets):
-                        target_parent = unique_outlets[idx]
-                        # Find all branches under this parent
+                parsed_indices = parse_multi_select(choice, len(unique_outlets))
+                if parsed_indices:
+                    if len(parsed_indices) == 1:
+                        target_parent = unique_outlets[parsed_indices[0]]
                         matching_branches = [o for o in outlets if o['nama_outlet'] == target_parent]
-                        
                         if len(matching_branches) == 1:
                             selected_outlet = matching_branches[0]
                             state = "confirm"
@@ -213,10 +242,15 @@ def interactive_menu():
                             branches = matching_branches
                             state = "select_branch"
                     else:
-                        print(f"  {RED}Nomor outlet di luar jangkauan.{RESET}")
-                        time.sleep(1)
-                except ValueError:
-                    print(f"  {RED}Pilihan tidak valid.{RESET}")
+                        # Multi-select: gather all branches for all selected outlets
+                        selected_outlet = []
+                        for idx in parsed_indices:
+                            target_parent = unique_outlets[idx]
+                            matching_branches = [o for o in outlets if o['nama_outlet'] == target_parent]
+                            selected_outlet.extend(matching_branches)
+                        state = "confirm_all"
+                else:
+                    print(f"  {RED}Pilihan tidak valid atau di luar jangkauan.{RESET}")
                     time.sleep(1)
                     
         elif state == "select_branch":
@@ -233,7 +267,7 @@ def interactive_menu():
             print(f"    {YELLOW}[b  ]{RESET} Kembali ke pemilihan outlet")
             print()
             
-            choice = input(f"  {BOLD}Pilih nomor cabang (atau 'all'/'new'/'b'):{RESET} ").strip()
+            choice = input(f"  {BOLD}Pilih nomor cabang (misal: 1,3 atau 'all'/'new'/'b'):{RESET} ").strip()
             if choice.lower() == 'b':
                 state = "select_outlet"
             elif choice.lower() == 'all':
@@ -266,16 +300,16 @@ def interactive_menu():
                     selected_outlet = filtered_branches
                     state = "confirm_all"
             else:
-                try:
-                    idx = int(choice) - 1
-                    if 0 <= idx < len(branches):
-                        selected_outlet = branches[idx]
+                parsed_indices = parse_multi_select(choice, len(branches))
+                if parsed_indices:
+                    if len(parsed_indices) == 1:
+                        selected_outlet = branches[parsed_indices[0]]
                         state = "confirm"
                     else:
-                        print(f"  {RED}Nomor cabang di luar jangkauan.{RESET}")
-                        time.sleep(1)
-                except ValueError:
-                    print(f"  {RED}Pilihan tidak valid.{RESET}")
+                        selected_outlet = [branches[idx] for idx in parsed_indices]
+                        state = "confirm_all"
+                else:
+                    print(f"  {RED}Pilihan tidak valid atau di luar jangkauan.{RESET}")
                     time.sleep(1)
                     
         elif state == "confirm":
