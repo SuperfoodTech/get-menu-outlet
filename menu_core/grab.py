@@ -137,20 +137,13 @@ def _save_outputs(
     if store_id:
         base = f"{base}_{store_id}"
 
-    items_csv = os.path.join(output_dir, f"grab_items_{base}.csv")
-    mods_csv  = os.path.join(output_dir, f"grab_modifiers_{base}.csv")
     excel_f   = os.path.join(output_dir, f"grab_menu_{base}.xlsx")
-
-    df_items.to_csv(items_csv, index=False)
-    df_mods.to_csv(mods_csv,  index=False)
 
     with pd.ExcelWriter(excel_f, engine="openpyxl") as w:
         df_items.to_excel(w, sheet_name="Items",     index=False)
         df_mods.to_excel(w,  sheet_name="Modifiers", index=False)
 
     return {
-        "items_csv":   items_csv,
-        "mods_csv":    mods_csv,
         "excel":       excel_f,
         "items_count": len(df_items),
         "mods_count":  len(df_mods),

@@ -175,6 +175,12 @@ Setiap outlet menghasilkan 3 file di `platforms/{platform}/outlets/{nama_outlet}
 
 ---
 
+## 📡 API Referensi (Endpoints)
+
+Untuk detail endpoints API yang digunakan serta cara *mapping* data (pemetaan dari response JSON API ke kolom Excel), silakan merujuk ke file **[API_DOCUMENTATION.md](API_DOCUMENTATION.md)**.
+
+---
+
 ## 🔄 Alur Kerja
 
 ```
@@ -202,7 +208,7 @@ run.sh / cli.py
 
 > **GoFood** — Session login disimpan di `platforms/gofood/sessions/`. Jika session expired, browser akan terbuka otomatis untuk login ulang.
 
-> **Shopee** — Chrome profile disimpan di `/mnt/DATA/Proyek/task-weekly/VB/data/chrome_profile`. Session reusable selama cookie belum expired.
+> **Shopee** — Chrome profile disimpan di `data/chrome_profile`. Session reusable selama cookie belum expired.
 
 > **GrabFood** — Credentials (username Grab Merchant) harus diisi di kolom **Nama Pengguna** / **Kata Sandi** pada Google Sheets untuk baris Grab.
 

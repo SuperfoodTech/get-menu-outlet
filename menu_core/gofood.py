@@ -263,12 +263,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
         
     combined_name = re.sub(r'_+', '_', combined_name)
     
-    items_csv_path = os.path.join(output_dir, f"gofood_items_{combined_name}_{store_id}.csv")
-    mods_csv_path = os.path.join(output_dir, f"gofood_modifiers_{combined_name}_{store_id}.csv")
     excel_path = os.path.join(output_dir, f"gofood_menu_{combined_name}_{store_id}.xlsx")
-    
-    df_items.to_csv(items_csv_path, index=False)
-    df_mods.to_csv(mods_csv_path, index=False)
     
     with pd.ExcelWriter(excel_path, engine='openpyxl') as writer:
         df_items.to_excel(writer, sheet_name='Items', index=False)
@@ -277,8 +272,6 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     print(f"   ✅ Berhasil memproses data menu GoFood!")
     print(f"      - Item Count: {len(df_items)}")
     return True, {
-        'items_csv': items_csv_path,
-        'mods_csv': mods_csv_path,
         'excel': excel_path,
         'items_count': len(df_items),
         'mods_count': len(df_mods)

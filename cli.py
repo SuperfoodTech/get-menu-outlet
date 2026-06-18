@@ -45,7 +45,7 @@ def get_output_dir(applicator, clean_outlet):
 
 def _try_upload_to_drive(output_dir: str, outlet_name: str, applicator: str = ""):
     """
-    Upload semua file .xlsx & .csv dari output_dir ke Google Drive via AppScript.
+    Upload semua file .xlsx dari output_dir ke Google Drive via AppScript.
     Struktur folder di Drive:
       <folder_induk> / <GR|S|GO> / <nama_outlet> / file.xlsx
     Hanya berjalan jika GDRIVE_APPSCRIPT_URL diisi di .env.
@@ -67,10 +67,9 @@ def _try_upload_to_drive(output_dir: str, outlet_name: str, applicator: str = ""
         print(f"  {YELLOW}[Drive] Gagal import uploader: {e}{RESET}")
         return
 
-    # Kumpulkan semua file output (.xlsx dan .csv)
+    # Kumpulkan hanya file output Excel (.xlsx)
     files = sorted(
-        glob.glob(os.path.join(output_dir, "*.xlsx")) +
-        glob.glob(os.path.join(output_dir, "*.csv"))
+        glob.glob(os.path.join(output_dir, "*.xlsx"))
     )
     if not files:
         return
@@ -215,7 +214,7 @@ def interactive_menu():
                     is_processed = False
                     if os.path.exists(output_dir):
                         files = os.listdir(output_dir)
-                        has_files = any(f.endswith('.csv') or f.endswith('.xlsx') for f in files)
+                        has_files = any(f.endswith('.xlsx') for f in files)
                         if len(files) > 0 and has_files:
                             is_processed = True
                             
@@ -286,7 +285,7 @@ def interactive_menu():
                     is_processed = False
                     if os.path.exists(output_dir):
                         files = os.listdir(output_dir)
-                        has_files = any(f.endswith('.csv') or f.endswith('.xlsx') for f in files)
+                        has_files = any(f.endswith('.xlsx') for f in files)
                         if len(files) > 0 and has_files:
                             is_processed = True
                             
@@ -356,7 +355,7 @@ def interactive_menu():
                 is_processed = False
                 if os.path.exists(output_dir):
                     files = os.listdir(output_dir)
-                    has_files = any(f.endswith('.csv') or f.endswith('.xlsx') for f in files)
+                    has_files = any(f.endswith('.xlsx') for f in files)
                     if len(files) > 0 and has_files:
                         is_processed = True
                 if not is_processed:
@@ -393,7 +392,7 @@ def interactive_menu():
                     is_processed = False
                     if os.path.exists(output_dir):
                         files = os.listdir(output_dir)
-                        has_files = any(f.endswith('.csv') or f.endswith('.xlsx') for f in files)
+                        has_files = any(f.endswith('.xlsx') for f in files)
                         if len(files) > 0 and has_files:
                             is_processed = True
                             
@@ -507,9 +506,7 @@ def main():
             print(f"  - Total Item     : {result_data['items_count']}")
             print(f"  - Total Modifier : {result_data['mods_count']}")
             print(f"  - Hasil disimpan di directory: {output_dir}")
-            print(f"    1. Items CSV     : {result_data['items_csv']}")
-            print(f"    2. Modifiers CSV : {result_data['mods_csv']}")
-            print(f"    3. Excel Unified : {result_data['excel']}")
+            print(f"    1. Excel Unified : {result_data['excel']}")
             _try_upload_to_drive(output_dir, raw_outlet, applicator)
         else:
             print(f"\n{RED}{BOLD}✘ PENARIKAN MENU GAGAL / STUB{RESET}")
