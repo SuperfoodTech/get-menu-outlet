@@ -1,0 +1,43 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Reports / Outputs
+laporan/
+downloads/
+logs/
+*.csv
+*.xlsx
+platforms/*/outlets/
+
+# Credentials & Secrets
+.env
+*credentials*.json
+session.json
+session_*.json
+sessions/
+platforms/gofood/sessions/
+platforms/shopee/sessions/
+platforms/grab/sessions/
+
+# Browser Automation Cache & Profiles
+data/chrome_profile_*/**/Cache/
+data/chrome_profile_*/**/Code Cache/
+data/chrome_profile_*/**/DawnCache/
+data/chrome_profile_*/**/GPUCache/
+data/chrome_profile_*/**/Crashpad/
+data/chrome_profile_*/Singleton*
+data/chrome_profile_*/lockfile
+data/*_cache.csv
+
+# Temporary / Scratch scripts
+scratch/
