@@ -30,15 +30,14 @@ platforms/shopee/sessions/
 platforms/grab/sessions/
 
 # Browser Automation Cache & Profiles
-data/chrome_profile_*/**/Cache/
-data/chrome_profile_*/**/Code Cache/
-data/chrome_profile_*/**/DawnCache/
-data/chrome_profile_*/**/GPUCache/
-data/chrome_profile_*/**/Crashpad/
-data/chrome_profile_*/Singleton*
-data/chrome_profile_*/lockfile
+data/chrome_profile*/**/Cache/
+data/chrome_profile*/**/Code Cache/
+data/chrome_profile*/**/DawnCache/
+data/chrome_profile*/**/GPUCache/
+data/chrome_profile*/**/Crashpad/
+data/chrome_profile*/Singleton*
+data/chrome_profile*/lockfile
 data/*_cache.csv
 
 # Temporary / Scratch scripts
 scratch/
-data/chrome_profile/
