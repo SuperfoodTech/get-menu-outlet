@@ -46,7 +46,7 @@ if not logger.handlers:
 
 # ─── Column definitions ───────────────────────────────────────────────────────
 ITEM_COLS = [
-    "Link outlet", "Nama panjang", "Nama pendek (GrabFood)", "Store ID",
+    "Link outlet", "Nama panjang", "Store ID",
     "Nama kategori", "Nama item", "Jumlah terjual",
     "Jumlah modifier group", "Jumlah modifier", "Deskripsi item",
     "Harga item sebelum promo (harga coret)",
@@ -55,7 +55,7 @@ ITEM_COLS = [
     "Ketersediaan item", "Link foto",
 ]
 MOD_COLS = [
-    "Link outlet", "Nama panjang", "Nama pendek (GrabFood)", "Store ID",
+    "Link outlet", "Nama panjang", "Store ID",
     "Nama item", "Nama modifier group", "Nama modifier", "Tipe modifier",
     "Minimal", "Maksimal", "Harga modifier", "Ketersediaan modifier",
 ]

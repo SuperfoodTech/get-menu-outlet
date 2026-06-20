@@ -158,7 +158,6 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
                     modifier_rows.append([
                         f"https://gofood.link/a/{store_id}",
                         nama_resto,
-                        brand or nama_resto,
                         store_id,
                         item_name,
                         vcat_name,
@@ -219,7 +218,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
             
     # Build output DataFrames
     item_cols = [
-        'Link outlet', 'Nama panjang', 'Nama pendek (ShopeeFood)', 'Store ID',
+        'Link outlet', 'Nama panjang', 'Store ID',
         'Nama kategori', 'Nama item', 'Jumlah terjual', 'Jumlah modifier group',
         'Jumlah modifier', 'Deskripsi item', 'Harga item sebelum promo (harga coret)',
         'Harga item setelah promo (harga coret)', 'Nominal atau persentase promo (harga coret)',
@@ -229,7 +228,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     item_data = []
     for d in all_dishes:
         item_data.append([
-            d['link_outlet'], d['nama_panjang'], d['nama_pendek'], d['store_id'],
+            d['link_outlet'], d['nama_panjang'], d['store_id'],
             d['nama_kategori'], d['nama_item'], d['jumlah_terjual'], d['jumlah_modifier_group'],
             d['jumlah_modifier'], d['deskripsi_item'], d['harga_sebelum_promo'],
             d['harga_setelah_promo'], d['promo'], d['ketersediaan'], d['link_foto']
@@ -238,7 +237,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     df_items = pd.DataFrame(item_data, columns=item_cols)
     
     mod_cols = [
-        'Link outlet', 'Nama panjang', 'Nama pendek (ShopeeFood)', 'Store ID',
+        'Link outlet', 'Nama panjang', 'Store ID',
         'Nama item', 'Nama modifier group', 'Nama modifier', 'Tipe modifier',
         'Minimal', 'Maksimal', 'Harga modifier', 'Ketersediaan modifier'
     ]

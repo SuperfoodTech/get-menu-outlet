@@ -130,41 +130,169 @@ def banner():
     print(f"\033[90m=================================================================\033[0m")
     print()
 
+def clean_local_data():
+    print(f"\n{BOLD}{YELLOW}=== BERSIHKAN DATA LOKAL ==={RESET}")
+    print("Pilih data yang ingin dibersihkan:")
+    print(f"  {GREEN}[1]{RESET} Semua file laporan Excel (.xlsx) di folder platforms/")
+    print(f"  {GREEN}[2]{RESET} Cache API & Sesi (.json di downloads/, sessions/, api_cache/)")
+    print(f"  {GREEN}[3]{RESET} Cache spreadsheet (master_merchants_cache.csv)")
+    print(f"  {GREEN}[4]{RESET} Bersihkan SEMUA data di atas")
+    print(f"  {YELLOW}[5]{RESET} Batal")
+    print()
+    
+    choice = input(f"  {BOLD}Pilihan (misal: 1,3 atau '4' untuk semua / '5' untuk batal):{RESET} ").strip()
+    if choice == "5":
+        print("  Dibatalkan.")
+        time.sleep(1)
+        return
+        
+    if choice == "4":
+        parsed_indices = [0, 1, 2]
+    else:
+        parsed_indices = parse_multi_select(choice, 3)
+        
+    if not parsed_indices:
+        print(f"  {RED}Pilihan tidak valid.{RESET}")
+        time.sleep(1.5)
+        return
+        
+    import shutil
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    cleaned_something = False
+    
+    if 0 in parsed_indices:
+        print("[*] Membersihkan file Excel hasil penarikan (.xlsx)...")
+        xlsx_count = 0
+        for root, dirs, files in os.walk(os.path.join(base_dir, "platforms")):
+            for file in files:
+                if file.endswith(".xlsx"):
+                    try:
+                        os.remove(os.path.join(root, file))
+                        xlsx_count += 1
+                    except Exception as e:
+                        pass
+        # Also clean GR/grab/laporan/ if exists
+        laporan_dir = os.path.join(base_dir, "GR", "grab", "laporan")
+        if os.path.exists(laporan_dir):
+            try:
+                shutil.rmtree(laporan_dir)
+                xlsx_count += 1
+            except Exception:
+                pass
+        print(f"  ✓ Berhasil menghapus {xlsx_count} file .xlsx.")
+        cleaned_something = True
+        
+    if 1 in parsed_indices:
+        print("[*] Membersihkan cache API dan sesi (.json)...")
+        json_count = 0
+        
+        # 1. downloads/
+        downloads_dir = os.path.join(base_dir, "downloads")
+        if os.path.exists(downloads_dir):
+            for file in os.listdir(downloads_dir):
+                if file.endswith(".json"):
+                    try:
+                        os.remove(os.path.join(downloads_dir, file))
+                        json_count += 1
+                    except Exception:
+                        pass
+                        
+        # 2. sessions/
+        sessions_dir = os.path.join(base_dir, "sessions")
+        if os.path.exists(sessions_dir):
+            for file in os.listdir(sessions_dir):
+                if file.endswith(".json"):
+                    try:
+                        os.remove(os.path.join(sessions_dir, file))
+                        json_count += 1
+                    except Exception:
+                        pass
+                        
+        # 3. platforms/gofood/api_cache/
+        gofood_cache = os.path.join(base_dir, "platforms", "gofood", "api_cache")
+        if os.path.exists(gofood_cache):
+            for file in os.listdir(gofood_cache):
+                if file.endswith(".json"):
+                    try:
+                        os.remove(os.path.join(gofood_cache, file))
+                        json_count += 1
+                    except Exception:
+                        pass
+                        
+        print(f"  ✓ Berhasil menghapus {json_count} file cache .json.")
+        cleaned_something = True
+        
+    if 2 in parsed_indices:
+        print("[*] Membersihkan cache spreadsheet...")
+        cache_file = os.path.join(base_dir, "data", "master_merchants_cache.csv")
+        if os.path.exists(cache_file):
+            try:
+                os.remove(cache_file)
+                print("  ✓ Berhasil menghapus cache spreadsheet.")
+                cleaned_something = True
+            except Exception as e:
+                print(f"  Gagal menghapus cache spreadsheet: {e}")
+        else:
+            print("  Cache spreadsheet sudah bersih.")
+            cleaned_something = True
+            
+    if cleaned_something:
+        print(f"\n  {GREEN}✔ Pembersihan data lokal selesai!{RESET}")
+    else:
+        print(f"\n  {RED}Pilihan tidak valid.{RESET}")
+    time.sleep(2)
+
+
 def interactive_menu():
     state = "applicator"
+    applicators = []
+    current_app_idx = 0
     applicator = None
     outlets = []
     selected_outlet = None
+    results = []
     
     while True:
         if state == "applicator":
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
-            print(f"  {BOLD}Pilih Aplikator/Platform:{RESET}")
+            print(f"  {BOLD}Pilih Aplikator/Platform (bisa pilih lebih dari satu, contoh: 1,3 atau 1-2):{RESET}")
             print(f"    {MAGENTA}[1]{RESET} ShopeeFood")
             print(f"    {GREEN}[2]{RESET} GrabFood")
             print(f"    {CYAN}[3]{RESET} GoFood")
-            print(f"    {YELLOW}[4]{RESET} Keluar")
+            print(f"    {YELLOW}[4]{RESET} Bersihkan Data Lokal")
+            print(f"    {RED}[5]{RESET} Keluar")
             print()
             
-            choice = input(f"  {BOLD}Pilihan (1/2/3/4):{RESET} ").strip()
-            if choice == "4":
+            choice = input(f"  {BOLD}Pilihan (1/2/3/4/5):{RESET} ").strip()
+            if choice == "5":
                 print("  Keluar.")
                 sys.exit(0)
-            elif choice == "1":
-                applicator = "shopee"
-                state = "load_outlets"
-            elif choice == "2":
-                applicator = "grab"
-                state = "load_outlets"
-            elif choice == "3":
-                applicator = "gofood"
-                state = "load_outlets"
-            else:
+            elif choice == "4":
+                clean_local_data()
+                continue
+                
+            parsed_indices = parse_multi_select(choice, 3)
+            if not parsed_indices:
                 print(f"  {RED}Pilihan tidak valid.{RESET}")
                 time.sleep(1)
+                continue
                 
+            applicators = []
+            for idx in parsed_indices:
+                if idx == 0:
+                    applicators.append("shopee")
+                elif idx == 1:
+                    applicators.append("grab")
+                elif idx == 2:
+                    applicators.append("gofood")
+                    
+            current_app_idx = 0
+            results = []
+            state = "load_outlets"
+            
         elif state == "load_outlets":
+            applicator = applicators[current_app_idx]
             print(f"\n  [*] Mengunduh & memuat daftar outlet untuk {applicator.upper()}...")
             try:
                 outlets = get_outlets_for_applicator(applicator)
@@ -186,7 +314,7 @@ def interactive_menu():
             # Get unique Nama Outlet (nama_outlet) values
             unique_outlets = sorted(list(set(o['nama_outlet'] for o in outlets if o['nama_outlet'])))
             
-            print(f"  {BOLD}Pilih Nama Outlet {applicator.upper()}:{RESET}")
+            print(f"  {BOLD}Pilih Nama Outlet {applicator.upper()} [{current_app_idx + 1}/{len(applicators)}]:{RESET}")
             print(f"    {GREEN}[all]{RESET} Jalankan semua outlet dan cabang")
             print(f"    {GREEN}[new]{RESET} Jalankan HANYA outlet/cabang yang belum ditarik")
             for idx, name in enumerate(unique_outlets):
@@ -255,7 +383,7 @@ def interactive_menu():
         elif state == "select_branch":
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
-            print(f"  {BOLD}Pilih Cabang untuk '{parent_name}':{RESET}")
+            print(f"  {BOLD}Pilih Cabang untuk '{parent_name}' [{current_app_idx + 1}/{len(applicators)}]:{RESET}")
             print(f"    {GREEN}[all]{RESET} Jalankan semua cabang untuk outlet ini")
             print(f"    {GREEN}[new]{RESET} Jalankan HANYA cabang yang belum ditarik")
             
@@ -321,7 +449,7 @@ def interactive_menu():
             print(f"  Store ID  : {BOLD}{selected_outlet['store_id']}{RESET}")
             print(f"  {CYAN}{'─'*60}{RESET}")
             print()
-            print(f"  {BOLD}Konfirmasi tindakan:{RESET}")
+            print(f"  {BOLD}Konfirmasi tindakan [{current_app_idx + 1}/{len(applicators)}]:{RESET}")
             print(f"    {GREEN}[1]{RESET} Lanjutkan Tarik Menu")
             print(f"    {YELLOW}[2]{RESET} Kembali ke daftar outlet")
             print(f"    {RED}[3]{RESET} Batal dan Keluar")
@@ -329,7 +457,12 @@ def interactive_menu():
             
             choice = input(f"  {BOLD}Pilihan (1/2/3):{RESET} ").strip()
             if choice == "1":
-                break
+                results.append((applicator, selected_outlet))
+                if current_app_idx + 1 < len(applicators):
+                    current_app_idx += 1
+                    state = "load_outlets"
+                else:
+                    break
             elif choice == "2":
                 state = "select_outlet"
             elif choice == "3":
@@ -370,7 +503,7 @@ def interactive_menu():
             print(f"  Jeda      : {BOLD}Setiap 10 outlet akan dijeda 1 menit{RESET}")
             print(f"  {CYAN}{'─'*60}{RESET}")
             print()
-            print(f"  {BOLD}Konfirmasi tindakan:{RESET}")
+            print(f"  {BOLD}Konfirmasi tindakan [{current_app_idx + 1}/{len(applicators)}]:{RESET}")
             print(f"    {GREEN}[1]{RESET} Lanjutkan Jalankan SEMUA (Overwrite)")
             print(f"    {GREEN}[2]{RESET} Lanjutkan Jalankan HANYA yang Belum Selesai ({unprocessed_count} outlet)")
             print(f"    {YELLOW}[3]{RESET} Kembali ke daftar outlet")
@@ -379,7 +512,12 @@ def interactive_menu():
             
             choice = input(f"  {BOLD}Pilihan (1/2/3/4):{RESET} ").strip()
             if choice == "1":
-                break
+                results.append((applicator, selected_outlet))
+                if current_app_idx + 1 < len(applicators):
+                    current_app_idx += 1
+                    state = "load_outlets"
+                else:
+                    break
             elif choice == "2":
                 filtered_outlets = []
                 for o in selected_outlet:
@@ -404,8 +542,12 @@ def interactive_menu():
                     time.sleep(3)
                     state = "select_outlet"
                 else:
-                    selected_outlet = filtered_outlets
-                    break
+                    results.append((applicator, filtered_outlets))
+                    if current_app_idx + 1 < len(applicators):
+                        current_app_idx += 1
+                        state = "load_outlets"
+                    else:
+                        break
             elif choice == "3":
                 state = "select_outlet"
             elif choice == "4":
@@ -415,103 +557,105 @@ def interactive_menu():
                 print(f"  {RED}Pilihan tidak valid.{RESET}")
                 time.sleep(1)
                 
-    return applicator, selected_outlet
+    return results
+
 
 def main():
     try:
-        applicator, outlet = interactive_menu()
+        results = interactive_menu()
     except KeyboardInterrupt:
         print("\n  Dibatalkan oleh pengguna.")
         sys.exit(0)
         
     import re
     
-    if isinstance(outlet, list):
-        total_outlets = len(outlet)
-        print(f"\n{CYAN}=== MEMULAI PENARIKAN MENU MASSAL ({total_outlets} OUTLET) ==={RESET}")
-        print(f"[*] Waktu mulai: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        
-        success_count = 0
-        fail_count = 0
-        
-        for idx, o in enumerate(outlet):
-            raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
+    for applicator, outlet in results:
+        if isinstance(outlet, list):
+            total_outlets = len(outlet)
+            print(f"\n{CYAN}=== MEMULAI PENARIKAN MENU MASSAL ({total_outlets} OUTLET) - {applicator.upper()} ==={RESET}")
+            print(f"[*] Waktu mulai: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            
+            success_count = 0
+            fail_count = 0
+            
+            for idx, o in enumerate(outlet):
+                raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
+                clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
+                clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
+                
+                output_dir = get_output_dir(applicator, clean_outlet)
+                os.makedirs(output_dir, exist_ok=True)
+                
+                name_to_show = o['brand'] or o['nama_resto_final'] or o['nama_outlet']
+                print(f"\n{BOLD}[{idx + 1}/{total_outlets}] Memproses: {name_to_show} (ID: {o['store_id']}) - {applicator.upper()}{RESET}")
+                
+                success = False
+                result_data = None
+                
+                try:
+                    if applicator == "shopee":
+                        success, result_data = extract_shopee_menu(o, output_dir)
+                    elif applicator == "grab":
+                        success, result_data = extract_grab_menu(o, output_dir)
+                    elif applicator == "gofood":
+                        success, result_data = extract_gofood_menu(o, output_dir)
+                except Exception as e:
+                    success = False
+                    result_data = f"Exception occurred: {e}"
+                    
+                if success and isinstance(result_data, dict):
+                    success_count += 1
+                    print(f"  {GREEN}✔ Berhasil! {result_data.get('items_count', 0)} item, {result_data.get('mods_count', 0)} modifier.{RESET}")
+                    _try_upload_to_drive(output_dir, raw_outlet, applicator)
+                else:
+                    fail_count += 1
+                    print(f"  {RED}✘ Gagal: {result_data}{RESET}")
+                    
+                # Delay logic: 1 minute pause after every 10 outlets
+                if (idx + 1) < total_outlets and (idx + 1) % 10 == 0:
+                    print(f"\n{YELLOW}[BATCH] Selesai memproses 10 outlet. Menunggu jeda 1 menit sebelum batch berikutnya...{RESET}")
+                    for remaining in range(60, 0, -1):
+                        sys.stdout.write(f"\rMenunggu... {remaining} detik")
+                        sys.stdout.flush()
+                        time.sleep(1)
+                    print(f"\r{GREEN}[BATCH] Jeda selesai. Melanjutkan penarikan...{RESET}\n")
+                    
+            print(f"\n{CYAN}=== PENARIKAN MENU MASSAL SELESAI - {applicator.upper()} ==={RESET}")
+            print(f"  - Sukses : {GREEN}{success_count}{RESET}")
+            print(f"  - Gagal  : {RED}{fail_count}{RESET}")
+            
+        else:
+            print(f"\n{CYAN}=== MEMULAI PENARIKAN MENU - {applicator.upper()} ==={RESET}")
+            print(f"[*] Waktu mulai: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            
+            raw_outlet = outlet.get('nama_outlet') or outlet.get('nama_resto_final') or outlet.get('merchant_name') or 'unknown'
             clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
             clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
             
             output_dir = get_output_dir(applicator, clean_outlet)
             os.makedirs(output_dir, exist_ok=True)
             
-            name_to_show = o['brand'] or o['nama_resto_final'] or o['nama_outlet']
-            print(f"\n{BOLD}[{idx + 1}/{total_outlets}] Memproses: {name_to_show} (ID: {o['store_id']}){RESET}")
-            
             success = False
             result_data = None
             
-            try:
-                if applicator == "shopee":
-                    success, result_data = extract_shopee_menu(o, output_dir)
-                elif applicator == "grab":
-                    success, result_data = extract_grab_menu(o, output_dir)
-                elif applicator == "gofood":
-                    success, result_data = extract_gofood_menu(o, output_dir)
-            except Exception as e:
-                success = False
-                result_data = f"Exception occurred: {e}"
+            if applicator == "shopee":
+                success, result_data = extract_shopee_menu(outlet, output_dir)
+            elif applicator == "grab":
+                success, result_data = extract_grab_menu(outlet, output_dir)
+            elif applicator == "gofood":
+                success, result_data = extract_gofood_menu(outlet, output_dir)
                 
             if success and isinstance(result_data, dict):
-                success_count += 1
-                print(f"  {GREEN}✔ Berhasil! {result_data.get('items_count', 0)} item, {result_data.get('mods_count', 0)} modifier.{RESET}")
+                print(f"\n{GREEN}{BOLD}✔ PENARIKAN MENU BERHASIL!{RESET}")
+                print(f"  - Total Item     : {result_data['items_count']}")
+                print(f"  - Total Modifier : {result_data['mods_count']}")
+                print(f"  - Hasil disimpan di directory: {output_dir}")
+                print(f"    1. Excel Unified : {result_data['excel']}")
                 _try_upload_to_drive(output_dir, raw_outlet, applicator)
             else:
-                fail_count += 1
-                print(f"  {RED}✘ Gagal: {result_data}{RESET}")
-                
-            # Delay logic: 1 minute pause after every 10 outlets
-            if (idx + 1) < total_outlets and (idx + 1) % 10 == 0:
-                print(f"\n{YELLOW}[BATCH] Selesai memproses 10 outlet. Menunggu jeda 1 menit sebelum batch berikutnya...{RESET}")
-                for remaining in range(60, 0, -1):
-                    sys.stdout.write(f"\rMenunggu... {remaining} detik")
-                    sys.stdout.flush()
-                    time.sleep(1)
-                print(f"\r{GREEN}[BATCH] Jeda selesai. Melanjutkan penarikan...{RESET}\n")
-                
-        print(f"\n{CYAN}=== PENARIKAN MENU MASSAL SELESAI ==={RESET}")
-        print(f"  - Sukses : {GREEN}{success_count}{RESET}")
-        print(f"  - Gagal  : {RED}{fail_count}{RESET}")
-        
-    else:
-        print(f"\n{CYAN}=== MEMULAI PENARIKAN MENU ==={RESET}")
-        print(f"[*] Waktu mulai: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        
-        raw_outlet = outlet.get('nama_outlet') or outlet.get('nama_resto_final') or outlet.get('merchant_name') or 'unknown'
-        clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
-        clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
-        
-        output_dir = get_output_dir(applicator, clean_outlet)
-        os.makedirs(output_dir, exist_ok=True)
-        
-        success = False
-        result_data = None
-        
-        if applicator == "shopee":
-            success, result_data = extract_shopee_menu(outlet, output_dir)
-        elif applicator == "grab":
-            success, result_data = extract_grab_menu(outlet, output_dir)
-        elif applicator == "gofood":
-            success, result_data = extract_gofood_menu(outlet, output_dir)
-            
-        if success and isinstance(result_data, dict):
-            print(f"\n{GREEN}{BOLD}✔ PENARIKAN MENU BERHASIL!{RESET}")
-            print(f"  - Total Item     : {result_data['items_count']}")
-            print(f"  - Total Modifier : {result_data['mods_count']}")
-            print(f"  - Hasil disimpan di directory: {output_dir}")
-            print(f"    1. Excel Unified : {result_data['excel']}")
-            _try_upload_to_drive(output_dir, raw_outlet, applicator)
-        else:
-            print(f"\n{RED}{BOLD}✘ PENARIKAN MENU GAGAL / STUB{RESET}")
-            if isinstance(result_data, str):
-                print(f"  Info: {result_data}")
+                print(f"\n{RED}{BOLD}✘ PENARIKAN MENU GAGAL / STUB{RESET}")
+                if isinstance(result_data, str):
+                    print(f"  Info: {result_data}")
             
 if __name__ == "__main__":
     main()
