@@ -41,3 +41,9 @@ data/*_cache.csv
 
 # Temporary / Scratch scripts
 scratch/
+data/chrome_profile*/**/.org.chromium.*
+data/chrome_profile*/**/LOG*
+data/chrome_profile*/**/LOCK
+data/chrome_profile*/**/*journal*
+data/chrome_profile*/**/*.ldb
+data/chrome_profile*/**/*.log

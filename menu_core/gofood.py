@@ -3,6 +3,7 @@ import json
 import re
 import sys
 import pandas as pd
+import datetime
 
 def extract_gofood_menu(store_metadata: dict, output_dir: str):
     """
@@ -261,8 +262,9 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
         combined_name = f"{safe_merchant}_{safe_branch}"
         
     combined_name = re.sub(r'_+', '_', combined_name)
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     
-    excel_path = os.path.join(output_dir, f"gofood_menu_{combined_name}_{store_id}.xlsx")
+    excel_path = os.path.join(output_dir, f"gofood_menu_{combined_name}_{store_id}_{timestamp}.xlsx")
     
     with pd.ExcelWriter(excel_path, engine='openpyxl') as writer:
         df_items.to_excel(writer, sheet_name='Items', index=False)

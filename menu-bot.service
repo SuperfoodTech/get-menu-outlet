@@ -1,0 +1,14 @@
+[Unit]
+Description=Menu Outlet Discord Bot
+After=network.target
+
+[Service]
+WorkingDirectory=/mnt/DATA/Proyek/Menu Outlet
+ExecStart=/mnt/DATA/Proyek/Menu Outlet/.venv/bin/python discord_bot.py
+Restart=always
+RestartSec=5
+# .env dimuat langsung dari dalam script python, jadi EnvironmentFile opsional
+# EnvironmentFile=/mnt/DATA/Proyek/Menu Outlet/discord-bot/.env
+
+[Install]
+WantedBy=default.target

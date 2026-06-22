@@ -1093,15 +1093,22 @@ def main():
         print("❌ Tidak ada outlet GoFood dengan email kredensial yang tersedia.")
         return
 
-    # Cek token yang sudah ada di .env
+    # Cek token yang sudah ada di tokens.json
     existing_tokens = {}
-    for key, value in os.environ.items():
-        if key.startswith('BEARER_TOKEN_') and value:
-            suffix = key[len('BEARER_TOKEN_'):]
-            phone_part = suffix.split('_')[0]
-            phone_norm = normalisation_nomor_hp(phone_part)
-            if phone_norm:
-                existing_tokens[phone_norm] = True
+    tokens_file = MENU_DIR / "platforms" / "gofood" / "tokens.json"
+    if tokens_file.exists():
+        try:
+            with open(tokens_file, "r") as f:
+                tokens_data = json.load(f)
+            for key, value in tokens_data.items():
+                if key.startswith('BEARER_TOKEN_') and value:
+                    suffix = key[len('BEARER_TOKEN_'):]
+                    phone_part = suffix.split('_')[0]
+                    phone_norm = normalisation_nomor_hp(phone_part)
+                    if phone_norm:
+                        existing_tokens[phone_norm] = True
+        except Exception:
+            pass
 
     # Tampilkan daftar
     print(f"\n📋 Ditemukan {len(outlets_with_email)} outlet GoFood Live dengan email:\n")
@@ -1162,21 +1169,31 @@ def main():
             sanitized_name = re.sub(r'[^a-zA-Z0-9]', '', outlet['nama_outlet'])
             suffix = f"_{phone_norm}_{sanitized_name}"
 
-            # Simpan ke .env di core folder
+            # Simpan ke tokens.json
             try:
-                set_key(str(ENV_PATH), "BEARER_TOKEN", token)
-                set_key(str(ENV_PATH), f"BEARER_TOKEN{suffix}", token)
-                set_key(str(ENV_PATH), "ACTIVE_NOMOR_HP", phone_norm)
-                set_key(str(ENV_PATH), f"NAMA_OUTLET{suffix}", outlet['nama_outlet'])
+                tokens_file = MENU_DIR / "platforms" / "gofood" / "tokens.json"
+                tokens_file.parent.mkdir(parents=True, exist_ok=True)
+                tokens_data = {}
+                if tokens_file.exists():
+                    with open(tokens_file, "r") as f:
+                        tokens_data = json.load(f)
+                
+                tokens_data["BEARER_TOKEN"] = token
+                tokens_data[f"BEARER_TOKEN{suffix}"] = token
+                tokens_data["ACTIVE_NOMOR_HP"] = phone_norm
+                tokens_data[f"NAMA_OUTLET{suffix}"] = outlet['nama_outlet']
                 if outlet['cabang']:
-                    set_key(str(ENV_PATH), f"CABANG{suffix}", outlet['cabang'])
+                    tokens_data[f"CABANG{suffix}"] = outlet['cabang']
                 if outlet['store_id']:
-                    set_key(str(ENV_PATH), f"STORE_ID{suffix}", outlet['store_id'])
+                    tokens_data[f"STORE_ID{suffix}"] = outlet['store_id']
+                
+                with open(tokens_file, "w") as f:
+                    json.dump(tokens_data, f, indent=4)
 
-                print(f"   ✅ Token disimpan: BEARER_TOKEN{suffix}")
+                print(f"   ✅ Token disimpan ke tokens.json: BEARER_TOKEN{suffix}")
                 success_count += 1
             except Exception as e:
-                print(f"   ❌ Gagal simpan ke .env: {e}")
+                print(f"   ❌ Gagal simpan ke tokens.json: {e}")
                 print(f"   Token: {token[:50]}...")
 
             # Dump session JSON ke menu folder

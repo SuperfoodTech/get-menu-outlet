@@ -6,6 +6,7 @@ import requests
 import pandas as pd
 from pathlib import Path
 from openpyxl import Workbook
+import datetime
 
 from selenium.webdriver.chrome.options import Options
 
@@ -25,6 +26,44 @@ def custom_add_argument(self, argument):
     orig_add_argument(self, argument)
 Options.add_argument = custom_add_argument
 
+# FORCE the session file path to be inside Menu Outlet instead of VB
+def custom_get_session_file_path(account_name: str) -> Path:
+    project_root = Path(__file__).resolve().parent.parent
+    session_dir = project_root / "sessions"
+    session_dir.mkdir(parents=True, exist_ok=True)
+    return session_dir / f"session_{account_name}.json"
+
+browser.get_session_file_path = custom_get_session_file_path
+
+# PATCH _init_driver untuk menggunakan undetected_chromedriver
+# agar otomatis cocok dengan versi Chromium yang terinstall di sistem
+def _patched_init_driver(headless: bool, account_name: str = None):
+    import undetected_chromedriver as uc
+    project_root = Path(__file__).resolve().parent.parent
+    profile_dir = project_root / "data" / "chrome_profile"
+    profile_dir.mkdir(parents=True, exist_ok=True)
+
+    options = uc.ChromeOptions()
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument(f"--user-data-dir={profile_dir}")
+    options.add_argument("--profile-directory=Default")
+    if headless:
+        options.add_argument("--headless=new")
+        options.add_argument("--window-size=1920,1080")
+    else:
+        options.add_argument("--start-maximized")
+
+    driver = uc.Chrome(options=options, use_subprocess=True, version_main=149)
+    driver.set_page_load_timeout(60)
+    return driver
+
+browser._init_driver = _patched_init_driver
+
+# PATCH: Nonaktifkan paksaan logout/OTP loop jika deteksi API "Unknown Merchant" gagal
+# Shopee baru saja mematikan API GetUserInfo, sehingga script selalu salah mengira "Unknown Merchant".
+browser._deliberate_logout_and_relogin = lambda *args, **kwargs: True
 
 SELLER_BASE = "https://foody.shopee.co.id"
 IMG_BASE    = "https://down-id.img.susercontent.com/file"
@@ -35,7 +74,7 @@ class ShopeeClient:
         self.extra_cookies = extra_cookies or {}
         self.entity_id     = entity_id or self.extra_cookies.get("shopee_foody_mid", "")
         self.session       = requests.Session()
-        self.user_agent    = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+        self.user_agent    = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
 
     def _seller_headers(self, override_entity_id: str = None) -> dict:
         eid = override_entity_id or self.entity_id
@@ -71,6 +110,7 @@ class ShopeeClient:
         except Exception as e:
             print(f"[Shopee API] get_store_dishes error: {e}")
         return []
+
 
     def get_store_option_groups(self, store_id: str, dish_ids: list = None) -> list[dict]:
         url = f"{SELLER_BASE}/api/seller/store/option-groups/search"
@@ -113,63 +153,40 @@ def extract_shopee_menu(store_metadata: dict, output_dir: str):
 
     print(f"[*] Mengambil sesi Shopee untuk outlet '{target_name}' ({store_id})...")
 
-    # Buka browser, jangan langsung ditutup agar bisa switch merchant
+    # Ambil sesi, namun jangan tutup browser dulu untuk switch merchant
     session_data = browser.get_session(
         account_name=account_name,
         username=username,
         password=password,
         headless=True,
         close_browser=False,
+        target_name=target_name,
     )
 
     if not session_data or "shopee_tob_token" not in session_data:
-        return False, "Gagal mendapatkan sesi Shopee. Coba jalankan ulang atau cek credentials."
+        return False, "Gagal mendapatkan sesi Shopee. Coba jalankan ulang."
 
-    driver   = session_data.get("driver")
-    tob_token    = session_data["shopee_tob_token"]
-    extra_cookies = session_data.get("extra_cookies", {})
-    entity_id = store_id  # default
-
+    driver = session_data.get("driver")
     if driver:
         try:
-            import time as _time
-            # Switch merchant via Shopee Partner API dalam konteks browser
-            switch_js = """
-            var done = arguments[arguments.length - 1];
-            var sid  = arguments[0];
-            var tok  = document.cookie.split('; ')
-                .find(r => r.startsWith('shopee_tob_token='))?.split('=')[1] || '';
-            fetch('https://api.partner.shopee.co.id/nb/mss/web-api/PartnerAccountServer/SwitchPortal',
-                { method: 'POST',
-                  headers: {'Content-Type': 'application/json', 'x-merchant-token': tok},
-                  credentials: 'include',
-                  body: JSON.stringify({merchantId: parseInt(sid)}) })
-            .then(r => r.json()).then(d => done(d)).catch(e => done(null));
-            """
-            try:
-                driver.set_script_timeout(12)
-                switch_result = driver.execute_async_script(switch_js, str(store_id))
-                if switch_result:
-                    _time.sleep(2)
-                    # Reload dashboard agar cookie entity_id terupdate
-                    driver.get("https://partner.shopee.co.id/food/dashboard")
-                    _time.sleep(3)
-            except Exception as se:
-                print(f"  [!] Switch merchant gagal: {se}")
-
-            # Ambil token yang sudah tie ke merchant yang benar
-            refreshed = browser.refresh_tokens(driver, account_name)
-            if refreshed and refreshed.get("shopee_tob_token"):
-                tob_token     = refreshed["shopee_tob_token"]
-                extra_cookies = refreshed.get("extra_cookies", {})
-                entity_id     = refreshed.get("shopee_tob_entity_id") or store_id
+            # Lakukan switch merchant secara eksplisit di UI
+            browser.auto_switch_merchant(driver, target_name)
+            
+            # Segarkan token untuk merchant yang baru dipilih
+            refreshed = browser.refresh_tokens(driver, account_name, store_id)
+            if refreshed:
+                session_data.update(refreshed)
         except Exception as e:
-            print(f"  [!] Error saat switch merchant: {e}")
+            print(f"  [!] Error saat UI switch merchant: {e}")
         finally:
             try: driver.quit()
             except: pass
 
-    # 2. Initialize ShopeeClient dengan entity_id dari hasil switch merchant
+    tob_token     = session_data["shopee_tob_token"]
+    extra_cookies = session_data.get("extra_cookies", {})
+    entity_id     = session_data.get("shopee_tob_entity_id") or store_id
+
+    # Initialize ShopeeClient dengan entity_id dari hasil switch merchant
     client = ShopeeClient(
         tob_token=tob_token,
         entity_id=entity_id,
@@ -179,6 +196,7 @@ def extract_shopee_menu(store_metadata: dict, output_dir: str):
     print(f"[*] Menarik data menu ShopeeFood untuk: {target_name} ({store_id})...")
 
     try:
+
         # Fetch catalogs and dishes
         catalogs = client.get_store_dishes(store_id)
         if not catalogs:
@@ -346,8 +364,9 @@ def extract_shopee_menu(store_metadata: dict, output_dir: str):
             combined_name = f"{safe_merchant}_{safe_branch}"
 
         combined_name = re.sub(r'_+', '_', combined_name)
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-        excel_path = os.path.join(output_dir, f"shopee_menu_{combined_name}_{store_id}.xlsx")
+        excel_path = os.path.join(output_dir, f"shopee_menu_{combined_name}_{store_id}_{timestamp}.xlsx")
 
         with pd.ExcelWriter(excel_path, engine='openpyxl') as writer:
             df_items.to_excel(writer, sheet_name='Items', index=False)

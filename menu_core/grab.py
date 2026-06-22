@@ -13,6 +13,7 @@ import os
 import re
 import sys
 from pathlib import Path
+import datetime
 
 import pandas as pd
 
@@ -137,7 +138,8 @@ def _save_outputs(
     if store_id:
         base = f"{base}_{store_id}"
 
-    excel_f   = os.path.join(output_dir, f"grab_menu_{base}.xlsx")
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    excel_f   = os.path.join(output_dir, f"grab_menu_{base}_{timestamp}.xlsx")
 
     with pd.ExcelWriter(excel_f, engine="openpyxl") as w:
         df_items.to_excel(w, sheet_name="Items",     index=False)

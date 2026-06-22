@@ -1,7 +1,14 @@
-2026/06/18-15:01:14.635 a224 Reusing MANIFEST /mnt/DATA/Proyek/Menu Outlet/data/chrome_profile/profile_allvbadmin/IndexedDB/https_partner.business.accounts.shopee.co.id_0.indexeddb.leveldb/MANIFEST-000001
-2026/06/18-15:01:14.644 a224 Recovering log #4
-2026/06/18-15:01:14.648 a224 Reusing old log /mnt/DATA/Proyek/Menu Outlet/data/chrome_profile/profile_allvbadmin/IndexedDB/https_partner.business.accounts.shopee.co.id_0.indexeddb.leveldb/000004.log 
-2026/06/18-15:01:14.759 a227 Level-0 table #8: started
-2026/06/18-15:01:14.766 a227 Level-0 table #8: 7022 bytes OK
-2026/06/18-15:01:14.774 a227 Delete type=0 #4
-2026/06/18-15:01:14.776 a224 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/06/22-14:16:52.849 92e8 Reusing MANIFEST /mnt/DATA/Proyek/Menu Outlet/data/chrome_profile/profile_allvbadmin/IndexedDB/https_partner.business.accounts.shopee.co.id_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/22-14:16:52.853 92e8 Recovering log #10
+2026/06/22-14:16:52.854 92e8 Reusing old log /mnt/DATA/Proyek/Menu Outlet/data/chrome_profile/profile_allvbadmin/IndexedDB/https_partner.business.accounts.shopee.co.id_0.indexeddb.leveldb/000010.log 
+2026/06/22-14:16:52.855 92e8 Delete type=2 #8
+2026/06/22-14:16:52.957 92ec Level-0 table #15: started
+2026/06/22-14:16:52.963 92ec Level-0 table #15: 6574 bytes OK
+2026/06/22-14:16:52.966 92ec Delete type=0 #10
+2026/06/22-14:16:52.967 92e8 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 709 : 1
+2026/06/22-14:16:52.967 92e8 Compacting 1@0 + 1@1 files
+2026/06/22-14:16:52.970 92e8 Generated table #16@0: 172 keys, 2939 bytes
+2026/06/22-14:16:52.970 92e8 Compacted 1@0 + 1@1 files => 2939 bytes
+2026/06/22-14:16:52.973 92e8 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/22-14:16:52.974 92e8 Delete type=2 #15
+2026/06/22-14:16:52.974 92e8 Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 709 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

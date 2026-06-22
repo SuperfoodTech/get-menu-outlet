@@ -244,196 +244,270 @@ def clean_local_data():
 
 
 def interactive_menu():
-    state = "applicator"
-    applicators = []
-    current_app_idx = 0
-    applicator = None
-    outlets = []
-    selected_outlet = None
+    state = "main_menu"
+    all_outlets_data = {}
+    unique_outlets = []
+    parent_name = ""
+    selected_applicators = []
     results = []
+    selected_branches_data_temp = {}
     
     while True:
-        if state == "applicator":
+        if state == "main_menu":
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
-            print(f"  {BOLD}Pilih Aplikator/Platform (bisa pilih lebih dari satu, contoh: 1,3 atau 1-2):{RESET}")
-            print(f"    {MAGENTA}[1]{RESET} ShopeeFood")
-            print(f"    {GREEN}[2]{RESET} GrabFood")
-            print(f"    {CYAN}[3]{RESET} GoFood")
-            print(f"    {YELLOW}[4]{RESET} Bersihkan Data Lokal")
-            print(f"    {RED}[5]{RESET} Keluar")
+            print(f"  {BOLD}Pilih Menu Utama:{RESET}")
+            print(f"    {GREEN}[1]{RESET} Get Menu Data")
+            print(f"    {YELLOW}[p]{RESET} Bersihkan Data Lokal")
+            print(f"    {RED}[q]{RESET} Keluar")
             print()
             
-            choice = input(f"  {BOLD}Pilihan (1/2/3/4/5):{RESET} ").strip()
-            if choice == "5":
+            choice = input(f"  {BOLD}Pilihan (1/p/q):{RESET} ").strip().lower()
+            if choice == "q":
                 print("  Keluar.")
                 sys.exit(0)
-            elif choice == "4":
+            elif choice == "p":
                 clean_local_data()
                 continue
-                
-            parsed_indices = parse_multi_select(choice, 3)
-            if not parsed_indices:
+            elif choice == "1":
+                state = "load_all_outlets"
+            else:
                 print(f"  {RED}Pilihan tidak valid.{RESET}")
                 time.sleep(1)
-                continue
                 
-            applicators = []
-            for idx in parsed_indices:
-                if idx == 0:
-                    applicators.append("shopee")
-                elif idx == 1:
-                    applicators.append("grab")
-                elif idx == 2:
-                    applicators.append("gofood")
-                    
-            current_app_idx = 0
-            results = []
-            state = "load_outlets"
+        elif state == "load_all_outlets":
+            # Load from all 3 applicators silently to build the full list
+            print("  [*] Memuat daftar outlet...")
+            all_outlets_data = {}
+            for app in ["shopee", "grab", "gofood"]:
+                try:
+                    outlets = get_outlets_for_applicator(app)
+                    if outlets:
+                        all_outlets_data[app] = outlets
+                except Exception as e:
+                    print(f"  {RED}[ERROR] Gagal memuat daftar outlet untuk {app.upper()}: {e}{RESET}")
             
-        elif state == "load_outlets":
-            applicator = applicators[current_app_idx]
-            print(f"\n  [*] Mengunduh & memuat daftar outlet untuk {applicator.upper()}...")
-            try:
-                outlets = get_outlets_for_applicator(applicator)
-                if not outlets:
-                    print(f"  {RED}[ERROR] Tidak ada outlet live yang ditemukan untuk {applicator.upper()}.{RESET}")
-                    time.sleep(2)
-                    state = "applicator"
-                else:
-                    state = "select_outlet"
-            except Exception as e:
-                print(f"  {RED}[ERROR] Gagal memuat daftar outlet: {e}{RESET}")
-                time.sleep(3)
-                state = "applicator"
+            if not all_outlets_data:
+                print(f"  {RED}[ERROR] Tidak ada outlet yang berhasil dimuat.{RESET}")
+                time.sleep(2)
+                state = "main_menu"
+            else:
+                unified_names = set()
+                for app, outlets in all_outlets_data.items():
+                    for o in outlets:
+                        if o.get('nama_outlet'):
+                            unified_names.add(o['nama_outlet'])
+                unique_outlets = sorted(list(unified_names))
+                state = "select_outlet"
                 
         elif state == "select_outlet":
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
-            
-            # Get unique Nama Outlet (nama_outlet) values
-            unique_outlets = sorted(list(set(o['nama_outlet'] for o in outlets if o['nama_outlet'])))
-            
-            print(f"  {BOLD}Pilih Nama Outlet {applicator.upper()} [{current_app_idx + 1}/{len(applicators)}]:{RESET}")
+            print(f"  {BOLD}Pilih Nama Outlet:{RESET}")
             print(f"    {GREEN}[all]{RESET} Jalankan semua outlet dan cabang")
             print(f"    {GREEN}[new]{RESET} Jalankan HANYA outlet/cabang yang belum ditarik")
             for idx, name in enumerate(unique_outlets):
                 print(f"    {GREEN}[{idx + 1:3d}]{RESET} {name}")
                 
-            print(f"    {YELLOW}[b  ]{RESET} Kembali ke pemilihan aplikator")
+            print(f"    {YELLOW}[b  ]{RESET} Kembali ke Menu Utama")
             print()
             
             choice = input(f"  {BOLD}Pilih nomor outlet (misal: 1,3,5-7 atau 'all'/'new'/'b'):{RESET} ").strip()
             if choice.lower() == 'b':
-                state = "applicator"
+                state = "main_menu"
             elif choice.lower() == 'all':
-                selected_outlet = outlets
-                state = "confirm_all"
+                # Grab everything
+                selected_branches_data_temp = all_outlets_data
+                state = "select_applicator_all"
             elif choice.lower() == 'new':
-                # Filter outlets to keep only those that have not been run
-                filtered_outlets = []
-                for o in outlets:
-                    raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
-                    clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
-                    clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
-                    
-                    output_dir = get_output_dir(applicator, clean_outlet)
-                    
-                    is_processed = False
-                    if os.path.exists(output_dir):
-                        files = os.listdir(output_dir)
-                        has_files = any(f.endswith('.xlsx') for f in files)
-                        if len(files) > 0 and has_files:
-                            is_processed = True
-                            
-                    if not is_processed:
-                        filtered_outlets.append(o)
+                # Filter locally right now
+                filtered_data = {}
+                for app, outlets in all_outlets_data.items():
+                    filtered_outlets = []
+                    for o in outlets:
+                        raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
+                        clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
+                        clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
+                        output_dir = get_output_dir(app, clean_outlet)
+                        is_processed = False
+                        if os.path.exists(output_dir):
+                            files = os.listdir(output_dir)
+                            if any(f.endswith('.xlsx') for f in files):
+                                is_processed = True
+                        if not is_processed:
+                            filtered_outlets.append(o)
+                    if filtered_outlets:
+                        filtered_data[app] = filtered_outlets
                 
-                if not filtered_outlets:
+                if not filtered_data:
                     print(f"\n  {GREEN}Semua outlet sudah berhasil ditarik sebelumnya!{RESET}")
                     time.sleep(3)
                 else:
-                    selected_outlet = filtered_outlets
-                    state = "confirm_all"
+                    selected_branches_data_temp = filtered_data
+                    state = "select_applicator_all"
             else:
                 parsed_indices = parse_multi_select(choice, len(unique_outlets))
                 if parsed_indices:
                     if len(parsed_indices) == 1:
-                        target_parent = unique_outlets[parsed_indices[0]]
-                        matching_branches = [o for o in outlets if o['nama_outlet'] == target_parent]
-                        if len(matching_branches) == 1:
-                            selected_outlet = matching_branches[0]
-                            state = "confirm"
-                        else:
-                            parent_name = target_parent
-                            branches = matching_branches
-                            state = "select_branch"
+                        parent_name = unique_outlets[parsed_indices[0]]
+                        selected_branches_data_temp = {app: [o for o in outlets if o.get('nama_outlet') == parent_name] for app, outlets in all_outlets_data.items()}
+                        state = "select_applicator_single"
                     else:
-                        # Multi-select: gather all branches for all selected outlets
-                        selected_outlet = []
-                        for idx in parsed_indices:
-                            target_parent = unique_outlets[idx]
-                            matching_branches = [o for o in outlets if o['nama_outlet'] == target_parent]
-                            selected_outlet.extend(matching_branches)
-                        state = "confirm_all"
+                        # Multi-select
+                        selected_branches_data_temp = {}
+                        for app, outlets in all_outlets_data.items():
+                            app_outlets = []
+                            for idx in parsed_indices:
+                                target_parent = unique_outlets[idx]
+                                app_outlets.extend([o for o in outlets if o.get('nama_outlet') == target_parent])
+                            if app_outlets:
+                                selected_branches_data_temp[app] = app_outlets
+                        state = "select_applicator_all"
                 else:
                     print(f"  {RED}Pilihan tidak valid atau di luar jangkauan.{RESET}")
                     time.sleep(1)
+
+        elif state.startswith("select_applicator_"):
+            # Select applicator
+            os.system('cls' if os.name == 'nt' else 'clear')
+            banner()
+            if state == "select_applicator_single":
+                print(f"  {BOLD}Pilih Aplikator/Platform untuk '{parent_name}':{RESET}")
+            else:
+                print(f"  {BOLD}Pilih Aplikator/Platform:{RESET}")
+                
+            print(f"    {MAGENTA}[1]{RESET} ShopeeFood")
+            print(f"    {GREEN}[2]{RESET} GrabFood")
+            print(f"    {CYAN}[3]{RESET} GoFood")
+            print(f"    {GREEN}[all]{RESET} Semua")
+            print(f"    {YELLOW}[b]{RESET} Kembali")
+            print()
+            
+            choice = input(f"  {BOLD}Pilihan (1/2/3/all/b):{RESET} ").strip().lower()
+            if choice == "b":
+                state = "select_outlet"
+                continue
+            elif choice == "4" or choice == "all":
+                parsed_indices = [0, 1, 2]
+            else:
+                parsed_indices = parse_multi_select(choice, 3)
+                
+            if not parsed_indices:
+                print(f"  {RED}Pilihan tidak valid.{RESET}")
+                time.sleep(1)
+                continue
+                
+            selected_applicators = []
+            if 0 in parsed_indices: selected_applicators.append("shopee")
+            if 1 in parsed_indices: selected_applicators.append("grab")
+            if 2 in parsed_indices: selected_applicators.append("gofood")
+            
+            # Filter the branches temp to ONLY keep selected applicators
+            filtered_branches_data = {}
+            for app in selected_applicators:
+                if app in selected_branches_data_temp and selected_branches_data_temp[app]:
+                    filtered_branches_data[app] = selected_branches_data_temp[app]
+            
+            if not filtered_branches_data:
+                print(f"  {RED}[ERROR] Outlet yang dipilih tidak memiliki data di aplikator yang Anda pilih.{RESET}")
+                time.sleep(2)
+                continue
+
+            # Route based on previous mode
+            if state == "select_applicator_single":
+                # Single parent name selected. Are there multiple branches?
+                max_branches = max(len(branches) for branches in filtered_branches_data.values())
+                if max_branches == 1:
+                    results = []
+                    for app, branches in filtered_branches_data.items():
+                        results.append((app, branches[0]))
+                    state = "confirm"
+                else:
+                    # Collect branch names
+                    unified_b_names = set()
+                    for app, branches in filtered_branches_data.items():
+                        for b in branches:
+                            b_name = b.get('brand') or b.get('nama_resto_final') or b.get('merchant_name') or 'Cabang'
+                            unified_b_names.add(b_name)
+                    unique_branches = sorted(list(unified_b_names))
+                    selected_branches_data_temp = filtered_branches_data  # Store for branch step
+                    state = "select_branch"
+            else:
+                # "all" mode, skip branch selection
+                results = []
+                for app, outlets in filtered_branches_data.items():
+                    results.append((app, outlets))
+                state = "confirm_all"
                     
         elif state == "select_branch":
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
-            print(f"  {BOLD}Pilih Cabang untuk '{parent_name}' [{current_app_idx + 1}/{len(applicators)}]:{RESET}")
+            app_str = " + ".join(a.upper() for a in selected_branches_data_temp.keys())
+            print(f"  {BOLD}Pilih Cabang untuk '{parent_name}' pada {app_str}:{RESET}")
             print(f"    {GREEN}[all]{RESET} Jalankan semua cabang untuk outlet ini")
             print(f"    {GREEN}[new]{RESET} Jalankan HANYA cabang yang belum ditarik")
             
-            for idx, b in enumerate(branches):
-                branch_name = b['brand'] or b['nama_resto_final'] or b['merchant_name']
-                print(f"    {GREEN}[{idx + 1:3d}]{RESET} {branch_name} (ID: {b['store_id']})")
+            for idx, b_name in enumerate(unique_branches):
+                print(f"    {GREEN}[{idx + 1:3d}]{RESET} {b_name}")
                 
-            print(f"    {YELLOW}[b  ]{RESET} Kembali ke pemilihan outlet")
+            print(f"    {YELLOW}[b  ]{RESET} Kembali ke pemilihan aplikator")
             print()
             
             choice = input(f"  {BOLD}Pilih nomor cabang (misal: 1,3 atau 'all'/'new'/'b'):{RESET} ").strip()
             if choice.lower() == 'b':
-                state = "select_outlet"
+                state = "select_applicator_single"
             elif choice.lower() == 'all':
-                selected_outlet = branches
+                results = []
+                for app, branches in selected_branches_data_temp.items():
+                    results.append((app, branches))
                 state = "confirm_all"
             elif choice.lower() == 'new':
-                # Filter branches to keep only those that have not been run
-                filtered_branches = []
-                for o in branches:
-                    raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
-                    clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
-                    clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
-                    
-                    output_dir = get_output_dir(applicator, clean_outlet)
-                    
-                    is_processed = False
-                    if os.path.exists(output_dir):
-                        files = os.listdir(output_dir)
-                        has_files = any(f.endswith('.xlsx') for f in files)
-                        if len(files) > 0 and has_files:
-                            is_processed = True
-                            
-                    if not is_processed:
-                        filtered_branches.append(o)
+                results = []
+                for app, branches in selected_branches_data_temp.items():
+                    filtered_branches = []
+                    for b in branches:
+                        raw_outlet = b.get('nama_outlet') or b.get('nama_resto_final') or b.get('merchant_name') or 'unknown'
+                        clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
+                        clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
+                        output_dir = get_output_dir(app, clean_outlet)
+                        is_processed = False
+                        if os.path.exists(output_dir):
+                            if any(f.endswith('.xlsx') for f in os.listdir(output_dir)):
+                                is_processed = True
+                        if not is_processed:
+                            filtered_branches.append(b)
+                    if filtered_branches:
+                        results.append((app, filtered_branches))
                 
-                if not filtered_branches:
+                if not results:
                     print(f"\n  {GREEN}Semua cabang untuk outlet ini sudah berhasil ditarik sebelumnya!{RESET}")
                     time.sleep(3)
                 else:
-                    selected_outlet = filtered_branches
                     state = "confirm_all"
             else:
-                parsed_indices = parse_multi_select(choice, len(branches))
+                parsed_indices = parse_multi_select(choice, len(unique_branches))
                 if parsed_indices:
+                    selected_b_names = [unique_branches[idx] for idx in parsed_indices]
                     if len(parsed_indices) == 1:
-                        selected_outlet = branches[parsed_indices[0]]
+                        target_b_name = selected_b_names[0]
+                        results = []
+                        for app, branches in selected_branches_data_temp.items():
+                            for b in branches:
+                                b_name = b.get('brand') or b.get('nama_resto_final') or b.get('merchant_name') or 'Cabang'
+                                if b_name == target_b_name:
+                                    results.append((app, b))
+                                    break
                         state = "confirm"
                     else:
-                        selected_outlet = [branches[idx] for idx in parsed_indices]
+                        results = []
+                        for app, branches in selected_branches_data_temp.items():
+                            app_branches = []
+                            for b in branches:
+                                b_name = b.get('brand') or b.get('nama_resto_final') or b.get('merchant_name') or 'Cabang'
+                                if b_name in selected_b_names:
+                                    app_branches.append(b)
+                            if app_branches:
+                                results.append((app, app_branches))
                         state = "confirm_all"
                 else:
                     print(f"  {RED}Pilihan tidak valid atau di luar jangkauan.{RESET}")
@@ -442,14 +516,13 @@ def interactive_menu():
         elif state == "confirm":
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
+            app_str = " + ".join(app.upper() for app, _ in results)
             print(f"  {CYAN}{'─'*60}{RESET}")
-            print(f"  Aplikator : {BOLD}{applicator.upper()}{RESET}")
-            name_to_show = selected_outlet['brand'] or selected_outlet['nama_resto_final'] or selected_outlet['nama_outlet']
-            print(f"  Outlet    : {BOLD}{name_to_show}{RESET}")
-            print(f"  Store ID  : {BOLD}{selected_outlet['store_id']}{RESET}")
+            print(f"  Aplikator : {BOLD}{app_str}{RESET}")
+            print(f"  Outlet    : {BOLD}{parent_name}{RESET}")
             print(f"  {CYAN}{'─'*60}{RESET}")
             print()
-            print(f"  {BOLD}Konfirmasi tindakan [{current_app_idx + 1}/{len(applicators)}]:{RESET}")
+            print(f"  {BOLD}Konfirmasi tindakan:{RESET}")
             print(f"    {GREEN}[1]{RESET} Lanjutkan Tarik Menu")
             print(f"    {YELLOW}[2]{RESET} Kembali ke daftar outlet")
             print(f"    {RED}[3]{RESET} Batal dan Keluar")
@@ -457,13 +530,9 @@ def interactive_menu():
             
             choice = input(f"  {BOLD}Pilihan (1/2/3):{RESET} ").strip()
             if choice == "1":
-                results.append((applicator, selected_outlet))
-                if current_app_idx + 1 < len(applicators):
-                    current_app_idx += 1
-                    state = "load_outlets"
-                else:
-                    break
+                break
             elif choice == "2":
+                results = []
                 state = "select_outlet"
             elif choice == "3":
                 print("  Dibatalkan.")
@@ -476,79 +545,73 @@ def interactive_menu():
             os.system('cls' if os.name == 'nt' else 'clear')
             banner()
             
+            app_str = " + ".join(app.upper() for app, _ in results)
+            
             # Count unprocessed outlets
+            total_selected = sum(len(outlets) for _, outlets in results)
             unprocessed_count = 0
-            for o in selected_outlet:
-                raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
-                clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
-                clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
-                
-                output_dir = get_output_dir(applicator, clean_outlet)
-                
-                is_processed = False
-                if os.path.exists(output_dir):
-                    files = os.listdir(output_dir)
-                    has_files = any(f.endswith('.xlsx') for f in files)
-                    if len(files) > 0 and has_files:
-                        is_processed = True
-                if not is_processed:
-                    unprocessed_count += 1
+            for app, outlets in results:
+                for o in outlets:
+                    raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
+                    clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
+                    clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
+                    
+                    output_dir = get_output_dir(app, clean_outlet)
+                    is_processed = False
+                    if os.path.exists(output_dir):
+                        if any(f.endswith('.xlsx') for f in os.listdir(output_dir)):
+                            is_processed = True
+                    if not is_processed:
+                        unprocessed_count += 1
             
             print(f"  {CYAN}{'─'*60}{RESET}")
-            print(f"  Aplikator : {BOLD}{applicator.upper()}{RESET}")
+            print(f"  Aplikator : {BOLD}{app_str}{RESET}")
             print(f"  Mode      : {BOLD}{YELLOW}BATCH RUN (Massal){RESET}")
-            print(f"  Total     : {BOLD}{len(selected_outlet)} outlet/cabang{RESET}")
-            print(f"  Belum Run : {BOLD}{GREEN}{unprocessed_count} outlet/cabang{RESET}")
-            print(f"  Sudah Run : {BOLD}{len(selected_outlet) - unprocessed_count} outlet/cabang (Skipped jika pilih [2]){RESET}")
+            print(f"  Total     : {BOLD}{total_selected} tarikan (gabungan semua aplikator){RESET}")
+            print(f"  Belum Run : {BOLD}{GREEN}{unprocessed_count} tarikan{RESET}")
+            print(f"  Sudah Run : {BOLD}{total_selected - unprocessed_count} tarikan (Skipped jika pilih [2]){RESET}")
             print(f"  Jeda      : {BOLD}Setiap 10 outlet akan dijeda 1 menit{RESET}")
             print(f"  {CYAN}{'─'*60}{RESET}")
             print()
-            print(f"  {BOLD}Konfirmasi tindakan [{current_app_idx + 1}/{len(applicators)}]:{RESET}")
+            print(f"  {BOLD}Konfirmasi tindakan:{RESET}")
             print(f"    {GREEN}[1]{RESET} Lanjutkan Jalankan SEMUA (Overwrite)")
-            print(f"    {GREEN}[2]{RESET} Lanjutkan Jalankan HANYA yang Belum Selesai ({unprocessed_count} outlet)")
+            print(f"    {GREEN}[2]{RESET} Lanjutkan Jalankan HANYA yang Belum Selesai ({unprocessed_count} tarikan)")
             print(f"    {YELLOW}[3]{RESET} Kembali ke daftar outlet")
             print(f"    {RED}[4]{RESET} Batal dan Keluar")
             print()
             
             choice = input(f"  {BOLD}Pilihan (1/2/3/4):{RESET} ").strip()
             if choice == "1":
-                results.append((applicator, selected_outlet))
-                if current_app_idx + 1 < len(applicators):
-                    current_app_idx += 1
-                    state = "load_outlets"
-                else:
-                    break
+                break
             elif choice == "2":
-                filtered_outlets = []
-                for o in selected_outlet:
-                    raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
-                    clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
-                    clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
-                    
-                    output_dir = get_output_dir(applicator, clean_outlet)
-                    
-                    is_processed = False
-                    if os.path.exists(output_dir):
-                        files = os.listdir(output_dir)
-                        has_files = any(f.endswith('.xlsx') for f in files)
-                        if len(files) > 0 and has_files:
-                            is_processed = True
-                            
-                    if not is_processed:
-                        filtered_outlets.append(o)
+                filtered_results = []
+                for app, outlets in results:
+                    filtered_outlets = []
+                    for o in outlets:
+                        raw_outlet = o.get('nama_outlet') or o.get('nama_resto_final') or o.get('merchant_name') or 'unknown'
+                        clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
+                        clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
+                        
+                        output_dir = get_output_dir(app, clean_outlet)
+                        is_processed = False
+                        if os.path.exists(output_dir):
+                            if any(f.endswith('.xlsx') for f in os.listdir(output_dir)):
+                                is_processed = True
+                        if not is_processed:
+                            filtered_outlets.append(o)
+                    if filtered_outlets:
+                        filtered_results.append((app, filtered_outlets))
                 
-                if not filtered_outlets:
+                if not filtered_results:
                     print(f"\n  {GREEN}Semua outlet dalam batch ini sudah berhasil ditarik sebelumnya!{RESET}")
                     time.sleep(3)
+                    results = []
                     state = "select_outlet"
                 else:
-                    results.append((applicator, filtered_outlets))
-                    if current_app_idx + 1 < len(applicators):
-                        current_app_idx += 1
-                        state = "load_outlets"
-                    else:
-                        break
+                    results = filtered_results
+                    break
             elif choice == "3":
+                results = []
                 state = "select_outlet"
             elif choice == "4":
                 print("  Dibatalkan.")
@@ -560,12 +623,69 @@ def interactive_menu():
     return results
 
 
+
 def main():
-    try:
-        results = interactive_menu()
-    except KeyboardInterrupt:
-        print("\n  Dibatalkan oleh pengguna.")
+    import argparse
+    parser = argparse.ArgumentParser(description="Menu Extractor CLI")
+    parser.add_argument("--platform", type=str, help="Platform (gofood, grab, shopee, all)")
+    parser.add_argument("--outlet", type=str, help="Nama outlet (exact match atau all)")
+    parser.add_argument("--cabang", type=str, help="Nama cabang (exact match atau all)")
+    parser.add_argument("--list-json", action="store_true", help="Dump outlets as JSON")
+    args = parser.parse_args()
+
+    if args.list_json:
+        import json
+        outlets = {
+            "gofood": get_outlets_for_applicator("gofood"),
+            "grab": get_outlets_for_applicator("grab"),
+            "shopee": get_outlets_for_applicator("shopee")
+        }
+        print(json.dumps(outlets))
         sys.exit(0)
+
+    results = []
+    if args.platform:
+        applicators = ["shopee", "grab", "gofood"] if args.platform.lower() == "all" else [args.platform.lower()]
+        for app in applicators:
+            outlets = get_outlets_for_applicator(app)
+            if args.outlet and args.outlet.lower() != "all":
+                outlets = [o for o in outlets if (o.get('nama_outlet') or '').lower() == args.outlet.lower() or (o.get('nama_resto_final') or '').lower() == args.outlet.lower()]
+            
+            outlet_groups = {}
+            for o in outlets:
+                name = o.get('nama_resto_final') or o.get('nama_outlet') or 'unknown'
+                if name not in outlet_groups:
+                    outlet_groups[name] = []
+                outlet_groups[name].append(o)
+            
+            for name, branches in outlet_groups.items():
+                if args.cabang and args.cabang.lower() != "all" and args.cabang.lower() != "new":
+                    filtered = [b for b in branches if (b.get('brand') or b.get('cabang') or '').lower() == args.cabang.lower()]
+                    if filtered:
+                        results.append((app, filtered))
+                elif args.cabang and args.cabang.lower() == "new":
+                    filtered = []
+                    for b in branches:
+                        raw_outlet = b.get('nama_outlet') or b.get('nama_resto_final') or b.get('merchant_name') or 'unknown'
+                        clean_outlet = "".join(c for c in raw_outlet if c.isalnum() or c in (' ', '_', '-')).strip()
+                        clean_outlet = re.sub(r'\s+', ' ', clean_outlet).lower()
+                        output_dir = get_output_dir(app, clean_outlet)
+                        is_processed = False
+                        if os.path.exists(output_dir):
+                            if any(f.endswith('.xlsx') for f in os.listdir(output_dir)):
+                                is_processed = True
+                        if not is_processed:
+                            filtered.append(b)
+                    if filtered:
+                        results.append((app, filtered))
+                else:
+                    results.append((app, branches))
+    else:
+        try:
+            results = interactive_menu()
+        except KeyboardInterrupt:
+            print("\n  Dibatalkan oleh pengguna.")
+            sys.exit(0)
         
     import re
     
