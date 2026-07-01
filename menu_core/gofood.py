@@ -148,6 +148,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
             
         items = cat.get("menu_items", [])
         for item in items:
+            item_id = item.get("common_id") or item.get("id") or ""
             item_name = item.get("name", "").strip()
             item_price_str = item.get("price", "0")
             try:
@@ -182,6 +183,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
                 variants = vcat.get("variants", [])
                 total_modifiers_count += len(variants)
                 
+                vcat_id_value = vcat.get("common_id") or vcat.get("id") or ""
                 vcat_name = vcat.get("name", "").strip()
                 rules = vcat.get("rules") or {}
                 selection = rules.get("selection") or {}
@@ -190,6 +192,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
                 tipe_modifier = "Pilihan Tunggal" if max_qty == 1 else "Pilihan Ganda"
                 
                 for var in variants:
+                    var_id = var.get("common_id") or var.get("id") or ""
                     var_name = var.get("name", "").strip()
                     var_price = float(var.get("price", 0))
                     var_active = var.get("active", True)
@@ -201,7 +204,9 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
                         nama_resto,
                         store_id,
                         item_name,
+                        vcat_id_value,
                         vcat_name,
+                        var_id,
                         var_name,
                         tipe_modifier,
                         min_qty,
@@ -244,6 +249,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
                 'nama_pendek': brand or nama_resto,
                 'store_id': store_id,
                 'nama_kategori': cat_name,
+                'item_id': item_id,
                 'nama_item': item_name,
                 'jumlah_terjual': 0,
                 'jumlah_modifier_group': mod_groups_count,
@@ -260,7 +266,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     # Build output DataFrames
     item_cols = [
         'Link outlet', 'Nama panjang', 'Store ID',
-        'Nama kategori', 'Nama item', 'Jumlah terjual', 'Jumlah modifier group',
+        'Nama kategori', 'Item ID', 'Nama item', 'Jumlah terjual', 'Jumlah modifier group',
         'Jumlah modifier', 'Deskripsi item', 'Harga item sebelum promo (harga coret)',
         'Harga item setelah promo (harga coret)', 'Nominal atau persentase promo (harga coret)',
         'Ketersediaan item', 'Link foto'
@@ -270,7 +276,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     for d in all_dishes:
         item_data.append([
             d['link_outlet'], d['nama_panjang'], d['store_id'],
-            d['nama_kategori'], d['nama_item'], d['jumlah_terjual'], d['jumlah_modifier_group'],
+            d['nama_kategori'], d['item_id'], d['nama_item'], d['jumlah_terjual'], d['jumlah_modifier_group'],
             d['jumlah_modifier'], d['deskripsi_item'], d['harga_sebelum_promo'],
             d['harga_setelah_promo'], d['promo'], d['ketersediaan'], d['link_foto']
         ])
@@ -279,7 +285,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     
     mod_cols = [
         'Link outlet', 'Nama panjang', 'Store ID',
-        'Nama item', 'Nama modifier group', 'Nama modifier', 'Tipe modifier',
+        'Nama item', 'Modifier Group ID', 'Nama modifier group', 'Modifier ID', 'Nama modifier', 'Tipe modifier',
         'Minimal', 'Maksimal', 'Harga modifier', 'Ketersediaan modifier'
     ]
     
