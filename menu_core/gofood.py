@@ -71,6 +71,46 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     if not menus:
         return False, "Data menu kosong di dalam file JSON."
         
+    access_token = login_result.get('access_token')
+
+    # --- GET GOFOOD URL WITH UUID ---
+    restaurant_uuid = ""
+    for cat in menus:
+        if cat.get("restaurant_id"):
+            restaurant_uuid = cat.get("restaurant_id")
+            break
+            
+    # Ambil nama kota dari GoBiz API
+    city_slug = "indonesia"
+    if access_token:
+        try:
+            import requests
+            headers = {
+                'Accept': 'application/json, text/plain, */*',
+                'Authentication-Type': 'go-id',
+                'Authorization': f'Bearer {access_token}',
+                'Content-Type': 'application/json'
+            }
+            resp = requests.get(f'https://api.gobiz.co.id/v1/merchants/{store_id}', headers=headers, timeout=10)
+            if resp.status_code == 200:
+                merch_data = resp.json()
+                if merch_data.get('outlet_city'):
+                    city_raw = merch_data['outlet_city']
+                    # Hapus kata "Kota", "Kabupaten", atau "Kab." di awal nama kota
+                    city_raw = re.sub(r'^(kota|kabupaten|kab\.)\s+', '', city_raw, flags=re.IGNORECASE)
+                    city_slug = re.sub(r'[^a-zA-Z0-9\s\-]', '', city_raw)
+                    city_slug = re.sub(r'\s+', '-', city_slug.strip()).lower()
+        except Exception as e:
+            print(f"   ⚠️ Gagal mengambil nama kota dari API: {e}")
+            
+    gofood_link = f"https://gofood.link/a/{store_id}"
+    if restaurant_uuid:
+        raw_slug = store_metadata.get('nama_resto_final') or store_metadata.get('nama_outlet') or store_metadata.get('brand') or 'outlet'
+        clean_slug = re.sub(r'[^a-zA-Z0-9\s\-]', '', raw_slug)
+        clean_slug = re.sub(r'\s+', '-', clean_slug.strip()).lower()
+        gofood_link = f"https://gofood.co.id/{city_slug}/restaurant/{clean_slug}-{restaurant_uuid}"
+        
+
     # --- LOAD MODIFIER DATA ---
     modifier_path = os.path.join(api_dir, f"modifier-response-{store_id}.json")
         
@@ -157,7 +197,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
                     var_ketersediaan = "Tersedia" if (var_active and var_instock) else "Habis"
                     
                     modifier_rows.append([
-                        f"https://gofood.link/a/{store_id}",
+                        gofood_link,
                         nama_resto,
                         store_id,
                         item_name,
@@ -199,7 +239,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
                         promo_val = f"{int(round(diff / harga_sebelum * 100))}%"
             
             dish_obj = {
-                'link_outlet': f"https://gofood.link/a/{store_id}",
+                'link_outlet': gofood_link,
                 'nama_panjang': nama_resto,
                 'nama_pendek': brand or nama_resto,
                 'store_id': store_id,
