@@ -109,7 +109,9 @@ def generate_c5_from_dir(output_dir: str, raw_outlet: str, applicator: str):
                 if header in row and pd.notna(row[header]):
                     ws_mod.cell(row=r_idx, column=c_idx, value=row[header])
 
-        safe_name = raw_outlet.replace('/', '_').replace('\\', '_')
+        # Ambil nama cabang dari data mentah untuk penamaan file
+        nama_cabang = str(df_items['Nama panjang'].iloc[0]).strip() if ('Nama panjang' in df_items and not df_items.empty) else raw_outlet
+        safe_name = nama_cabang.replace('/', '_').replace('\\', '_')
         
         # Ambil Store ID dari data mentah agar nama file unik untuk setiap cabang
         store_id = str(df_items['Store ID'].iloc[0]).strip() if ('Store ID' in df_items and not df_items.empty) else ""
