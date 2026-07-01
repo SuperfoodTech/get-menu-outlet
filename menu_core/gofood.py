@@ -141,6 +141,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     
     # Parse GoFood menu categories and items
     for cat in menus:
+        cat_id = cat.get("common_id") or cat.get("id") or ""
         cat_name = cat.get("name", "").strip()
         cat_active = cat.get("active", True)
         if not cat_active:
@@ -248,6 +249,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
                 'nama_panjang': nama_resto,
                 'nama_pendek': brand or nama_resto,
                 'store_id': store_id,
+                'kategori_id': cat_id,
                 'nama_kategori': cat_name,
                 'item_id': item_id,
                 'nama_item': item_name,
@@ -265,7 +267,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
             
     # Build output DataFrames
     item_cols = [
-        'Link outlet', 'Nama panjang', 'Store ID',
+        'Link outlet', 'Nama panjang', 'Store ID', 'Category ID',
         'Nama kategori', 'Item ID', 'Nama item', 'Jumlah terjual', 'Jumlah modifier group',
         'Jumlah modifier', 'Deskripsi item', 'Harga item sebelum promo (harga coret)',
         'Harga item setelah promo (harga coret)', 'Nominal atau persentase promo (harga coret)',
@@ -275,7 +277,7 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
     item_data = []
     for d in all_dishes:
         item_data.append([
-            d['link_outlet'], d['nama_panjang'], d['store_id'],
+            d['link_outlet'], d['nama_panjang'], d['store_id'], d['kategori_id'],
             d['nama_kategori'], d['item_id'], d['nama_item'], d['jumlah_terjual'], d['jumlah_modifier_group'],
             d['jumlah_modifier'], d['deskripsi_item'], d['harga_sebelum_promo'],
             d['harga_setelah_promo'], d['promo'], d['ketersediaan'], d['link_foto']
