@@ -1,1082 +1,826 @@
 {
     "menus": [
         {
-            "id": "ee65768e-4503-4a2a-b34f-3822ec2c77b9",
-            "common_id": "e06ce6e6-7af5-42ed-8809-37c478f0aec8",
-            "name": "Siap Masak",
-            "sku": "SIAP_MASAK",
+            "id": "1647c30a-ae32-4849-95e0-1182eeafd844",
+            "common_id": "ddddf434-0dba-4d1c-a610-6607ddeb3e5b",
+            "name": "Favorit Banyak Orang",
+            "sku": "FAVORIT_BANYAK_ORANG",
             "active": true,
-            "weight": 1,
+            "weight": 6,
             "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
             "master_menu_category_id": "",
-            "menu_items_count": 2,
+            "menu_items_count": 4,
             "menu_items": [
                 {
                     "active": true,
-                    "description": "Kebab frozen menta dengan full daging, satu kotak isi 5 kebab",
-                    "id": "31cd97b0-3b82-4ba7-b7a4-3412376830be",
-                    "image_id": "df0cf381-5327-41d8-8865-d7e165ef2a1b",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cf4317cf-b6b5-4591-a5c3-9de0085920b6_85b887bd-6e8c-4567-a8f7-85c40612888f_Go-Biz_20190920_202032.jpeg",
+                    "description": "Roti maryam dengan coklat manis dan keju lezat.",
+                    "id": "0a8d1eec-de4a-4da6-beb4-8d7435c79cdb",
+                    "image_id": "3b78cab2-f081-45aa-bdca-b1fe3d0df124",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d526289a-ca4e-469a-9d5c-74c25439900e_menu-item-image_1782467062867.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cf4317cf-b6b5-4591-a5c3-9de0085920b6_85b887bd-6e8c-4567-a8f7-85c40612888f_Go-Biz_20190920_202032.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d526289a-ca4e-469a-9d5c-74c25439900e_menu-item-image_1782467062867.jpg"
                     },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "ee65768e-4503-4a2a-b34f-3822ec2c77b9",
-                    "name": "Frozen Kebab Full Daging",
-                    "price": "35000.00",
+                    "menu_id": "1647c30a-ae32-4849-95e0-1182eeafd844",
+                    "name": "Maryam Coklat Keju",
+                    "price": "19500.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 67627876,
+                    "shopping_item_id": 144535797,
                     "signature": false,
                     "weight": 1,
                     "brand_id": null,
                     "variant_category_ids": [],
-                    "common_id": "97336c8c-e16d-4ba8-85f2-a4df749dcb4d"
+                    "common_id": "bafb34b4-b493-4bd5-991e-437dcf89f9fb"
                 },
                 {
                     "active": true,
-                    "description": "Maryam dengan ukuran jumbo original 10 lembar maryam",
-                    "id": "fe5b92c1-abc3-4f51-b5ac-c954c57b78ae",
-                    "image_id": "813f79ae-04fd-4424-bac0-3fbde9019fa5",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ff3417c8-0416-4a35-b5c6-6025525dd16e_eed4dc00-53f6-47a6-80e2-5a45f8783f2d_Go-Biz_20190920_202159.jpeg",
+                    "description": "Burger klasik dengan patty daging, sayur, dan saus spesial.",
+                    "id": "626d48fa-8426-45ed-b9ae-f0b09c2e8494",
+                    "image_id": "ab62cba6-74de-490c-8b27-4de90022deea",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/82280e3a-7d3f-4a4a-854e-3ccf53d273dc_menu-item-image_1782467026451.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ff3417c8-0416-4a35-b5c6-6025525dd16e_eed4dc00-53f6-47a6-80e2-5a45f8783f2d_Go-Biz_20190920_202159.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/82280e3a-7d3f-4a4a-854e-3ccf53d273dc_menu-item-image_1782467026451.jpg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "ee65768e-4503-4a2a-b34f-3822ec2c77b9",
-                    "name": "Maryam Original Frozen",
-                    "price": "45000.00",
+                    "menu_id": "1647c30a-ae32-4849-95e0-1182eeafd844",
+                    "name": "Burger Ori",
+                    "price": "24000.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 67628105,
+                    "shopping_item_id": 144535769,
                     "signature": false,
                     "weight": 2,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "2d3eca82-fcff-4b5d-968c-77a0bf52afca"
-                }
-            ]
-        },
-        {
-            "id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-            "common_id": "0d163246-71c1-4f07-922a-ace0a616e2e5",
-            "name": "Makanan Snack Dan Camilan",
-            "sku": "MAKANAN_SNACK_DAN_CAMILAN",
-            "active": true,
-            "weight": 2,
-            "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-            "master_menu_category_id": "",
-            "menu_items_count": 26,
-            "menu_items": [
-                {
-                    "active": true,
-                    "description": "Dengan daging sapi dan rempah yaman",
-                    "id": "b55b3981-a560-45a1-b66e-22dacb7b9892",
-                    "image_id": "9d31dffc-fd37-45c3-9fe7-dc90444156c3",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4a0e857b-f658-4b6b-9ef8-bbeb3eb58799_e547720e-5758-4d37-8a91-dd16f8639080_Go-Biz_20190913_172710.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4a0e857b-f658-4b6b-9ef8-bbeb3eb58799_e547720e-5758-4d37-8a91-dd16f8639080_Go-Biz_20190913_172710.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Kecil Ala Baba Amir",
-                    "price": "10000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66219208,
-                    "signature": false,
-                    "weight": 1,
-                    "brand_id": null,
                     "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
                     ],
-                    "common_id": "dd710cdb-8bf9-4727-83d5-dc6a9eb152ea"
+                    "common_id": "183fbcb6-6dc0-4eed-b20c-336cafa9215e"
                 },
                 {
                     "active": true,
-                    "description": "Ukuran kecil yang di sertakan daging + keju atau telur",
-                    "id": "69611238-b043-4017-ac83-b21b55390482",
-                    "image_id": "de6d982b-bc69-4db9-a003-d4c25ea1bba5",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6bfb95ea-3813-43e2-99d1-5f96afda859f_8b8bac6e-dac0-43db-892c-dbf8a945262d_Go-Biz_20190913_173627.jpeg",
+                    "description": "Kebab jumbo isi daging, keju, telur, dan saus spesial.",
+                    "id": "396080c1-24e9-4a2b-a09a-4202fc82acac",
+                    "image_id": "fa35fa8c-a81a-43a6-a376-b44c6b3c9149",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/22e8976a-446a-445f-8e3e-e8e75634e3a3_menu-item-image_1782467014113.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6bfb95ea-3813-43e2-99d1-5f96afda859f_8b8bac6e-dac0-43db-892c-dbf8a945262d_Go-Biz_20190913_173627.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/22e8976a-446a-445f-8e3e-e8e75634e3a3_menu-item-image_1782467014113.jpg"
                     },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Kecil + Keju / Telur",
-                    "price": "12000.00",
+                    "menu_id": "1647c30a-ae32-4849-95e0-1182eeafd844",
+                    "name": "Kebab Jumbo Keju + Telur",
+                    "price": "31500.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66220968,
-                    "signature": true,
-                    "weight": 2,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "9424e5d1-bf6b-4305-83f8-ea4d5241272e"
-                },
-                {
-                    "active": true,
-                    "description": "Tortila dengan ukuran sedang dan kelembutan daging dan sayur segar",
-                    "id": "adf0d8bb-c0b6-4eb3-90c4-0e47848a6c28",
-                    "image_id": "83676791-d240-4dc9-afd6-3cf0fa097d46",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/72606cdf-a2a0-445f-ba17-19686d1eb60b_2ecbef35-bbb9-4870-b9d6-ef1f8fe81422_Go-Biz_20190915_131636.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/72606cdf-a2a0-445f-ba17-19686d1eb60b_2ecbef35-bbb9-4870-b9d6-ef1f8fe81422_Go-Biz_20190915_131636.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Sedang Baba Amir",
-                    "price": "13000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66484045,
+                    "shopping_item_id": 144535756,
                     "signature": false,
                     "weight": 3,
                     "brand_id": null,
                     "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
                     ],
-                    "common_id": "2955853c-4f64-4698-ba6d-2c75a9a991af"
+                    "common_id": "365d0e02-2322-47e4-9f9a-075a00c950f2"
                 },
                 {
                     "active": true,
-                    "description": "Dengan diameter besar dan daging serta saus pilihan",
-                    "id": "528a89ba-6a12-4218-b7ab-6a0678626763",
-                    "image_id": "da6b53b2-4c90-4c58-9bbd-fccb854cf31e",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/deef1ca9-df01-4156-bdf4-cc73b433a751_08115060-c965-4c3c-b3a1-5715d5bcad40_Go-Biz_20190913_173820.jpeg",
+                    "description": "Kebab premium extra large dengan daging cincang melimpah dan isian puas.",
+                    "id": "6b970fb7-bb32-4417-b572-41082b450ad1",
+                    "image_id": "3508bcc6-b84d-4b98-a585-fe0195057e40",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/49a11b1a-f7b0-45f8-88da-f3b7dc53d6e9_menu-item-image_1782467050188.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/deef1ca9-df01-4156-bdf4-cc73b433a751_08115060-c965-4c3c-b3a1-5715d5bcad40_Go-Biz_20190913_173820.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/49a11b1a-f7b0-45f8-88da-f3b7dc53d6e9_menu-item-image_1782467050188.jpg"
                     },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Besar Baba Amir",
-                    "price": "18000.00",
+                    "menu_id": "1647c30a-ae32-4849-95e0-1182eeafd844",
+                    "name": "Extra Large",
+                    "price": "49500.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66221327,
+                    "shopping_item_id": 144535789,
                     "signature": false,
                     "weight": 4,
                     "brand_id": null,
                     "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
                     ],
-                    "common_id": "278cb7c2-4e63-4146-8cc7-bdc2fbd4a94d"
-                },
-                {
-                    "active": false,
-                    "description": "Kebab dengan ukuran besar dan daging sapi di lumuri dengan keju dan saus keju baba amir",
-                    "id": "5b7fbc8c-ec92-4391-9ce1-cead31c1bbc9",
-                    "image_id": "7ef802a0-5209-4dd0-912b-283935eb78b5",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/72595943-5924-424b-81e2-8332143a6a10_c208e425-dc0e-4bc4-b4b0-c24dc6aa5b6e_master-menu-item-image_1589275753129.jpg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/72595943-5924-424b-81e2-8332143a6a10_c208e425-dc0e-4bc4-b4b0-c24dc6aa5b6e_master-menu-item-image_1589275753129.jpg"
-                    },
-                    "in_stock": false,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Sold Out",
-                    "price": "1.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66220696,
-                    "signature": false,
-                    "weight": 5,
-                    "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "54677500-f29e-44d3-acb5-5fd08f290e70"
-                },
-                {
-                    "active": true,
-                    "description": "Kebab dengan ukuran besar dan daging sapi di lumuri dengan keju dan saus keju baba amir",
-                    "id": "57270fd6-f816-484b-be6a-abfc36e22897",
-                    "image_id": "25752e81-0b28-4812-b311-ff0993595f69",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/187963cc-9c36-44ec-991e-fce9a4c9402f_78689d4a-af4b-4fe4-b6ac-2d0b8f3c19ac_Go-Biz_20190920_145923.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/187963cc-9c36-44ec-991e-fce9a4c9402f_78689d4a-af4b-4fe4-b6ac-2d0b8f3c19ac_Go-Biz_20190920_145923.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Besar Daging + Keju",
-                    "price": "20000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 67557527,
-                    "signature": false,
-                    "weight": 6,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "08b602fb-0195-47c9-bf28-6bd37a6e8647"
-                },
-                {
-                    "active": true,
-                    "description": "Sayur segar dengan daging lembut serta lumeran telur berstekstur lembut",
-                    "id": "f5bc02be-0289-429a-9f90-7dbd1dc63844",
-                    "image_id": "e990c8b7-beb8-4f77-95f9-85012f6ec327",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/fe4078a0-659b-4e37-9ec9-5aca306aa8e4_f9292fde-58ac-40f3-962e-806cc0d9b8d1_Go-Biz_20190915_132017.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/fe4078a0-659b-4e37-9ec9-5aca306aa8e4_f9292fde-58ac-40f3-962e-806cc0d9b8d1_Go-Biz_20190915_132017.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Besar Telur",
-                    "price": "20000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66484607,
-                    "signature": false,
-                    "weight": 7,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "cb1af922-7bbb-4712-85ab-c715ad227696"
-                },
-                {
-                    "active": true,
-                    "description": "Lotus terbaik dan parutan keju lumer pada daging yaman",
-                    "id": "ae26e614-d951-4a48-bfed-c759f774decb",
-                    "image_id": "6856f2b8-3493-40ab-9942-8d9ceb8078bc",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/151627f0-91bb-4773-a9e0-2d0fc8c9a283_a8f93a13-2d86-4c24-9192-0cde5b5f76ca_Go-Biz_20190913_110439.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/151627f0-91bb-4773-a9e0-2d0fc8c9a283_a8f93a13-2d86-4c24-9192-0cde5b5f76ca_Go-Biz_20190913_110439.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Jumbo + Keju",
-                    "price": "19000.00",
-                    "promotion": "eyJpZCI6ICIzMTc3YTk2Ny0yOWZmLTQ0YmUtOGJmMi00MzYwY2ZkOTZlNTEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIiwgIlJDIiwgImZsYXNoX3NhbGUiXSwgImNhdGVnb3J5IjogIkRpc2NvdW50IiwgImVuZF90aW1lIjogIjIzOjU5OjAwIiwgImZsYXNoX3NhbGUiOiBmYWxzZSwgInByb21vX3R5cGUiOiAiUGVyY2VudGFnZURpc2NvdW50IiwgImRlc2NyaXB0aW9uIjogIkdvRm9vZCBNZWdhIFByb21vIiwgInNlbGxpbmdfcHJpY2UiOiAxNDMwMCwgImFjdGl2YXRlX2l0ZW1zIjogZmFsc2UsICJiYWRnZV9pbWFnZV91cmwiOiB7ImJpZyI6ICJodHRwczovL2kuZ29qZWthcGkuY29tL2Rhcmtyb29tL2dvZm9vZC1pbmRvbmVzaWEvdjIvaW1hZ2VzL3VwbG9hZHMvcHJvbW8tZGlzaC1lbmxhcmdlLXYzLnBuZyIsICJzbWFsbCI6ICJodHRwczovL2kuZ29qZWthcGkuY29tL2Rhcmtyb29tL2dvZm9vZC1pbmRvbmVzaWEvdjIvaW1hZ2VzL3VwbG9hZHMvcHJvbW8tZGlzaC12My5wbmcifSwgInNrdV9jYXRlZ29yeV9uYW1lIjogIlByb21vIiwgImRpc2NvdW50X3BlcmNlbnRhZ2UiOiAyNSwgInVzZXJfbWF4X3NrdV9xdWFudGl0eSI6IG51bGwsICJvcmRlcl9tYXhfc2t1X3F1YW50aXR5IjogbnVsbCwgInVzZXJfbWF4X3NrdV9xdWFudGl0eV9wZXJfZGF5IjogbnVsbH0=",
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66139831,
-                    "signature": true,
-                    "weight": 8,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "0d4346fd-452e-4a67-ba73-bcfe7ad6a7c5"
-                },
-                {
-                    "active": true,
-                    "description": "Lotus terbaik dan kebab ukuran jumbo, taburan daging yamann serta keju dan telur ala baba amir dan saus keju pilihan",
-                    "id": "51b7b9eb-c533-40de-9d39-c51c567aaa7e",
-                    "image_id": "9bbf43d4-7290-4c69-a3ac-72ec58d8b7cd",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/372fa541-223a-4b97-a1c7-a51a531168de_15f4994f-46aa-46d5-8173-fe37038ebf35_Go-Biz_20190913_110908.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/372fa541-223a-4b97-a1c7-a51a531168de_15f4994f-46aa-46d5-8173-fe37038ebf35_Go-Biz_20190913_110908.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Jumbo + Keju Telur",
-                    "price": "22000.00",
-                    "promotion": "eyJpZCI6ICIzMTc3YTk2Ny0yOWZmLTQ0YmUtOGJmMi00MzYwY2ZkOTZlNTEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIiwgIlJDIiwgImZsYXNoX3NhbGUiXSwgImNhdGVnb3J5IjogIkRpc2NvdW50IiwgImVuZF90aW1lIjogIjIzOjU5OjAwIiwgImZsYXNoX3NhbGUiOiBmYWxzZSwgInByb21vX3R5cGUiOiAiUGVyY2VudGFnZURpc2NvdW50IiwgImRlc2NyaXB0aW9uIjogIkdvRm9vZCBNZWdhIFByb21vIiwgInNlbGxpbmdfcHJpY2UiOiAxNjUwMCwgImFjdGl2YXRlX2l0ZW1zIjogZmFsc2UsICJiYWRnZV9pbWFnZV91cmwiOiB7ImJpZyI6ICJodHRwczovL2kuZ29qZWthcGkuY29tL2Rhcmtyb29tL2dvZm9vZC1pbmRvbmVzaWEvdjIvaW1hZ2VzL3VwbG9hZHMvcHJvbW8tZGlzaC1lbmxhcmdlLXYzLnBuZyIsICJzbWFsbCI6ICJodHRwczovL2kuZ29qZWthcGkuY29tL2Rhcmtyb29tL2dvZm9vZC1pbmRvbmVzaWEvdjIvaW1hZ2VzL3VwbG9hZHMvcHJvbW8tZGlzaC12My5wbmcifSwgInNrdV9jYXRlZ29yeV9uYW1lIjogIlByb21vIiwgImRpc2NvdW50X3BlcmNlbnRhZ2UiOiAyNSwgInVzZXJfbWF4X3NrdV9xdWFudGl0eSI6IG51bGwsICJvcmRlcl9tYXhfc2t1X3F1YW50aXR5IjogbnVsbCwgInVzZXJfbWF4X3NrdV9xdWFudGl0eV9wZXJfZGF5IjogbnVsbH0=",
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66141182,
-                    "signature": true,
-                    "weight": 9,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "cd26135c-7ac7-4dc9-9b34-ff4ae05078fb"
-                },
-                {
-                    "active": true,
-                    "description": "Kebab dengan ukuran 3 kali lipat besar dan bentuk. ditambahkan dengan daging dobel keju dobel dan telur lezat resep. dan tentunya ada kentang dan macam bumbu rahasi",
-                    "id": "b8beb40d-8e06-487c-940a-db59acff3528",
-                    "image_id": "87a00b0d-f5c4-40ce-ba2d-ffc8b4cba6ba",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7aea6698-c680-4540-bbc2-1caa57afcc9d_bba0b75a-9ed8-4cb9-b381-5bbeabd19c5b_Go-Biz_20200202_185023.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7aea6698-c680-4540-bbc2-1caa57afcc9d_bba0b75a-9ed8-4cb9-b381-5bbeabd19c5b_Go-Biz_20200202_185023.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Master Jumbo",
-                    "price": "55000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 1697525977,
-                    "signature": false,
-                    "weight": 10,
-                    "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "f28ff44a-7625-4517-9187-ab0bc020c0e5"
-                },
-                {
-                    "active": true,
-                    "description": "Sayur loutus dengan pilihan terbaik dengan taburan daging sapi resep yaman",
-                    "id": "75601f0f-cad6-4e52-a969-9bd874dbb5a2",
-                    "image_id": "5c75060e-99ee-4eb6-b207-4ab6cffcc45b",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/9d687529-7fc2-4b2f-8978-e0de6cf4b2bf_cc1491c3-7684-4354-9e9d-cc6f3ee75379_Go-Biz_20190913_110352.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/9d687529-7fc2-4b2f-8978-e0de6cf4b2bf_cc1491c3-7684-4354-9e9d-cc6f3ee75379_Go-Biz_20190913_110352.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Full Daging",
-                    "price": "19000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66139270,
-                    "signature": false,
-                    "weight": 11,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "568fc215-fc71-4897-b813-6b478e728334"
-                },
-                {
-                    "active": true,
-                    "description": "Lotus terbaik dengan tambahan daging full versi yaman + keju slace dalam setiap dagingnya + telur tebal ala baba amir . BONUS KEBAB KECIL UNTUK PEMBELIAN 2 PCS",
-                    "id": "115d3d9d-1373-4c47-a430-521a498b6e1d",
-                    "image_id": "82b7fcc8-95c7-4bca-a22d-27380f869091",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/df53fc8d-b4e0-49e5-a7c1-defd544bafbe_95d78971-9373-42c0-a2bd-33d0cc020398_Go-Biz_20190913_110700.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/df53fc8d-b4e0-49e5-a7c1-defd544bafbe_95d78971-9373-42c0-a2bd-33d0cc020398_Go-Biz_20190913_110700.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Double Jumbo",
-                    "price": "26000.00",
-                    "promotion": "eyJpZCI6ICIzMTc3YTk2Ny0yOWZmLTQ0YmUtOGJmMi00MzYwY2ZkOTZlNTEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIiwgIlJDIiwgImZsYXNoX3NhbGUiXSwgImNhdGVnb3J5IjogIkRpc2NvdW50IiwgImVuZF90aW1lIjogIjIzOjU5OjAwIiwgImZsYXNoX3NhbGUiOiBmYWxzZSwgInByb21vX3R5cGUiOiAiUGVyY2VudGFnZURpc2NvdW50IiwgImRlc2NyaXB0aW9uIjogIkdvRm9vZCBNZWdhIFByb21vIiwgInNlbGxpbmdfcHJpY2UiOiAxOTUwMCwgImFjdGl2YXRlX2l0ZW1zIjogZmFsc2UsICJiYWRnZV9pbWFnZV91cmwiOiB7ImJpZyI6ICJodHRwczovL2kuZ29qZWthcGkuY29tL2Rhcmtyb29tL2dvZm9vZC1pbmRvbmVzaWEvdjIvaW1hZ2VzL3VwbG9hZHMvcHJvbW8tZGlzaC1lbmxhcmdlLXYzLnBuZyIsICJzbWFsbCI6ICJodHRwczovL2kuZ29qZWthcGkuY29tL2Rhcmtyb29tL2dvZm9vZC1pbmRvbmVzaWEvdjIvaW1hZ2VzL3VwbG9hZHMvcHJvbW8tZGlzaC12My5wbmcifSwgInNrdV9jYXRlZ29yeV9uYW1lIjogIlByb21vIiwgImRpc2NvdW50X3BlcmNlbnRhZ2UiOiAyNSwgInVzZXJfbWF4X3NrdV9xdWFudGl0eSI6IG51bGwsICJvcmRlcl9tYXhfc2t1X3F1YW50aXR5IjogbnVsbCwgInVzZXJfbWF4X3NrdV9xdWFudGl0eV9wZXJfZGF5IjogbnVsbH0=",
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66140302,
-                    "signature": true,
-                    "weight": 12,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "28e5eb91-004c-4ee6-9804-b769a811520e"
-                },
-                {
-                    "active": true,
-                    "description": "Tortila jumbo dengan sedikit sayuran dan banyak daging serta telur yang lembut ditambah dengan keju slace yang padat. . special. promo BONUS KEBAB KECIL",
-                    "id": "73a7490e-f7c9-4757-a4c3-653bfda3fc85",
-                    "image_id": "0eca75b4-b791-4ea7-990b-9e48ceff295f",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5f583778-bfdb-49d8-9836-e0de19765e96_501b9cd7-3a4b-492c-a298-2cfd10d8c7d4_Go-Biz_20190914_220918.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5f583778-bfdb-49d8-9836-e0de19765e96_501b9cd7-3a4b-492c-a298-2cfd10d8c7d4_Go-Biz_20190914_220918.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Triple Jumbo + Keju + Telur",
-                    "price": "30000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66417129,
-                    "signature": true,
-                    "weight": 13,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "62164b64-598f-49d7-a43d-94357509f531"
-                },
-                {
-                    "active": true,
-                    "description": "Tortila lembut dengan daging dan keju serta telur yand di lapisi saus pilihan",
-                    "id": "a7c48d7d-5394-473b-9eff-07776058771e",
-                    "image_id": "470f0fa2-08e1-4db4-bf2c-d07cdde698a6",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/882673ee-84e5-4893-8eaf-b93aca8fa1a6_afa4047d-5ad8-4fcc-8e6b-30aa234def35_Go-Biz_20190915_131811.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/882673ee-84e5-4893-8eaf-b93aca8fa1a6_afa4047d-5ad8-4fcc-8e6b-30aa234def35_Go-Biz_20190915_131811.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Sedang Keju Telur",
-                    "price": "17000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66484214,
-                    "signature": false,
-                    "weight": 15,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "029bc057-4072-4078-b28b-8e880478d6ec"
-                },
-                {
-                    "active": true,
-                    "description": "Maryam prata baba amir ukuran jumbo dengan lumeran susu dan keju",
-                    "id": "79dfe74f-b34e-4826-89f8-8153784caa26",
-                    "image_id": "da5ba196-08c9-4607-bd76-fac586bb82ab",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/523b16fc-5780-4d84-942c-1c50ad8171ef_bc72fe71-edc0-455f-8f35-4f92c15bd20e_Go-Biz_20190915_132152.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/523b16fc-5780-4d84-942c-1c50ad8171ef_bc72fe71-edc0-455f-8f35-4f92c15bd20e_Go-Biz_20190915_132152.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Maryam Keju Susu",
-                    "price": "12000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66484725,
-                    "signature": false,
-                    "weight": 16,
-                    "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "cb1964b9-e61c-41cf-a218-57bf7edfb1b2"
-                },
-                {
-                    "active": true,
-                    "description": "Maryam ukuran jumbo , dengan taburan sedikit loutus pilihan dan daging yaman , dan saus pilihan baba amir",
-                    "id": "f6c87969-bead-4d7c-92c7-28dcbbd54109",
-                    "image_id": "feddd65c-44f6-431f-affe-d4d460d81398",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ca7cf63b-ef2e-4027-9380-6e0ca424f18a_84f1d15a-06b4-44d0-9e81-8d5cc9766c98_Go-Biz_20190913_111155.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ca7cf63b-ef2e-4027-9380-6e0ca424f18a_84f1d15a-06b4-44d0-9e81-8d5cc9766c98_Go-Biz_20190913_111155.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Maryam Prata Ala Baba Amir",
-                    "price": "15000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66141671,
-                    "signature": true,
-                    "weight": 17,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "b50558a8-e411-48cb-a1b0-8f89c6c50d11"
-                },
-                {
-                    "active": true,
-                    "description": "Maryam dengan salad sayur pilihan dengan daging yaman serta telur dan keju",
-                    "id": "a998c59f-7107-4762-8123-de832fe7ab65",
-                    "image_id": "6b3f96de-71d7-424e-8123-230c672ad791",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0456223d-5938-453d-a808-5b59c51add0f_a3e615b9-1651-4e5d-8eda-3dc1bb9f8f04_Go-Biz_20190913_111346.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0456223d-5938-453d-a808-5b59c51add0f_a3e615b9-1651-4e5d-8eda-3dc1bb9f8f04_Go-Biz_20190913_111346.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Maryam Salad + Keju Telur + Daging Ala Baba Amir",
-                    "price": "20000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66142314,
-                    "signature": true,
-                    "weight": 18,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "f5cb67ee-8a18-40d2-82a9-8ab219f3b8d1"
-                },
-                {
-                    "active": true,
-                    "description": "Roti burger dengan daging tebal serta dilumuri saus keju dan sayur pilihan",
-                    "id": "3bc015e9-7463-4e19-85d6-e9dad681523e",
-                    "image_id": "cc700fa0-541e-4bab-9e18-ee6224e32270",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3c64deea-5785-4295-bdda-17b2866139ee_ea67c160-9f6f-4402-9a91-a4513cb20dbd_Go-Biz_20190913_173007.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3c64deea-5785-4295-bdda-17b2866139ee_ea67c160-9f6f-4402-9a91-a4513cb20dbd_Go-Biz_20190913_173007.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Burger Klenger",
-                    "price": "17000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66219921,
-                    "signature": true,
-                    "weight": 19,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "11ebfe02-cdfa-433b-a1f5-28764660ce32"
-                },
-                {
-                    "active": true,
-                    "description": "Dengan daging ukuran tebal 5 cm dan disertakan sayuran , telur dan keju",
-                    "id": "41646f37-d784-4c2d-8602-6a0231e05428",
-                    "image_id": "ee9a53e7-6e32-43de-bd9e-7641a1f1ab9d",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/55608b31-fb18-419f-8332-60e440268af6_7b78e54b-5986-4816-b49c-84694dd20daa_Go-Biz_20190915_132322.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/55608b31-fb18-419f-8332-60e440268af6_7b78e54b-5986-4816-b49c-84694dd20daa_Go-Biz_20190915_132322.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Burger Klenger Keju Telur",
-                    "price": "22000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66485107,
-                    "signature": false,
-                    "weight": 20,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "431ecfb4-fa28-4169-ab91-a4c6d2956649"
-                },
-                {
-                    "active": true,
-                    "description": "Roti gurih dan renyah di campur dengan rempahh rempah , dan 2 daging tebal ala baba amir",
-                    "id": "b94782e8-473e-4484-b8eb-14fe4263cc36",
-                    "image_id": "0cdf40af-d3f2-4526-9f9a-74edc0624cd4",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/95d2c367-6ca1-4089-a6a0-bd335eed9298_88936b5c-d2b2-4a6e-b0a4-8649f94b7af7_Go-Biz_20190913_172815.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/95d2c367-6ca1-4089-a6a0-bd335eed9298_88936b5c-d2b2-4a6e-b0a4-8649f94b7af7_Go-Biz_20190913_172815.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Burger Klenger Doubel Daging",
-                    "price": "25000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66219499,
-                    "signature": true,
-                    "weight": 21,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "5fa65f61-6c99-4335-8e15-d6b3aeb27963"
-                },
-                {
-                    "active": true,
-                    "description": "Roti burger dengan kelezatan daging 3 lapis dan saus keju pilihan baba amir",
-                    "id": "8e90bdcc-5ad3-4886-852d-79c3b56e5b83",
-                    "image_id": "dca67d65-68f0-4c99-84ff-d5827c2194c1",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/44f1734a-33ca-41c7-913d-aa50382eef10_3d3f4e03-02da-491c-a16a-1f544d47436f_Go-Biz_20190913_173225.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/44f1734a-33ca-41c7-913d-aa50382eef10_3d3f4e03-02da-491c-a16a-1f544d47436f_Go-Biz_20190913_173225.jpeg"
-                    },
-                    "in_stock": false,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Daging Tripel Klenger",
-                    "price": "35000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 66220188,
-                    "signature": true,
-                    "weight": 22,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "d9128400-7711-4149-bfe6-7ce8ead2d9cc"
-                },
-                {
-                    "active": true,
-                    "description": "Dengan burger warna randem plus daging klenger dan telur resep baba amir",
-                    "id": "a937398f-87bb-41a0-9418-12ace9d4d788",
-                    "image_id": "51fa298d-c11d-47c4-a5c0-2eaf032dd3f5",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4937cc25-d1cf-44f6-a75e-8a1916aec419_Go-Biz_20211220_160638.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4937cc25-d1cf-44f6-a75e-8a1916aec419_Go-Biz_20211220_160638.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Burger Keju Atau Telor",
-                    "price": "18000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 258756028,
-                    "signature": false,
-                    "weight": 23,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "f44021d2-a7ec-4380-a37f-9a7ff27373d5"
-                },
-                {
-                    "active": true,
-                    "description": "Dengan Daging Tebal Dan Tambahan Toping Nikmat Ala Baba Amir",
-                    "id": "125bdaae-1243-47b8-9634-cb83f6c721e8",
-                    "image_id": "7cd75919-5f8b-4c92-9eb3-5979b1bd5956",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0e5cd3c1-56f8-4816-b44c-948fa2df0ffc_Go-Biz_20210517_161308.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0e5cd3c1-56f8-4816-b44c-948fa2df0ffc_Go-Biz_20210517_161308.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Burger Klenger + Keju atau Telor",
-                    "price": "20000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 46002050,
-                    "signature": false,
-                    "weight": 24,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "56d6c508-d516-4052-bb90-6ac55498b12c"
-                },
-                {
-                    "active": true,
-                    "description": "Roti Burger Di Campur Dengan Daging Caca Kebab Nyaman Yang Identik Unik Dan enak Dilidah",
-                    "id": "192c96d6-c902-4732-a5fc-d48d36183bb9",
-                    "image_id": "0bc1aec9-6b9e-4eef-a288-f5b67172feb0",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/fe733736-ef7f-497d-be06-96767a727292_Go-Biz_20210517_181426.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/fe733736-ef7f-497d-be06-96767a727292_Go-Biz_20210517_181426.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Burger X Daging Kebab",
-                    "price": "15000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 46005639,
-                    "signature": false,
-                    "weight": 25,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "585c55af-f256-441d-bb4c-effa6a2ba814"
-                },
-                {
-                    "active": true,
-                    "description": "Dengan Tortila Jumbo Yang Khas Dari Kebab Baba Amir dan Racian Daging Tebal Burger Kelenger Menyatu Menjadi Kesatuan Yang Membuat Lidah Anda Tergoyah.",
-                    "id": "bc9766e6-2541-4866-9ec4-038115cbd509",
-                    "image_id": "cdcf1f9f-ca2d-463a-bd95-64c3c48786a4",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6cba3f2d-69b1-4e86-9b88-7b2c652773dc_Go-Biz_20210517_181543.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6cba3f2d-69b1-4e86-9b88-7b2c652773dc_Go-Biz_20210517_181543.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Daging Burger Speacial Menu",
-                    "price": "28000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 46005676,
-                    "signature": false,
-                    "weight": 26,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "2b475709-5c31-4740-a44a-736bdd9cf9d1"
-                },
-                {
-                    "active": true,
-                    "description": "Perpaduan daging Yang Khas Di Campur Dengan Camburan Daging Burger Klenger Dan Racian Keju Serta Telur Khas Baba Amir",
-                    "id": "a1433ca1-65df-4c25-9127-db00414dc2dd",
-                    "image_id": "24f94e03-cc74-410a-a2df-e4f0553ccea0",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7bd3e13e-67ff-4033-880b-1ddb8c565ab6_Go-Biz_20210517_181727.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7bd3e13e-67ff-4033-880b-1ddb8c565ab6_Go-Biz_20210517_181727.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "da432bc3-ac0d-45ba-b484-32a9fc4ae0c2",
-                    "name": "Kebab Daging Burger Tambah Keju Telor",
-                    "price": "32000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 46005718,
-                    "signature": false,
-                    "weight": 27,
-                    "brand_id": null,
-                    "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
-                    ],
-                    "common_id": "4a5e14fe-6594-49f5-94a1-42bcd0bf52c1"
+                    "common_id": "7058c072-b962-4354-9e60-068f0347eeac"
                 }
             ]
         },
         {
-            "id": "795d29a5-84d1-493b-9262-30cd1408f0cf",
-            "common_id": "6dbe3f31-9b97-4598-bc75-733b5ea6fc83",
-            "name": "Cofee Susu Baba Amir",
-            "sku": "COFEE_SUSU_BABA_AMIR",
+            "id": "38be859b-e304-4c52-b435-7d661129b1ea",
+            "common_id": "dc0c08f7-425c-4aed-8ef3-485e1937b962",
+            "name": "Paket Hemat Baba Amir",
+            "sku": "PAKET_HEMAT_BABA_AMIR",
             "active": true,
-            "weight": 3,
+            "weight": 7,
             "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
             "master_menu_category_id": "",
-            "menu_items_count": 2,
+            "menu_items_count": 3,
             "menu_items": [
                 {
                     "active": true,
-                    "description": "Coffe Susu Khas Yamani Perpaduan Dengan Kentalnya Susu Serta Kopi Kusus Baba Amir",
-                    "id": "852cd3f0-b5e2-4bfb-9911-5b06a996ec5a",
-                    "image_id": "328a89ba-8ef6-4b5b-9a9b-bdc15405aea5",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/14f84d27-01e7-48b4-9916-f61f3b648c8d_Go-Biz_20200707_174945.jpeg",
+                    "description": "Kombinasi pas burger gurih dan maryam manis, cocok untuk teman santai atau camilan kenyang.",
+                    "id": "2fa96015-1931-41f1-9d4f-a3228e797000",
+                    "image_id": "2f70546a-cd6c-4ff6-ac97-9050d9152acb",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/dfc11193-38d0-4981-b22e-421e45962152_menu-item-image_1782467185793.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/14f84d27-01e7-48b4-9916-f61f3b648c8d_Go-Biz_20200707_174945.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/dfc11193-38d0-4981-b22e-421e45962152_menu-item-image_1782467185793.jpg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "795d29a5-84d1-493b-9262-30cd1408f0cf",
-                    "name": "Coffe Susu Crimy Atau Strong",
-                    "price": "13000.00",
-                    "promotion": null,
+                    "menu_id": "38be859b-e304-4c52-b435-7d661129b1ea",
+                    "name": "1x Burger Ori + 1x Maryam Coklat Keju",
+                    "price": "52500.00",
+                    "promotion": "eyJpZCI6ICI0M2U3ODYxYS02YTFmLTQ0ZGUtYWIwNi05MDVjYjQ4ZTEyMmEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIl0sICJjYXRlZ29yeSI6ICJEaXNjb3VudCIsICJlbmRfdGltZSI6ICIyMzo1OTowMCIsICJmbGFzaF9zYWxlIjogZmFsc2UsICJwcm9tb190eXBlIjogIlBlcmNlbnRhZ2VEaXNjb3VudCIsICJkZXNjcmlwdGlvbiI6ICJQcm9tbyIsICJzZWxsaW5nX3ByaWNlIjogNDIwMDAsICJhY3RpdmF0ZV9pdGVtcyI6IGZhbHNlLCAiYmFkZ2VfaW1hZ2VfdXJsIjogeyJiaWciOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtZW5sYXJnZS12My5wbmciLCAic21hbGwiOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtdjMucG5nIn0sICJza3VfY2F0ZWdvcnlfbmFtZSI6ICJQcm9tbyIsICJkaXNjb3VudF9wZXJjZW50YWdlIjogMjAsICJ1c2VyX21heF9za3VfcXVhbnRpdHkiOiBudWxsLCAib3JkZXJfbWF4X3NrdV9xdWFudGl0eSI6IG51bGwsICJ1c2VyX21heF9za3VfcXVhbnRpdHlfcGVyX2RheSI6IG51bGx9",
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 2070389228,
+                    "shopping_item_id": 144535804,
                     "signature": false,
                     "weight": 1,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "0e764bbb-5d04-48b5-a58b-87d59bfd5bd8"
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "be69064a-6a28-44ac-93bb-e1833939369e"
                 },
                 {
                     "active": true,
-                    "description": "Coffe Susu Baik Untik Kesehatan Dan Kebugaran Jasmani. Serta Mempercantik Suara Dengan Baik... Bertabur Rempah Pilihan Yaman No 1 Di Indonesia.. Rasakan Sensasinya",
-                    "id": "32cf4809-5227-4866-8be4-19a3e6e68499",
-                    "image_id": "b915ff6c-38ee-4f14-8061-c405412ae1dc",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3c7efbf3-905f-42c0-b538-8f1a40532453_Go-Biz_20200707_175142.jpeg",
+                    "description": "Perpaduan kebab jumbo, burger lezat, dan maryam manis yang pas untuk dinikmati berdua.",
+                    "id": "84548d92-be15-43cd-84d9-81e740254bcd",
+                    "image_id": "d938449f-793a-4bec-98bb-851f1be4742e",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/03fbfe83-b8ea-482c-90af-32926e475ea8_menu-item-image_1782467086578.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3c7efbf3-905f-42c0-b538-8f1a40532453_Go-Biz_20200707_175142.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/03fbfe83-b8ea-482c-90af-32926e475ea8_menu-item-image_1782467086578.jpg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "795d29a5-84d1-493b-9262-30cd1408f0cf",
-                    "name": "Coffe Baba Amir Premium",
-                    "price": "15000.00",
-                    "promotion": null,
+                    "menu_id": "38be859b-e304-4c52-b435-7d661129b1ea",
+                    "name": "1x Kebab Jumbo Keju + Telur + 1x Burger Ori + 1x Maryam Coklat Keju",
+                    "price": "90000.00",
+                    "promotion": "eyJpZCI6ICI0M2U3ODYxYS02YTFmLTQ0ZGUtYWIwNi05MDVjYjQ4ZTEyMmEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIl0sICJjYXRlZ29yeSI6ICJEaXNjb3VudCIsICJlbmRfdGltZSI6ICIyMzo1OTowMCIsICJmbGFzaF9zYWxlIjogZmFsc2UsICJwcm9tb190eXBlIjogIlBlcmNlbnRhZ2VEaXNjb3VudCIsICJkZXNjcmlwdGlvbiI6ICJQcm9tbyIsICJzZWxsaW5nX3ByaWNlIjogNzIwMDAsICJhY3RpdmF0ZV9pdGVtcyI6IGZhbHNlLCAiYmFkZ2VfaW1hZ2VfdXJsIjogeyJiaWciOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtZW5sYXJnZS12My5wbmciLCAic21hbGwiOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtdjMucG5nIn0sICJza3VfY2F0ZWdvcnlfbmFtZSI6ICJQcm9tbyIsICJkaXNjb3VudF9wZXJjZW50YWdlIjogMjAsICJ1c2VyX21heF9za3VfcXVhbnRpdHkiOiBudWxsLCAib3JkZXJfbWF4X3NrdV9xdWFudGl0eSI6IG51bGwsICJ1c2VyX21heF9za3VfcXVhbnRpdHlfcGVyX2RheSI6IG51bGx9",
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 2070390002,
+                    "shopping_item_id": 144535811,
                     "signature": false,
                     "weight": 2,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "038f91e9-5afb-46b5-8499-e4abc3596138"
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "6dac6058-47e7-4353-a138-25a1c535ffcc"
+                },
+                {
+                    "active": true,
+                    "description": "Paket lengkap isi kebab extra large, burger, dan maryam manis, cocok untuk rame-rame.",
+                    "id": "5468e7ff-69b5-470d-ac86-f0e7e891fc7e",
+                    "image_id": "9a75259f-c91b-4018-b7f2-7f061794e8c8",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c6493916-a35d-4a9c-88ab-b5aafb96e7f6_menu-item-image_1782467099079.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c6493916-a35d-4a9c-88ab-b5aafb96e7f6_menu-item-image_1782467099079.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "38be859b-e304-4c52-b435-7d661129b1ea",
+                    "name": "1x Extra Large + 1x Burger Ori + 2x Maryam Coklat Keju",
+                    "price": "150000.00",
+                    "promotion": "eyJpZCI6ICI0M2U3ODYxYS02YTFmLTQ0ZGUtYWIwNi05MDVjYjQ4ZTEyMmEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIl0sICJjYXRlZ29yeSI6ICJEaXNjb3VudCIsICJlbmRfdGltZSI6ICIyMzo1OTowMCIsICJmbGFzaF9zYWxlIjogZmFsc2UsICJwcm9tb190eXBlIjogIlBlcmNlbnRhZ2VEaXNjb3VudCIsICJkZXNjcmlwdGlvbiI6ICJQcm9tbyIsICJzZWxsaW5nX3ByaWNlIjogMTIwMDAwLCAiYWN0aXZhdGVfaXRlbXMiOiBmYWxzZSwgImJhZGdlX2ltYWdlX3VybCI6IHsiYmlnIjogImh0dHBzOi8vaS5nb2pla2FwaS5jb20vZGFya3Jvb20vZ29mb29kLWluZG9uZXNpYS92Mi9pbWFnZXMvdXBsb2Fkcy9wcm9tby1kaXNoLWVubGFyZ2UtdjMucG5nIiwgInNtYWxsIjogImh0dHBzOi8vaS5nb2pla2FwaS5jb20vZGFya3Jvb20vZ29mb29kLWluZG9uZXNpYS92Mi9pbWFnZXMvdXBsb2Fkcy9wcm9tby1kaXNoLXYzLnBuZyJ9LCAic2t1X2NhdGVnb3J5X25hbWUiOiAiUHJvbW8iLCAiZGlzY291bnRfcGVyY2VudGFnZSI6IDIwLCAidXNlcl9tYXhfc2t1X3F1YW50aXR5IjogbnVsbCwgIm9yZGVyX21heF9za3VfcXVhbnRpdHkiOiBudWxsLCAidXNlcl9tYXhfc2t1X3F1YW50aXR5X3Blcl9kYXkiOiBudWxsfQ==",
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144535845,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "e6c605e2-5737-4387-9124-08cacf81f132"
                 }
             ]
         },
         {
-            "id": "9dac8545-cd98-4f4f-bb8f-ed847ccf0864",
-            "common_id": "95b45646-c2a4-418a-9d60-4b63a10588cc",
-            "name": "Paket Keluarga",
-            "sku": "PAKET_KELUARGA",
+            "id": "3a4f926c-df57-4705-9b1f-ef8fc2730185",
+            "common_id": "593adfc2-25e8-471a-8299-c7fe5c0e8030",
+            "name": "Kebab Premium Juara",
+            "sku": "KEBAB_PREMIUM_JUARA",
             "active": true,
-            "weight": 4,
+            "weight": 8,
             "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
             "master_menu_category_id": "",
             "menu_items_count": 5,
             "menu_items": [
                 {
                     "active": true,
-                    "description": "Paket Kenyang",
-                    "id": "3281a04e-9f09-42a7-a59a-112f58070d8f",
-                    "image_id": "c256c7bf-5145-4fae-91a3-260456757d86",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cf9a1ade-b7bf-447e-b29f-354ed549e51a_Go-Biz_20210124_123542.jpeg",
+                    "description": "Kebab premium isi daging cincang dengan double keju yang gurih lumer.",
+                    "id": "70f9e059-ac11-476a-bacf-a276f0de6c34",
+                    "image_id": "a254382a-0569-48d3-9eff-23f06542c1ab",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f06d81b7-abdf-4e3b-af99-970dd5f13dd5_menu-item-image_1782467208067.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cf9a1ade-b7bf-447e-b29f-354ed549e51a_Go-Biz_20210124_123542.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f06d81b7-abdf-4e3b-af99-970dd5f13dd5_menu-item-image_1782467208067.jpg"
                     },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "9dac8545-cd98-4f4f-bb8f-ed847ccf0864",
-                    "name": "Kebab Besar 1 Pcs, Kebab Dobel Jumbo 1 Pcs  , Kebab Sedang Keju Telur 1 Pcs",
-                    "price": "62000.00",
+                    "menu_id": "3a4f926c-df57-4705-9b1f-ef8fc2730185",
+                    "name": "Medium Double Cheese",
+                    "price": "27000.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 21955930,
+                    "shopping_item_id": 144536000,
                     "signature": false,
                     "weight": 1,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "e947364d-0574-4752-87bc-9e58fc57e55d"
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "206677f1-d47e-4ed9-ad6c-52790889076b"
                 },
                 {
                     "active": true,
-                    "description": "Kenyang Dengan Harga Speacial",
-                    "id": "c1eb576b-4e62-4065-bd6d-0453520bbaed",
-                    "image_id": "3bf833b3-8e4a-486f-b054-65fec845825e",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e0a1953f-b39f-42e9-84f2-e44ee35bfdab_Go-Biz_20210124_123812.jpeg",
+                    "description": "Kebab premium isi daging cincang dengan double telur dan saus spesial.",
+                    "id": "4f860c66-dfd3-4c64-acbc-ec60939ff829",
+                    "image_id": "94fe3271-c820-4a6f-a117-c30810759139",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c8ba9d87-69fb-485e-b6eb-0bd8b8081390_menu-item-image_1782467197463.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e0a1953f-b39f-42e9-84f2-e44ee35bfdab_Go-Biz_20210124_123812.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c8ba9d87-69fb-485e-b6eb-0bd8b8081390_menu-item-image_1782467197463.jpg"
                     },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "9dac8545-cd98-4f4f-bb8f-ed847ccf0864",
-                    "name": "Burger Klenger 1 Pcs Burger Klenger Keju Telor 1 Pcs ,kebab Full Daging 1 Pcs Dan Maryam 1 Original",
-                    "price": "70000.00",
+                    "menu_id": "3a4f926c-df57-4705-9b1f-ef8fc2730185",
+                    "name": "Medium Double Egg",
+                    "price": "27000.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 21956443,
+                    "shopping_item_id": 144535997,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "000bb106-6771-441e-8b40-2dec0e2f6e08"
+                },
+                {
+                    "active": true,
+                    "description": "Kebab premium large dengan keju dan mozarella lumer di setiap gigitan.",
+                    "id": "e25fd272-c57e-49f7-8daf-001c1c0ba837",
+                    "image_id": "363b3828-e9ef-4ed6-a033-65a0c0384bcc",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/740402dd-c60b-4335-ad5d-0a8108086a62_menu-item-image_1782467223105.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/740402dd-c60b-4335-ad5d-0a8108086a62_menu-item-image_1782467223105.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "3a4f926c-df57-4705-9b1f-ef8fc2730185",
+                    "name": "Large Cheese Mozarella",
+                    "price": "34500.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536007,
                     "signature": false,
                     "weight": 2,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "8650040f-f833-402f-8ccb-6a08b9e6e479"
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "b4ae2445-3b6e-4a94-ab8e-3fbbc60f2883"
                 },
                 {
                     "active": true,
-                    "description": "Porsi Bareng Keluarga",
-                    "id": "977bc32a-cd02-4278-8c79-14b2ca1efbbd",
-                    "image_id": "9703c861-d416-41bf-b0b2-c4043509c580",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c568c96f-0972-4f4a-ac89-2a5e52f131f4_Go-Biz_20210124_124112.jpeg",
+                    "description": "Kebab premium large isi daging cincang dengan telur dan saus spesial.",
+                    "id": "7b77d52e-c3bb-47bf-98ec-f35014a3e12f",
+                    "image_id": "a8b6a79b-8844-441d-a69c-554a549187e7",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/72357559-bbf6-488c-958f-97a0688a4bde_menu-item-image_1782467234210.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c568c96f-0972-4f4a-ac89-2a5e52f131f4_Go-Biz_20210124_124112.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/72357559-bbf6-488c-958f-97a0688a4bde_menu-item-image_1782467234210.jpg"
                     },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "9dac8545-cd98-4f4f-bb8f-ed847ccf0864",
-                    "name": "Burger Telor Atau Keju 3 Dan Kebab Jumbo Keju Atau Telor 3",
-                    "price": "120000.00",
+                    "menu_id": "3a4f926c-df57-4705-9b1f-ef8fc2730185",
+                    "name": "Large Premium Egg",
+                    "price": "34500.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 21957567,
+                    "shopping_item_id": 144536019,
                     "signature": false,
                     "weight": 3,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "703ba9ce-1c11-4325-8513-a31b4a8acdc5"
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "6c7e1cb4-4d63-491c-9348-6bffec61b0c6"
                 },
                 {
                     "active": true,
-                    "description": "Kebab Kecil 4 Kebab Sedang 2 Burger Klenger 1 Maryam Original 2 Dan Kebab Jumbo Telor",
-                    "id": "373d3352-7449-4822-beb4-816c1d94e79c",
-                    "image_id": "5f8139d7-a43e-4a77-ab16-14530a8273c7",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cc42de4a-61ad-4688-a8eb-c889a8d5b2e9_Go-Biz_20210124_124308.jpeg",
+                    "description": "Kebab premium large dengan telur, keju, dan mozarella yang lumer.",
+                    "id": "7e1792df-975d-4974-9913-41aab394741b",
+                    "image_id": "099b6d4a-3a56-4b11-a455-ecc30ada6df4",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/22abb5cc-e52e-4878-a816-178b21373ce2_menu-item-image_1782467355407.jpg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cc42de4a-61ad-4688-a8eb-c889a8d5b2e9_Go-Biz_20210124_124308.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/22abb5cc-e52e-4878-a816-178b21373ce2_menu-item-image_1782467355407.jpg"
                     },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "9dac8545-cd98-4f4f-bb8f-ed847ccf0864",
-                    "name": "Paket Rame Rame",
-                    "price": "105000.00",
-                    "promotion": null,
+                    "menu_id": "3a4f926c-df57-4705-9b1f-ef8fc2730185",
+                    "name": "Large Egg & Cheese Mozarella",
+                    "price": "54375.00",
+                    "promotion": "eyJpZCI6ICI0M2U3ODYxYS02YTFmLTQ0ZGUtYWIwNi05MDVjYjQ4ZTEyMmEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIl0sICJjYXRlZ29yeSI6ICJEaXNjb3VudCIsICJlbmRfdGltZSI6ICIyMzo1OTowMCIsICJmbGFzaF9zYWxlIjogZmFsc2UsICJwcm9tb190eXBlIjogIlBlcmNlbnRhZ2VEaXNjb3VudCIsICJkZXNjcmlwdGlvbiI6ICJQcm9tbyIsICJzZWxsaW5nX3ByaWNlIjogNDM1NzUsICJhY3RpdmF0ZV9pdGVtcyI6IGZhbHNlLCAiYmFkZ2VfaW1hZ2VfdXJsIjogeyJiaWciOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtZW5sYXJnZS12My5wbmciLCAic21hbGwiOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtdjMucG5nIn0sICJza3VfY2F0ZWdvcnlfbmFtZSI6ICJQcm9tbyIsICJkaXNjb3VudF9wZXJjZW50YWdlIjogMjAsICJ1c2VyX21heF9za3VfcXVhbnRpdHkiOiBudWxsLCAib3JkZXJfbWF4X3NrdV9xdWFudGl0eSI6IG51bGwsICJ1c2VyX21heF9za3VfcXVhbnRpdHlfcGVyX2RheSI6IG51bGx9",
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 21958071,
+                    "shopping_item_id": 144536022,
                     "signature": false,
                     "weight": 4,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "20fdc6b4-b177-4358-b5b8-e01f570bc971"
-                },
-                {
-                    "active": true,
-                    "description": "Kebab Doubel Jumbo 2 , Kebab Master Jumbo 2, Burger Klenger Dobel Daging 1, Kebab Jumbo Keju Telur, Maryam Salad Daging Keju Tur 2",
-                    "id": "d29e8077-d4d2-4039-a3b6-6481e365885f",
-                    "image_id": "45aced55-bfa8-4d9b-8ab0-23ba811d3dd6",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5d1a860a-cc35-4ac9-90c8-be7a63077d31_Go-Biz_20210124_124606.jpeg",
-                    "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5d1a860a-cc35-4ac9-90c8-be7a63077d31_Go-Biz_20210124_124606.jpeg"
-                    },
-                    "in_stock": true,
-                    "stock": null,
-                    "stock_limit": null,
-                    "master_menu_item_id": "",
-                    "menu_id": "9dac8545-cd98-4f4f-bb8f-ed847ccf0864",
-                    "name": "Paket Ngeri Taun 2021",
-                    "price": "210000.00",
-                    "promotion": null,
-                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 21959085,
-                    "signature": false,
-                    "weight": 5,
-                    "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "761d3a02-bf46-4c98-8d48-65c549e2d6a1"
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "0ea615ff-12fa-4123-913f-5c6c998d5039"
                 }
             ]
         },
         {
-            "id": "3a985d1b-1cde-4f44-9044-1bff65d8863d",
-            "common_id": "7fe02f68-7a97-4182-b9d1-3d05c3cb8e4b",
-            "name": "Menu Promo",
-            "sku": "MENU_PROMO",
+            "id": "61037df3-1161-4e57-908b-f113eb394068",
+            "common_id": "eb8b50ff-bccc-4add-bdc8-b755c061b074",
+            "name": "Kebab Reguler Favorit",
+            "sku": "KEBAB_REGULER_FAVORIT",
             "active": true,
-            "weight": 5,
+            "weight": 9,
+            "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+            "master_menu_category_id": "",
+            "menu_items_count": 8,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Kebab kecil dengan daging, sayuran segar, dan saus spesial.",
+                    "id": "42a68cfa-1c74-4c20-828a-771c2fca135e",
+                    "image_id": "7c7a0414-bdc4-4320-83ec-23a68e1dae52",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e6381a73-05d7-49de-a26a-fd4e3b5243ad_menu-item-image_1782467370627.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e6381a73-05d7-49de-a26a-fd4e3b5243ad_menu-item-image_1782467370627.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "61037df3-1161-4e57-908b-f113eb394068",
+                    "name": "Kebab Kecil",
+                    "price": "16500.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536028,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
+                    ],
+                    "common_id": "c5863815-9801-4209-a770-b430ccba1bb1"
+                },
+                {
+                    "active": true,
+                    "description": "Kebab sedang isi daging gurih, sayuran segar, dan saus spesial.",
+                    "id": "84b9e13c-38ce-4dcd-80f6-31d2cd62a1cb",
+                    "image_id": "08a273ac-3792-4197-9172-308d41dc53fe",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e710fe52-e927-4554-9c2f-3fec74b3f716_menu-item-image_1782467384004.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e710fe52-e927-4554-9c2f-3fec74b3f716_menu-item-image_1782467384004.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "61037df3-1161-4e57-908b-f113eb394068",
+                    "name": "Kebab Sedang",
+                    "price": "19500.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536046,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
+                    ],
+                    "common_id": "6ad5ac26-1dea-447b-98f1-b1aafa1f6a4f"
+                },
+                {
+                    "active": true,
+                    "description": "Kebab sedang dengan pilihan tambahan keju atau telur.",
+                    "id": "8d231f62-c42c-4520-a6c4-eb0369915e9a",
+                    "image_id": "49cf009f-86ec-41a2-84b8-9008096d6be3",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b968441a-4bec-4f62-96fa-45e048309e36_menu-item-image_1782467400953.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b968441a-4bec-4f62-96fa-45e048309e36_menu-item-image_1782467400953.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "61037df3-1161-4e57-908b-f113eb394068",
+                    "name": "Kebab Sedang Keju / Telur",
+                    "price": "21000.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536062,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
+                    ],
+                    "common_id": "2df7777a-7f9e-4fd1-8d1f-bc7c60b4f1b9"
+                },
+                {
+                    "active": true,
+                    "description": "Kebab sedang isi daging, keju, telur, dan sayuran segar.",
+                    "id": "cb95189a-8556-46f6-ba20-a96947bfc3d1",
+                    "image_id": "a023cf70-3328-4fe3-9d15-82fd42fa7579",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6c856468-02de-4991-96ea-eb4102968d24_menu-item-image_1782467413240.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6c856468-02de-4991-96ea-eb4102968d24_menu-item-image_1782467413240.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "61037df3-1161-4e57-908b-f113eb394068",
+                    "name": "Kebab Sedang Keju + Telur",
+                    "price": "24000.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536097,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
+                    ],
+                    "common_id": "689d5e82-d5fa-4a17-92e6-1f48b6e0ba50"
+                },
+                {
+                    "active": true,
+                    "description": "Kebab jumbo dengan pilihan tambahan keju atau telur.",
+                    "id": "83506c6e-99c6-4b8e-a6c6-4542e5f48685",
+                    "image_id": "900fb92b-c4aa-49e1-8678-bac07c811d45",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6db341c9-6f0b-44e8-8a18-d6f603d7b791_menu-item-image_1782467476411.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6db341c9-6f0b-44e8-8a18-d6f603d7b791_menu-item-image_1782467476411.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "61037df3-1161-4e57-908b-f113eb394068",
+                    "name": "Kebab Jumbo Keju / Telur",
+                    "price": "24000.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536103,
+                    "signature": false,
+                    "weight": 6,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
+                    ],
+                    "common_id": "22d666b9-ef7d-4220-97f3-7514732732fb"
+                },
+                {
+                    "active": true,
+                    "description": "Kebab jumbo dengan isian full daging yang lebih puas.",
+                    "id": "6bf955d9-3615-4852-9037-74a9282791b7",
+                    "image_id": "0d8ff3df-784f-40b7-8f45-04a94c2a2276",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/757d49a7-2613-4977-9228-090db955661e_menu-item-image_1782467488930.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/757d49a7-2613-4977-9228-090db955661e_menu-item-image_1782467488930.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "61037df3-1161-4e57-908b-f113eb394068",
+                    "name": "Kebab Jumbo Full Daging",
+                    "price": "28500.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536233,
+                    "signature": false,
+                    "weight": 7,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
+                    ],
+                    "common_id": "ee9e6d4f-7e92-4be2-9522-cd44ef27ef50"
+                },
+                {
+                    "active": true,
+                    "description": "Kebab extra jumbo dengan isian melimpah dan rasa mantap.",
+                    "id": "1321fc66-7269-4167-80ee-2663fecd26ba",
+                    "image_id": "62c4141c-1518-40b7-a102-80a49b25af1b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3d3f7df2-4a62-4285-8201-8873b315c7ae_menu-item-image_1782467500165.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3d3f7df2-4a62-4285-8201-8873b315c7ae_menu-item-image_1782467500165.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "61037df3-1161-4e57-908b-f113eb394068",
+                    "name": "Kebab Extra Jumbo",
+                    "price": "48750.00",
+                    "promotion": "eyJpZCI6ICI0M2U3ODYxYS02YTFmLTQ0ZGUtYWIwNi05MDVjYjQ4ZTEyMmEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIl0sICJjYXRlZ29yeSI6ICJEaXNjb3VudCIsICJlbmRfdGltZSI6ICIyMzo1OTowMCIsICJmbGFzaF9zYWxlIjogZmFsc2UsICJwcm9tb190eXBlIjogIlBlcmNlbnRhZ2VEaXNjb3VudCIsICJkZXNjcmlwdGlvbiI6ICJQcm9tbyIsICJzZWxsaW5nX3ByaWNlIjogMzkwNTAsICJhY3RpdmF0ZV9pdGVtcyI6IGZhbHNlLCAiYmFkZ2VfaW1hZ2VfdXJsIjogeyJiaWciOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtZW5sYXJnZS12My5wbmciLCAic21hbGwiOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtdjMucG5nIn0sICJza3VfY2F0ZWdvcnlfbmFtZSI6ICJQcm9tbyIsICJkaXNjb3VudF9wZXJjZW50YWdlIjogMjAsICJ1c2VyX21heF9za3VfcXVhbnRpdHkiOiBudWxsLCAib3JkZXJfbWF4X3NrdV9xdWFudGl0eSI6IG51bGwsICJ1c2VyX21heF9za3VfcXVhbnRpdHlfcGVyX2RheSI6IG51bGx9",
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536246,
+                    "signature": false,
+                    "weight": 8,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
+                    ],
+                    "common_id": "8373fb7a-2600-4aeb-b3bb-e5866a75712e"
+                },
+                {
+                    "active": true,
+                    "description": "Kebab besar dengan daging melimpah dan sayuran segar.",
+                    "id": "8c6b2d66-8f1c-48a0-a3a1-42aa376fa558",
+                    "image_id": "9beed0ec-2de5-4aba-b1a4-6a52f72e72ee",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/873cc7f0-369c-4f8c-af84-9269e66d8be6_menu-item-image_1782467514542.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/873cc7f0-369c-4f8c-af84-9269e66d8be6_menu-item-image_1782467514542.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "61037df3-1161-4e57-908b-f113eb394068",
+                    "name": "Kebab Extra Large",
+                    "price": "46500.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536255,
+                    "signature": false,
+                    "weight": 9,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "ecee1da4-9355-49e8-a282-db6d2189ffe0"
+                    ],
+                    "common_id": "968dd7d6-d31e-4172-be46-1a4b1cdb84bf"
+                }
+            ]
+        },
+        {
+            "id": "aed140f7-2c26-4bde-9eef-d89a7d1fa006",
+            "common_id": "5f8bf606-2f4d-4941-9546-5a5301e13b07",
+            "name": "Burger Andalan",
+            "sku": "BURGER_ANDALAN",
+            "active": true,
+            "weight": 10,
             "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
             "master_menu_category_id": "",
             "menu_items_count": 4,
             "menu_items": [
                 {
-                    "active": false,
-                    "description": "",
-                    "id": "48ab7f7d-aefe-4aa2-8f55-11a9289d9619",
-                    "image_id": "",
-                    "image": null,
-                    "image_cover": {},
+                    "active": true,
+                    "description": "Burger dengan pilihan tambahan keju atau telur.",
+                    "id": "d940a8ea-d069-44f4-80f1-9b75e6c1587b",
+                    "image_id": "0bf8c9f5-b4f1-4264-a96f-d69c527124ec",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/785ebd05-ff44-4b1e-8f4a-c2855855a35a_menu-item-image_1782467531722.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/785ebd05-ff44-4b1e-8f4a-c2855855a35a_menu-item-image_1782467531722.jpg"
+                    },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "3a985d1b-1cde-4f44-9044-1bff65d8863d",
-                    "name": "Promo Kebab Besar Baba Amir",
-                    "price": "20000.00",
+                    "menu_id": "aed140f7-2c26-4bde-9eef-d89a7d1fa006",
+                    "name": "Burger Keju / Telur",
+                    "price": "27000.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 63024556,
+                    "shopping_item_id": 144536262,
                     "signature": false,
                     "weight": 1,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "9009face-60e5-45fe-89b7-fbe2be10cb71"
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "8c87f8b2-cac1-4dc1-8f8d-7bb648a1acf1"
                 },
                 {
-                    "active": false,
-                    "description": "",
-                    "id": "5e017d51-1dfe-49e2-87cb-aa818a233be8",
-                    "image_id": "",
-                    "image": null,
-                    "image_cover": {},
+                    "active": true,
+                    "description": "Burger dengan patty, keju, telur, dan saus lezat.",
+                    "id": "100b37cd-6c66-4984-bbec-f86d8350acb7",
+                    "image_id": "22ba3f31-0c4b-4677-a878-e6a113bfaf84",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6c217b8d-5d34-453b-88e6-5cb4d5974788_menu-item-image_1782467831624.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6c217b8d-5d34-453b-88e6-5cb4d5974788_menu-item-image_1782467831624.jpg"
+                    },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "3a985d1b-1cde-4f44-9044-1bff65d8863d",
-                    "name": "Promo Maryam Keju Susu",
-                    "price": "14000.00",
+                    "menu_id": "aed140f7-2c26-4bde-9eef-d89a7d1fa006",
+                    "name": "Burger Keju + Telur",
+                    "price": "31500.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 63024558,
+                    "shopping_item_id": 144536265,
                     "signature": false,
                     "weight": 2,
                     "brand_id": null,
-                    "variant_category_ids": [],
-                    "common_id": "0b4d62c2-5982-4283-88e0-3adc042b2bf4"
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "ca323bd4-00ce-471a-82ce-ce18d32343f5"
                 },
                 {
-                    "active": false,
-                    "description": "",
-                    "id": "6d9d0db2-c118-410e-803d-a2c23d3f425a",
-                    "image_id": "",
-                    "image": null,
-                    "image_cover": {},
+                    "active": true,
+                    "description": "Burger isi dua patty daging dengan rasa lebih puas.",
+                    "id": "d88fd92a-bda1-47ac-9614-797b7730a3de",
+                    "image_id": "1b495f4c-feff-411f-beb3-b3f13846a9f3",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cac44b57-a46a-4682-87f0-c60d349c76eb_menu-item-image_1782467846682.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cac44b57-a46a-4682-87f0-c60d349c76eb_menu-item-image_1782467846682.jpg"
+                    },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "3a985d1b-1cde-4f44-9044-1bff65d8863d",
-                    "name": "Promo Burger Klenger + Keju Atau Telor",
-                    "price": "22000.00",
+                    "menu_id": "aed140f7-2c26-4bde-9eef-d89a7d1fa006",
+                    "name": "Burger Double Beef",
+                    "price": "42000.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 63024560,
+                    "shopping_item_id": 144536282,
                     "signature": false,
                     "weight": 3,
                     "brand_id": null,
                     "variant_category_ids": [
-                        "a0c08b75-35a1-49ce-8b0f-5fb67c4410ed"
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
                     ],
-                    "common_id": "0ea4f4ad-b92f-4771-9c61-218f60e443e9"
+                    "common_id": "991c05f0-2092-4789-8281-e3cdc88c90d8"
                 },
                 {
-                    "active": false,
-                    "description": "",
-                    "id": "2b91f327-3e58-49c8-95c7-2c652c62b540",
-                    "image_id": "",
-                    "image": null,
-                    "image_cover": {},
+                    "active": true,
+                    "description": "Double beef burger dengan keju dan telur.",
+                    "id": "aeeb748e-cf82-4a2c-81fc-80940a529202",
+                    "image_id": "d7dada02-3409-4beb-9bf2-3c4cf2390fef",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3b8e93d3-73d9-48bb-bda5-dbd098746895_menu-item-image_1782467861215.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3b8e93d3-73d9-48bb-bda5-dbd098746895_menu-item-image_1782467861215.jpg"
+                    },
                     "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
-                    "menu_id": "3a985d1b-1cde-4f44-9044-1bff65d8863d",
-                    "name": "Promo Frozen Kebab Full Daging",
-                    "price": "37000.00",
+                    "menu_id": "aed140f7-2c26-4bde-9eef-d89a7d1fa006",
+                    "name": "Burger Double Beef Keju + Telur",
+                    "price": "61875.00",
+                    "promotion": "eyJpZCI6ICI0M2U3ODYxYS02YTFmLTQ0ZGUtYWIwNi05MDVjYjQ4ZTEyMmEiLCAidGFncyI6IFsiR09CSVoiLCAiU0tVIl0sICJjYXRlZ29yeSI6ICJEaXNjb3VudCIsICJlbmRfdGltZSI6ICIyMzo1OTowMCIsICJmbGFzaF9zYWxlIjogZmFsc2UsICJwcm9tb190eXBlIjogIlBlcmNlbnRhZ2VEaXNjb3VudCIsICJkZXNjcmlwdGlvbiI6ICJQcm9tbyIsICJzZWxsaW5nX3ByaWNlIjogNDk1NzUsICJhY3RpdmF0ZV9pdGVtcyI6IGZhbHNlLCAiYmFkZ2VfaW1hZ2VfdXJsIjogeyJiaWciOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtZW5sYXJnZS12My5wbmciLCAic21hbGwiOiAiaHR0cHM6Ly9pLmdvamVrYXBpLmNvbS9kYXJrcm9vbS9nb2Zvb2QtaW5kb25lc2lhL3YyL2ltYWdlcy91cGxvYWRzL3Byb21vLWRpc2gtdjMucG5nIn0sICJza3VfY2F0ZWdvcnlfbmFtZSI6ICJQcm9tbyIsICJkaXNjb3VudF9wZXJjZW50YWdlIjogMjAsICJ1c2VyX21heF9za3VfcXVhbnRpdHkiOiBudWxsLCAib3JkZXJfbWF4X3NrdV9xdWFudGl0eSI6IG51bGwsICJ1c2VyX21heF9za3VfcXVhbnRpdHlfcGVyX2RheSI6IG51bGx9",
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536294,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "0d0745dc-a389-4db9-9482-d1cd2fe44dca"
+                    ],
+                    "common_id": "6a2c6a16-4d82-4ce3-b87a-a29f88f29336"
+                }
+            ]
+        },
+        {
+            "id": "9729b3fa-b5fb-4027-be33-797eb50a9cb1",
+            "common_id": "31423a58-a541-4ec0-a6e4-1a73854d6662",
+            "name": "Maryam Arabian",
+            "sku": "MARYAM_ARABIAN",
+            "active": true,
+            "weight": 11,
+            "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+            "master_menu_category_id": "",
+            "menu_items_count": 4,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Roti maryam original lembut dengan tekstur berlapis dan harum.",
+                    "id": "b273835d-a414-4aa3-b097-bf267d1a7a1c",
+                    "image_id": "31f03298-755e-418b-830f-958b906d5dca",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/66cafd0b-0e6d-4250-b857-ef32152bed7c_menu-item-image_1782467875167.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/66cafd0b-0e6d-4250-b857-ef32152bed7c_menu-item-image_1782467875167.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9729b3fa-b5fb-4027-be33-797eb50a9cb1",
+                    "name": "Maryam Ori",
+                    "price": "15000.00",
                     "promotion": null,
                     "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
-                    "shopping_item_id": 63024565,
+                    "shopping_item_id": 144536302,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "5f2f0382-9fc2-4a0f-85bf-caa3516c89a3"
+                },
+                {
+                    "active": true,
+                    "description": "Roti maryam dengan topping susu manis dan keju gurih.",
+                    "id": "76b2fa1a-e890-4f9a-8447-c49ba1d79e57",
+                    "image_id": "cbdb1399-36f0-4f46-afbf-73d8cfbe18d2",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/90484922-ca69-4c3e-bc3a-dd6791a66d62_menu-item-image_1782467890765.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/90484922-ca69-4c3e-bc3a-dd6791a66d62_menu-item-image_1782467890765.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9729b3fa-b5fb-4027-be33-797eb50a9cb1",
+                    "name": "Maryam Susu Keju",
+                    "price": "19500.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536313,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "533cd7e2-084f-47bd-b87d-14f435032d9e"
+                },
+                {
+                    "active": true,
+                    "description": "Roti maryam dengan isian mozarella lumer menggoda.",
+                    "id": "df80c367-fb67-47ae-8146-0b28bdb2ec0e",
+                    "image_id": "b1c9cddb-fd21-45ee-9612-d4a5f80266d6",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f50711e8-aaab-4a06-85d7-395edfe8ec36_menu-item-image_1782467903348.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f50711e8-aaab-4a06-85d7-395edfe8ec36_menu-item-image_1782467903348.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9729b3fa-b5fb-4027-be33-797eb50a9cb1",
+                    "name": "Maryam Special Moza",
+                    "price": "31500.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536329,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "8c97ba4f-29cf-4405-9244-2f04846e8c5d"
+                },
+                {
+                    "active": true,
+                    "description": "Roti maryam isi salad, daging, keju, dan telur.",
+                    "id": "2cf8b20f-a59b-4bb0-a5d3-c2b3e355b116",
+                    "image_id": "f1a332d8-c19d-4e63-9ce2-9c895caa3bc2",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a80dad90-f95d-4f29-a6c5-e3b83240c832_menu-item-image_1782467915512.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a80dad90-f95d-4f29-a6c5-e3b83240c832_menu-item-image_1782467915512.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9729b3fa-b5fb-4027-be33-797eb50a9cb1",
+                    "name": "Maryam Special Salad Daging Keju Telur",
+                    "price": "34500.00",
+                    "promotion": null,
+                    "restaurant_id": "bf073396-8a91-4c62-ab30-1d7454e148a5",
+                    "shopping_item_id": 144536334,
                     "signature": false,
                     "weight": 4,
                     "brand_id": null,
                     "variant_category_ids": [],
-                    "common_id": "69c2a1e6-518a-48a2-81a8-a6467627db63"
+                    "common_id": "a764549d-e058-45a8-8b5c-88b1097879e0"
                 }
             ]
         }

@@ -45,7 +45,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4ae23742-9010-48f1-a718-670e9c957235_Go-Biz_20230311_230836.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -70,7 +70,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/232161e8-eed0-4074-b08b-54d319ba351f_Go-Biz_20230323_074311.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -748,7 +748,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c8d3f11c-f705-4c97-95ee-63fffbc4054c_Go-Biz_20210302_113409.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -948,7 +948,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/517f87ad-5c22-4b53-a4ef-9cdf56f8043f_Go-Biz_20230311_225956.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -1246,7 +1246,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ca8affe2-76e4-45d9-afd5-54b397ec44e0_Go-Biz_20230718_110306.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -1294,7 +1294,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/74e935c5-e2e0-497b-900b-464c06e1b626_Go-Food-Merchant_20251117_142207.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",

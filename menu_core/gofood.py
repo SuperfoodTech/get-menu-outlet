@@ -95,7 +95,8 @@ def extract_gofood_menu(store_metadata: dict, output_dir: str):
             if resp.status_code == 200:
                 merch_data = resp.json()
                 if merch_data.get('outlet_city'):
-                    city_raw = merch_data['outlet_city']
+                    city_raw = merch_data['outlet_city' 
+                    ]
                     # Hapus kata "Kota", "Kabupaten", atau "Kab." di awal nama kota
                     city_raw = re.sub(r'^(kota|kabupaten|kab\.)\s+', '', city_raw, flags=re.IGNORECASE)
                     city_slug = re.sub(r'[^a-zA-Z0-9\s\-]', '', city_raw)

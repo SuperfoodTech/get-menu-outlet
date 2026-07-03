@@ -1,0 +1,3377 @@
+{
+    "menus": [
+        {
+            "id": "debdb4a9-4dc1-4c67-9d8f-1f4f8f3a1696",
+            "common_id": "242854fb-16f4-4afc-8f59-56a71a00767a",
+            "name": "Gelar Hot Plate",
+            "sku": "GELAR_HOT_PLATE",
+            "active": true,
+            "weight": 1,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 6,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "19de14ae-1bd8-4b98-8242-1e6980bd1295",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "debdb4a9-4dc1-4c67-9d8f-1f4f8f3a1696",
+                    "name": "Chicken Steak",
+                    "price": "25000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 1828479552,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "7a55ba27-2843-45a7-a0f3-ca5634674fee"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "5861b80d-5171-41a7-841d-c5971d8d7622",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "debdb4a9-4dc1-4c67-9d8f-1f4f8f3a1696",
+                    "name": "Rice Chicken Egg",
+                    "price": "35000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996284,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "ac2a3fd1-4214-41c5-a0b5-81b5215d68e3"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "611cbc2e-738c-4bed-af67-809623feccc3",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "debdb4a9-4dc1-4c67-9d8f-1f4f8f3a1696",
+                    "name": "Mie Galau",
+                    "price": "25000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996285,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "2c793c56-0c4a-4aac-b825-8979e2bf4abb"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "b3fc6fdb-e5b7-40f7-88c7-eb61715b4f0a",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "debdb4a9-4dc1-4c67-9d8f-1f4f8f3a1696",
+                    "name": "Noodle Chicken Steak",
+                    "price": "33000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996286,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "6c2fb3de-e3b7-46ec-8824-6e491fad13fb"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "4b1c53dc-18ac-4f5d-972e-91596c60abf7",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "debdb4a9-4dc1-4c67-9d8f-1f4f8f3a1696",
+                    "name": "Dori Steak",
+                    "price": "30000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996287,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "b28e85e8-7295-4fa7-9ee5-20f8361b428d"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "a6cd2beb-d4a7-41b0-a802-283f4f104a08",
+                    "image_id": "0998ec8b-329b-4f01-8a14-413618d9e593",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ef6d00a9-baa3-4b56-891f-e88c23059d3f_Go-Biz_20240829_171403.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ef6d00a9-baa3-4b56-891f-e88c23059d3f_Go-Biz_20240829_171403.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "debdb4a9-4dc1-4c67-9d8f-1f4f8f3a1696",
+                    "name": "Beef Steak",
+                    "price": "42000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996288,
+                    "signature": false,
+                    "weight": 6,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "6c12968c-ea35-4ee5-9fd8-566a598e7410"
+                }
+            ]
+        },
+        {
+            "id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+            "common_id": "258a95fe-0c6f-465c-9b82-7fa5ea2b712d",
+            "name": "Menu Nasi Favorit",
+            "sku": "MENU_NASI_FAVORIT",
+            "active": true,
+            "weight": 2,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 24,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Sambel Sadis  + Nasi Ayam Geprek Sambel Original",
+                    "id": "89b08fd7-8220-46fc-ac9d-7607b16746d2",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Nasi Ayam Geprek Sambel Sadis + Nasi Ayam Geprek Sambel Original",
+                    "price": "40000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 25880390,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "58b6df87-6d38-4147-98a9-4aa9ec000e7f"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Lalapan Dengan Sambal Original Khas Geprek Ampel. Dijamin Nampol..!",
+                    "id": "9afa6d8d-7dd5-4943-9006-742e5c173dd4",
+                    "image_id": "11927a62-0d08-4817-9660-df70b58f41bd",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6347772d-c7e7-4ce3-979b-764213db6944_Go-Biz_20260314_195428.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6347772d-c7e7-4ce3-979b-764213db6944_Go-Biz_20260314_195428.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket A",
+                    "price": "21500.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 77331214,
+                    "signature": true,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "e13ff021-cda2-48c0-8fe1-7e23b9bd0d5b"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Yang Disajikan Dengan Sambel Original khas Geprek Ampel Dan Tambahan Keju Melar.",
+                    "id": "45319527-fe02-49d0-a687-292b0851dc8f",
+                    "image_id": "54fbb1e6-81a9-4adb-bb59-56e758d94a92",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6e01b0e8-c446-4c24-9d18-5dc0e5b1f9e6_Go-Biz_20240219_182424.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6e01b0e8-c446-4c24-9d18-5dc0e5b1f9e6_Go-Biz_20240219_182424.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Kelar A",
+                    "price": "28000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053134,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "068cc828-7836-44fa-8f68-0d91a50467c4"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Yang Disajikan Dengan Sambal Yang Ditambah Dengan Parutan Keju Khas Geprek Ampel",
+                    "id": "fdb24ec0-631c-4e45-8d73-ba3f4938594d",
+                    "image_id": "f761c5d9-8e70-41f2-88e9-d12af8f62c59",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ede3ce3e-e3ad-4fe6-a06d-b63c4b0ca969_Go-Biz_20240219_150404.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ede3ce3e-e3ad-4fe6-a06d-b63c4b0ca969_Go-Biz_20240219_150404.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Jupe A",
+                    "price": "22900.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053109,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "d1bfba27-9067-4bd7-a5db-faff617d18ea"
+                },
+                {
+                    "active": true,
+                    "description": "2Potong Ayam Geprek Yang Disajikan Dengan Sambal Khas Geprek Ampel Yang Membuat Hari Mu Semakin Tertantang.!",
+                    "id": "2ab26320-21ad-4a34-bdd6-ea86f61c018a",
+                    "image_id": "f8a5ea87-2d80-431f-91c5-310a75015624",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/36b8bb22-2e04-4785-80f6-5d096935bda4_Go-Biz_20240219_150026.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/36b8bb22-2e04-4785-80f6-5d096935bda4_Go-Biz_20240219_150026.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket B",
+                    "price": "27500.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996161,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "6357f866-9a52-43cc-b39d-5f14ef00db48"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Tahu Tempe Dan Telur DiSajikan Dengan Sambel Nampol Khas Geprek Ampel.",
+                    "id": "0cea5d4b-03a1-40c1-a314-003145d1e858",
+                    "image_id": "840138c6-4e70-4ad1-9be0-2cbc2f741386",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0e0d84f0-1d3d-47e7-99bf-f0f8a0e0baeb_Go-Biz_20240219_150048.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0e0d84f0-1d3d-47e7-99bf-f0f8a0e0baeb_Go-Biz_20240219_150048.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket C",
+                    "price": "17000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996162,
+                    "signature": false,
+                    "weight": 6,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "553e8634-8c8e-4ca4-b50c-619677250b25"
+                },
+                {
+                    "active": true,
+                    "description": "Tahu Tempe Dan Telur Yang Disajikan TANPA Nasi. Cocok Untuk Tambahan Menu Makan Mu..",
+                    "id": "354e3e36-8c19-4028-ac5f-0a724eddcf83",
+                    "image_id": "70738d4d-8a7c-4b5d-9c5b-c3d4479c8fe2",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5e2da5a5-2dd6-400a-9327-429589aeabf9_Go-Biz_20240219_150115.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5e2da5a5-2dd6-400a-9327-429589aeabf9_Go-Biz_20240219_150115.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket D",
+                    "price": "18000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996163,
+                    "signature": false,
+                    "weight": 7,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "ae8a9217-6a6f-45e4-98ad-9a3b966f3c95"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi, Ayam Geprek, Lalapan, Free Nestea Lemontea",
+                    "id": "1417d2a6-d67c-40ec-b89f-ac9fd1973449",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket A + Nestea Lemontea",
+                    "price": "23000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 17857164,
+                    "signature": false,
+                    "weight": 8,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "95c3257c-1298-4282-ad9f-54546996168d"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Udang Geprek Lalapan Yang Disajikan Dengan Siraman Sambal Khas Geprek Ampel Yang Bisa Menggugah Selera Makan Mu..",
+                    "id": "3758e040-37ec-4e0f-9e18-74e9aaec1b51",
+                    "image_id": "dbde6956-12f0-43d8-8415-ba1f9b08611b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/fe041b90-5041-4731-b1d0-64dc0dc6a40e_Go-Biz_20240219_150231.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/fe041b90-5041-4731-b1d0-64dc0dc6a40e_Go-Biz_20240219_150231.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket E",
+                    "price": "19900.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996164,
+                    "signature": false,
+                    "weight": 8,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "285b978c-d18f-4054-87e9-3ebbae464626"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi, Tahu Geprek, Telur Dadar/Ceplok, Lalapan, Free Nestea Lemontea",
+                    "id": "90d3f638-8515-49b8-a07d-fe9cfa0692e5",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket C + Nestea Lemontea",
+                    "price": "23000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 17857165,
+                    "signature": false,
+                    "weight": 9,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "3285e82b-16d7-4791-925f-7f62cff851b1"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi Ayam Geprek Sambal Matah + Telor",
+                    "id": "1c12fa71-ec9c-42d7-acd2-8662b3b2b57a",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Nasi Ayam Geprek Sambal Matah + Telor",
+                    "price": "30000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 25880389,
+                    "signature": false,
+                    "weight": 9,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "af857612-f746-41ac-8561-5c6e6ce7e8f2"
+                },
+                {
+                    "active": true,
+                    "description": "Udang geprek lalapan   tanpa nasi yang disajikan dengan siraman sambal khas geprek ampel yang bisa menggugah selera makan mu..",
+                    "id": "9f05a615-87d4-42a2-b7ab-7010ea8d5e77",
+                    "image_id": "a6b605dc-dfa7-446a-b8ab-6ea60539de1d",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1cc85d2f-7268-4663-8b06-b40e5a31be98_Go-Biz_20240219_150246.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1cc85d2f-7268-4663-8b06-b40e5a31be98_Go-Biz_20240219_150246.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket F",
+                    "price": "25000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996165,
+                    "signature": false,
+                    "weight": 9,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "ac52c5d2-4643-45a5-99b7-9c1ed8dc34aa"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi, Udang, Lalapan, Free Nestea Lemontea",
+                    "id": "89fbfd8d-d864-459f-ac11-085e9381ab9d",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket E + Nestea Lemontea",
+                    "price": "23000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 17857166,
+                    "signature": false,
+                    "weight": 10,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "9f73f30f-bc9d-4a95-8374-d5ddb8b4b84a"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Mix Udang Geprek Lalapan Yang Disajikan Dengan Siraman Sambal Khas Geprek Ampel Yang Bisa Menggugah Selera Makan Mu..",
+                    "id": "af54fb19-a86e-4596-b4ec-423807918ecf",
+                    "image_id": "ab07af99-31b2-44db-8803-8c38e7f7176d",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cd6216c3-c4c6-4439-803d-f80fc155c376_Go-Biz_20240221_114616.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cd6216c3-c4c6-4439-803d-f80fc155c376_Go-Biz_20240221_114616.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket Mauu",
+                    "price": "25000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996166,
+                    "signature": false,
+                    "weight": 10,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "2d3e8fda-25e6-422f-91ab-cd21734a3e94"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Yang Disajikan Dengan Siraman Saus Telor Asin khas Geprek Ampel Yang Dapat Membangkitkan Selera Makan Anda.",
+                    "id": "c5eee08f-8b94-4c1f-a85b-57af90d87779",
+                    "image_id": "6e07154e-9262-4658-bb50-fb035119b032",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f77328a0-3cd7-47b9-a6ae-76cc2411a3a9_Go-Biz_20240219_150305.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f77328a0-3cd7-47b9-a6ae-76cc2411a3a9_Go-Biz_20240219_150305.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Nasi Ayam Geprek Saus Telur Asin",
+                    "price": "24000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 25880388,
+                    "signature": false,
+                    "weight": 11,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "832f858e-3677-40dc-b54d-b4010ed26748"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Yang Disajikan Dengan Siraman Saus Lada Hitam khas Geprek Ampel Yang Dapat Memberikan Kepuasan Makan Mu.!",
+                    "id": "bfa31a0e-9dfb-4c60-87fb-856c650e7865",
+                    "image_id": "0a81b9a1-2efe-4807-9987-1c3b5e7b214e",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/52f46020-0863-4383-b6ee-ced46dd0ee61_Go-Biz_20240221_114632.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/52f46020-0863-4383-b6ee-ced46dd0ee61_Go-Biz_20240221_114632.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Ayam Geprek Hitz",
+                    "price": "24000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996243,
+                    "signature": false,
+                    "weight": 12,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "8d4c0570-c51c-4f2f-a513-fe6d08fd79ca"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Yang Disajikan Dengan Siraman Saus Asam Manis khas Geprek Ampel Yang Dapat Mencerahkan Hari-Hari Mu..",
+                    "id": "f68dd0e7-00c7-4b07-b00d-54550c1e939b",
+                    "image_id": "594820f9-d45e-4527-82b6-4c55edddf84e",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7870f739-7fa4-4332-b677-e4a2db553fec_Go-Biz_20240221_114653.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7870f739-7fa4-4332-b677-e4a2db553fec_Go-Biz_20240221_114653.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Ayam Geprek Simanis",
+                    "price": "24000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053280,
+                    "signature": false,
+                    "weight": 13,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "759af643-9fbe-470c-ac5c-7c31a3eb61ad"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Yang Disajikan Dengan Siraman Saus Padang khas Geprek Ampel Dan Pastinya Membuat Hari Mu Jadi Menyenang kan.",
+                    "id": "42a166e4-3b68-4a2b-b00f-2cd4ee457479",
+                    "image_id": "977725f0-0f7f-4e37-a6d0-2dba7817857f",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5093da4c-3f09-4c08-a667-380a0afd6a79_Go-Biz_20240221_114709.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5093da4c-3f09-4c08-a667-380a0afd6a79_Go-Biz_20240221_114709.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Ayam Geprek Nendang",
+                    "price": "24000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996244,
+                    "signature": false,
+                    "weight": 14,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "d16e49e5-0566-4de9-bd0b-b5b539ecdd45"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi Ayam Geprek Saos Telor Asin Free SOS Hand Sanitizer",
+                    "id": "a76ec9a3-6a30-444c-bc27-afe5bec93879",
+                    "image_id": "152503db-69cf-47ce-a8b8-75ec41539f31",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/336be406-6fb7-4df5-8a5e-771a8d2b281a_menu-item-image_1619045209499.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/336be406-6fb7-4df5-8a5e-771a8d2b281a_menu-item-image_1619045209499.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Nasi Ayam Geprek Saos Telor Asin",
+                    "price": "33000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 45343502,
+                    "signature": false,
+                    "weight": 14,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "fd8d70dc-5abc-43fe-a32c-960891240b79"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi Ayam Geprek Saos Sambel Matah + Telor Free SOS Hand Sanitizer",
+                    "id": "e6e5032c-cd06-4016-bf99-81a724233950",
+                    "image_id": "73ca9c98-b5c0-483e-80ef-4941d5881c9b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6c1e2e4e-03ef-4aba-b02a-9fa1c1cdf1c3_menu-item-image_1619045222731.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6c1e2e4e-03ef-4aba-b02a-9fa1c1cdf1c3_menu-item-image_1619045222731.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Nasi Ayam Geprek Saos Sambel Matah + Telor",
+                    "price": "37500.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 45343507,
+                    "signature": false,
+                    "weight": 15,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "63df31e2-2cc6-45b7-849c-4a6535d2ac2e"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi, Ayam Geprek, Lalapan, Toping Keju Mozza Free SOS Hand Sanitizer",
+                    "id": "ab3b6737-1754-4d1e-b93d-4bacd707eafd",
+                    "image_id": "23422844-c8f8-47e8-97ac-b8b6aedfa3a5",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/45ca67e0-1faf-4b86-a31a-bc1a85659621_menu-item-image_1619045235082.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/45ca67e0-1faf-4b86-a31a-bc1a85659621_menu-item-image_1619045235082.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket Kelar A",
+                    "price": "38000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 45343508,
+                    "signature": false,
+                    "weight": 16,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "06c16a6a-1f83-4263-b340-10c5c0b99b6f"
+                },
+                {
+                    "active": false,
+                    "description": "",
+                    "id": "cc862ad0-a87d-4959-bf5d-f8897f96df64",
+                    "image_id": "ff33b222-53cd-4260-98c9-6cecd7a458f1",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5c673b9c-fd7f-41f7-b666-1d5a0a9416b3_Go-Biz_20210503_144147.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5c673b9c-fd7f-41f7-b666-1d5a0a9416b3_Go-Biz_20210503_144147.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Nasi Ayam Geprek Saos Telor Asin Free Teh Pucuk Harum",
+                    "price": "29000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 45700795,
+                    "signature": false,
+                    "weight": 17,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "3e79b40e-1987-430e-b025-8a708bb1bfa5"
+                },
+                {
+                    "active": false,
+                    "description": "",
+                    "id": "1cdefd22-7307-4edd-a919-00c7367cdd4d",
+                    "image_id": "f9e63911-3274-4b9c-a274-6a377b7d2c1b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/77b2b290-ec96-492b-aa1d-cc9f276f7de2_Go-Biz_20210503_144216.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/77b2b290-ec96-492b-aa1d-cc9f276f7de2_Go-Biz_20210503_144216.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Nasi Ayam Geprek Saos Sambel Matah + Telor Free Teh Pucuk Harum",
+                    "price": "33000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 45700800,
+                    "signature": false,
+                    "weight": 18,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "40d9a7ae-c77d-4766-b1db-115ccabf5362"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi, Ayam Geprek, Lalapan, Toping Keju Mozza Free Teh Pucuk Harum",
+                    "id": "e3cf75a7-6cc2-45e8-9109-57e0884c0d2d",
+                    "image_id": "eeb1b1f8-07e9-4a6c-b69f-8d13e93d6352",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/561b66eb-30d0-4995-bb20-9c082957e08e_Go-Biz_20210503_144234.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/561b66eb-30d0-4995-bb20-9c082957e08e_Go-Biz_20210503_144234.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5a0a4799-65ac-4780-8e36-968fc84a3d8d",
+                    "name": "Paket Kelar A Free Teh Pucuk Harum",
+                    "price": "35000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 45700807,
+                    "signature": false,
+                    "weight": 19,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "079b404e-06ee-4d43-bc21-ee050e7b1a9e"
+                }
+            ]
+        },
+        {
+            "id": "2b078b12-e5ef-4bec-8c5e-9156849ebe08",
+            "common_id": "7309f612-f6ed-4088-8f42-ed3ab0121b3e",
+            "name": "JUPE (Keju/Pete)",
+            "sku": "JUPE_KEJU_PETE_",
+            "active": false,
+            "weight": 3,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 5,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "2Potong Ayam Geprek,Lalapan+Keju/Pete",
+                    "id": "138c06c6-2198-4f54-94b3-4a8931757189",
+                    "image_id": "f57a6f50-d826-4690-9503-7fe12c6adb51",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4a2c55f9-a289-4fd9-98c8-cfd66244c4c2_Go-Biz_20240219_150428.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4a2c55f9-a289-4fd9-98c8-cfd66244c4c2_Go-Biz_20240219_150428.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "2b078b12-e5ef-4bec-8c5e-9156849ebe08",
+                    "name": "Jupe B",
+                    "price": "27500.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053110,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "8dc7dfbf-2820-4aa8-9faa-89d6a795b25a"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi,Tahugeprek,Tempe Geprek,Telur Dadar/Ceplok,Lalapan,Keju/Pete",
+                    "id": "b040450b-444b-4c94-86a9-0deea237b731",
+                    "image_id": "40e4a696-ca3d-4917-a172-775e531d0acc",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0a268993-1fe2-46be-8008-963c4cdd0e03_Go-Biz_20240219_150611.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0a268993-1fe2-46be-8008-963c4cdd0e03_Go-Biz_20240219_150611.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "2b078b12-e5ef-4bec-8c5e-9156849ebe08",
+                    "name": "Jupe C",
+                    "price": "21000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053111,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "9a20c784-d53c-45fc-9913-1c79a3641cf7"
+                },
+                {
+                    "active": true,
+                    "description": "3Potong Tahu Geprek,3Potong Tempe Geprek,1 Butir Telur Ceplok/Dadar+Keju/Pete",
+                    "id": "504190e2-a91c-4ac4-ae1c-1161f7f0e13e",
+                    "image_id": "fda8929e-63e7-4ea5-9e68-07c654add9fb",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c5d68595-a412-45c9-be26-0c72f3569c41_Go-Biz_20240219_150626.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c5d68595-a412-45c9-be26-0c72f3569c41_Go-Biz_20240219_150626.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "2b078b12-e5ef-4bec-8c5e-9156849ebe08",
+                    "name": "Jupe D",
+                    "price": "22900.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053113,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "47238f14-2c9c-47ad-8139-c4ad8f5b2f8c"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi, Udang Geprek, Lalapan, Keju/Pete. Free Voucher GoRide/GoCar 30rb untuk perjalanan dari & ke Rumah Sakit/Puskesmas/Lokasi Vaksin. Masukkan kode voucher \"ANTERINVAKSIN\" di halaman Promo, lalu klik voucher untuk menggunakan.",
+                    "id": "4d1d89a4-62d7-4d3d-a9e0-9691bb7ba038",
+                    "image_id": "d9a39d36-145e-4932-876f-bacff9bcc282",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/76f5f39f-c24a-4982-bbb6-291ff3736d9e_Go-Biz_20240219_150653.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/76f5f39f-c24a-4982-bbb6-291ff3736d9e_Go-Biz_20240219_150653.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "2b078b12-e5ef-4bec-8c5e-9156849ebe08",
+                    "name": "Jupe E",
+                    "price": "21000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053114,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "9801f5f0-c459-41f2-8038-1e15bef717d9"
+                },
+                {
+                    "active": true,
+                    "description": "Udang Geprek,Lalapan+Keju/Pete",
+                    "id": "90640ff4-0ec5-4cd0-931d-f9227638f08a",
+                    "image_id": "a6ad264e-b15a-4f6e-b2ee-8804dfbddb82",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c0d34b59-6478-4f21-b18a-08940f9a52bc_Go-Biz_20240219_150709.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c0d34b59-6478-4f21-b18a-08940f9a52bc_Go-Biz_20240219_150709.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "2b078b12-e5ef-4bec-8c5e-9156849ebe08",
+                    "name": "Jupe F",
+                    "price": "28000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996170,
+                    "signature": false,
+                    "weight": 7,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "32c35356-5d87-46fa-bc62-52ae58cb90ab"
+                }
+            ]
+        },
+        {
+            "id": "6fa11776-33ab-4fbb-9849-e4738b09b61c",
+            "common_id": "c421e252-51ab-4d2d-a0e7-3c90d9cedd5d",
+            "name": "Paket Geprek Hemat",
+            "sku": "PAKET_GEPREK_HEMAT",
+            "active": true,
+            "weight": 3,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 6,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek",
+                    "id": "a332c4d7-4f64-4aad-a5d8-4d2c74d0523f",
+                    "image_id": "975e6f96-6c1a-431d-86ae-e4f3d93caa04",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/875c03e4-1348-45ce-9b3b-1cc1d47b6155_Go-Biz_20240323_161347.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/875c03e4-1348-45ce-9b3b-1cc1d47b6155_Go-Biz_20240323_161347.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6fa11776-33ab-4fbb-9849-e4738b09b61c",
+                    "name": "Beli 6 Bayar 5",
+                    "price": "115000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 575931660,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "24c7d3c0-5d97-4c25-bd2b-b958f2f1ba26"
+                },
+                {
+                    "active": true,
+                    "description": "Paket Lengkap Kenyang Puol.. Dengan Isian Nasi Ayam Geprek ,Tahu Tempe Telur, Dengan Siraman Rohani Dari Sambal Yang Menusuk Kalbu.. Lalu DiDingin kan Dengan Segar Nya Es Teh .",
+                    "id": "f2ff238d-6c44-42c1-96ff-4cf1ab2d5d39",
+                    "image_id": "22c177a9-fe66-4933-9a58-0657903e5d72",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/aabe68a1-9c31-4194-9b73-10abff81a86b_Go-Biz_20240323_161419.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/aabe68a1-9c31-4194-9b73-10abff81a86b_Go-Biz_20240323_161419.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6fa11776-33ab-4fbb-9849-e4738b09b61c",
+                    "name": "Ags 1",
+                    "price": "30000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996290,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "cc6498ea-8a05-4be7-9b1b-e062bcc3df28"
+                },
+                {
+                    "active": true,
+                    "description": "2Potong Ayam Geprek Ditemani Tempe Mendoan Dan Disegarkan Dengan Dingin Nya Es Teh",
+                    "id": "1d48d071-1919-4f58-aa1c-8b50e7d1afae",
+                    "image_id": "0c5b48bc-2590-406d-86ae-bdee90dbf814",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/823a68b8-04cf-4fc7-ad9d-b10323093ad1_Go-Biz_20240323_161515.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/823a68b8-04cf-4fc7-ad9d-b10323093ad1_Go-Biz_20240323_161515.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6fa11776-33ab-4fbb-9849-e4738b09b61c",
+                    "name": "Ags 2",
+                    "price": "45000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996291,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "961e05ea-0d83-4d9b-bc1f-45d4d2285da5"
+                },
+                {
+                    "active": true,
+                    "description": "3Porsi Nasi Ayam Geprek Lalapan Dengan Sambal Original Khas Geprek Ampel. Dijamin Nampol..! Dan Disegarkan Dengan Dingin Nya Es Teh",
+                    "id": "ca62d978-de1a-46ff-94fd-ebd380445563",
+                    "image_id": "4bb9d79e-0336-40d2-a58f-bb028c8361a5",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f72f1f7d-3beb-49ac-88e9-d875466c7b97_Go-Biz_20240323_161628.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f72f1f7d-3beb-49ac-88e9-d875466c7b97_Go-Biz_20240323_161628.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6fa11776-33ab-4fbb-9849-e4738b09b61c",
+                    "name": "Ags 3",
+                    "price": "75000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996292,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "b47ee9bc-8cb2-4d3a-853f-9cd81d0930c1"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Geprek Dengan Taburan Sambal Matah Khas Bali Yang Memanjakan Lidah.. Dengan segarnnya Irisan Cabe dan Bawang Yang Gurih dan Asam Nya jeruk Nipis Menambah Semangat Dalam Hari Mu.! Yang Di Temani Kriuk Nya Tahu Crispy Dan Disegarkan Dengan Di",
+                    "id": "9aa9ed8e-0007-4e5f-9d56-37509971881e",
+                    "image_id": "673cdbcd-e04d-40f6-891b-9cab350d0e78",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c01186f6-a068-49db-abfb-c410129a1ec2_Go-Biz_20240323_161846.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c01186f6-a068-49db-abfb-c410129a1ec2_Go-Biz_20240323_161846.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6fa11776-33ab-4fbb-9849-e4738b09b61c",
+                    "name": "Ags 4",
+                    "price": "42000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996293,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "cb563696-9803-4c61-8081-02097605db30"
+                },
+                {
+                    "active": true,
+                    "description": "5 porsi rame-rame nasi ayam geprek dengan taburan sambal matah khas bali yang memanjakan lidah.. dengan segarnnya irisan cabe dan bawang yang gurih dan asam nya jeruk nipis menambah semangat dalam hari mu.! dan disegarkan dengan dingin nya es teh",
+                    "id": "7382dbb7-db80-4fa2-8648-648017d32989",
+                    "image_id": "b42e6ba5-0415-4482-9083-b0d9551666f0",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/247ba13b-e097-4b57-b174-155e61f2d25b_Go-Biz_20240323_161937.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/247ba13b-e097-4b57-b174-155e61f2d25b_Go-Biz_20240323_161937.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6fa11776-33ab-4fbb-9849-e4738b09b61c",
+                    "name": "Ags 5",
+                    "price": "105000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996294,
+                    "signature": false,
+                    "weight": 6,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "3269e4b5-3283-4dd5-b964-49a0ec4f7f52"
+                }
+            ]
+        },
+        {
+            "id": "76fccb76-4078-4f2b-8c61-9a1e8d70ef84",
+            "common_id": "17bbe0c6-26c2-4c86-9ed1-af5c4a8dd00d",
+            "name": "Nasi Goreng Nikmat",
+            "sku": "NASI_GORENG_NIKMAT",
+            "active": true,
+            "weight": 4,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 7,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Nasi Yang Digoreng Dominan Putih Dengan Bumbu Rempah Dan Isian Sosis Ayam Telur Dan Sayuran Yang Dapat Memanjakan Selera Makan Mu..",
+                    "id": "a54598ed-12c3-45e4-a5d1-8a169b2fd6f2",
+                    "image_id": "6cd81c61-d71b-4758-9d45-3e25cee5eb69",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/2404db60-5ae0-4ecd-8c07-af0ac6187034_Go-Biz_20240323_155319.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/2404db60-5ae0-4ecd-8c07-af0ac6187034_Go-Biz_20240323_155319.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "76fccb76-4078-4f2b-8c61-9a1e8d70ef84",
+                    "name": "Nasi Goreng Ayam",
+                    "price": "25000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053305,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "0bf912ca-b770-4904-b323-e65a54bafc31"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Yang Digoreng Dominan Putih Dengan Bumbu Rempah Dengan Isian Sosis,Ayam,Ikan Asin Rebon Dan Sayuran Yang Menambah Kenikmatan Makan Mu.",
+                    "id": "b789a0eb-281a-4bfa-a7c3-7e6d300b3aa6",
+                    "image_id": "cf8e6726-d659-4d34-a34b-881b7e623cf8",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5ab775a8-82df-4ea0-afdd-e5666a4fde0a_Go-Biz_20240323_155443.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5ab775a8-82df-4ea0-afdd-e5666a4fde0a_Go-Biz_20240323_155443.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "76fccb76-4078-4f2b-8c61-9a1e8d70ef84",
+                    "name": "Nasi Goreng Ikan Asin",
+                    "price": "27000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996172,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "8ed56bff-2c75-4f6e-b131-1ce0317587e8"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Yang Digoreng Dominan Putih Dengan Bumbu Rempah Dengan Isian Sosis Udang Dan Sayuran",
+                    "id": "fdda6787-5237-4d6f-be12-423897821c22",
+                    "image_id": "b0d81797-b009-4cc3-8f70-2d8d00505c5f",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b115d752-4a88-4050-9eed-30c982b76f45_Go-Biz_20260314_195537.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b115d752-4a88-4050-9eed-30c982b76f45_Go-Biz_20260314_195537.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "76fccb76-4078-4f2b-8c61-9a1e8d70ef84",
+                    "name": "Nasi Goreng Seafood",
+                    "price": "32000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996174,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "e3d07adf-e7b8-4862-84a6-2ad99ba84a6a"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Yang Digoreng Dominan Putih Dengan Bumbu Rempah Dan Isian Sosis Ayam Udang Dan Sayuran Dengan Toping Telur Ceplok",
+                    "id": "cbc0ac94-4135-4c7f-bdbc-b51b0b8b5469",
+                    "image_id": "dfffcad1-eda3-456e-848e-94e0ec77ded5",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cc2173d4-295d-4906-a006-40a2b77dd56d_Go-Biz_20240323_155603.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cc2173d4-295d-4906-a006-40a2b77dd56d_Go-Biz_20240323_155603.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "76fccb76-4078-4f2b-8c61-9a1e8d70ef84",
+                    "name": "Nasi Goreng Special",
+                    "price": "35000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996176,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "0d61de1f-c71a-4aff-956a-c9188d933347"
+                },
+                {
+                    "active": true,
+                    "description": "kwetiaw Yang Digoreng  Dengan Bumbu Rempah Dan Isian Sosis Ayam Telur Dan Sayuran Yang Dapat Memanjakan Selera Makan Mu..",
+                    "id": "f1443dae-af63-4463-a2b3-50ea72fb00ff",
+                    "image_id": "af35a969-25ee-425c-8e0f-f3276966b2a8",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3f36da01-234b-42c8-a2d4-863e43ce9a00_Go-Biz_20240323_155713.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3f36da01-234b-42c8-a2d4-863e43ce9a00_Go-Biz_20240323_155713.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "76fccb76-4078-4f2b-8c61-9a1e8d70ef84",
+                    "name": "Kwetiau Viral Ayam",
+                    "price": "25000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83057819,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "88da0320-656b-4580-98fa-085a9c81e5d5"
+                },
+                {
+                    "active": true,
+                    "description": "kwetiaw Yang Digoreng  Berkuah Dengan Bumbu Rempah Dan Isian Sosis Ayam Telur Dan Sayuran Yang Dapat Memanjakan Selera Makan Mu..",
+                    "id": "50c54804-e0d2-483f-8b32-49aa26347c12",
+                    "image_id": "94e97edd-146d-41bb-b200-a770288bf459",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/de8c6435-3de4-4937-ac01-ca4b3ea35442_Go-Biz_20240323_155858.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/de8c6435-3de4-4937-ac01-ca4b3ea35442_Go-Biz_20240323_155858.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "76fccb76-4078-4f2b-8c61-9a1e8d70ef84",
+                    "name": "Kwetiau Viral Ayam Basah",
+                    "price": "27000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996260,
+                    "signature": false,
+                    "weight": 6,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "21533d64-6ea3-48d6-85eb-8270d0057d3f"
+                },
+                {
+                    "active": true,
+                    "description": "Kwetiaw Yang Digoreng Dominan Putih Dengan Bumbu Rempah Dengan Isian Sosis Udang Dan Sayuran",
+                    "id": "461219de-dde2-4579-88b5-ff6e7b30538c",
+                    "image_id": "f04cd076-3c38-4a11-bf09-966cd3db95e3",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/66167db8-0617-4419-be1e-85c75d9861f4_Go-Biz_20260314_195614.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/66167db8-0617-4419-be1e-85c75d9861f4_Go-Biz_20260314_195614.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "76fccb76-4078-4f2b-8c61-9a1e8d70ef84",
+                    "name": "Kwetiau Viral Sefood",
+                    "price": "37000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996261,
+                    "signature": false,
+                    "weight": 7,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "46e1e602-d6b9-4b55-8f75-aedffaee921a"
+                }
+            ]
+        },
+        {
+            "id": "56204fbf-d105-4ec2-bb6f-7cda9c2cb10a",
+            "common_id": "06838902-88ad-488d-8def-ab52805ac842",
+            "name": "KELAR (Keju Melar)",
+            "sku": "KELAR_KEJU_MELAR_",
+            "active": false,
+            "weight": 4,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 5,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "2Potong Ayam Geprek,Lalapan+Toping Keju Mozza",
+                    "id": "a61ed89d-20a5-42c9-b1d4-dd401054187d",
+                    "image_id": "fc42e1f4-b670-4e18-b59d-fa6df7c91ee4",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b9044293-70e6-4f24-9776-d704af2be0cc_Go-Biz_20210221_144528.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b9044293-70e6-4f24-9776-d704af2be0cc_Go-Biz_20210221_144528.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "56204fbf-d105-4ec2-bb6f-7cda9c2cb10a",
+                    "name": "Kelar B",
+                    "price": "26000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996266,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "480971f5-ee00-4df5-8f65-d4413ea34d54"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi,Tahugeprek,Tempe Geprek,Telur Dadar/Ceplok,Lalapan,Toping Keju Mozza",
+                    "id": "d7e5aea9-b137-4aa2-90ce-0f0216763744",
+                    "image_id": "1527dbbe-59d3-4330-96fc-f117a6911fb5",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/61b9e20a-8813-4937-a7ea-9858a17f8fe9_Go-Biz_20210221_144552.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/61b9e20a-8813-4937-a7ea-9858a17f8fe9_Go-Biz_20210221_144552.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "56204fbf-d105-4ec2-bb6f-7cda9c2cb10a",
+                    "name": "Kelar C",
+                    "price": "23000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996267,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "8c20a3c9-80db-44f1-b7ca-8b2ed147870f"
+                },
+                {
+                    "active": true,
+                    "description": "3Potong Tahu Geprek,3Potong Tempe Geprek,1 Butir Telur Ceplok/Dadar Toping Keju Mozza",
+                    "id": "57bbf739-b330-40b7-86b6-85ee6cbf62c1",
+                    "image_id": "df44132e-8935-42d4-bbd9-97b10e449907",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cba54096-83f3-46d8-847e-815c54da5f9e_Go-Biz_20210221_144607.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cba54096-83f3-46d8-847e-815c54da5f9e_Go-Biz_20210221_144607.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "56204fbf-d105-4ec2-bb6f-7cda9c2cb10a",
+                    "name": "Kelar D",
+                    "price": "24000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996268,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "062cb5bf-1a0b-484a-8a4d-c2505353c953"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi,Udang Geprek,Lalapan,Toping Kejumozza",
+                    "id": "59be7afc-8b3d-49c5-8f90-639f2e4c359c",
+                    "image_id": "4536861d-f83f-42af-a6b7-e5bc867a4705",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/15bce352-b7dc-4aec-9859-0ed5557d1e97_Go-Biz_20210221_144648.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/15bce352-b7dc-4aec-9859-0ed5557d1e97_Go-Biz_20210221_144648.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "56204fbf-d105-4ec2-bb6f-7cda9c2cb10a",
+                    "name": "Kelar E",
+                    "price": "24000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996269,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "116b6c58-ee75-4361-8383-d8ac9893a83c"
+                },
+                {
+                    "active": true,
+                    "description": "Udang Geprek,Lalapantoping Keju Mozza",
+                    "id": "4b9c5aae-b418-40b6-87b9-24631b1be247",
+                    "image_id": "fdc9d51a-bae5-40d6-a697-fc291781004c",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/76fe8bd3-0525-4585-b634-fec07ee68eb7_Go-Biz_20210221_144704.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/76fe8bd3-0525-4585-b634-fec07ee68eb7_Go-Biz_20210221_144704.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "56204fbf-d105-4ec2-bb6f-7cda9c2cb10a",
+                    "name": "Kelar F",
+                    "price": "30000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996270,
+                    "signature": false,
+                    "weight": 6,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "297d58a3-ff5d-4b07-973f-532e391012f9"
+                }
+            ]
+        },
+        {
+            "id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+            "common_id": "9aa7fdc1-e139-4aa9-82b4-498036292d99",
+            "name": "Indomie Series",
+            "sku": "INDOMIE_SERIES",
+            "active": true,
+            "weight": 5,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 10,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Indomie Goreng Ori",
+                    "id": "3c538bb2-ae07-4e7f-9685-4bc373c61951",
+                    "image_id": "932b25e0-675b-4fd9-a600-dacfb3a7a383",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/caa7512c-e26b-4e48-b0b1-9b5c1195cf96_Go-Biz_20240221_114746.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/caa7512c-e26b-4e48-b0b1-9b5c1195cf96_Go-Biz_20240221_114746.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie Ori",
+                    "price": "11000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053024,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "16847d0f-d931-441a-93e5-6cd55de4b653"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie kuah yang dimasak dengan bumbu ketulusan dan boleh reques level sehingga anda makan dengan tenang tanpa memikirkan masak lagi..",
+                    "id": "b91cfeb0-3eba-47a1-97ed-85e4cf42de7e",
+                    "image_id": "d2063dc6-aee6-41df-a85b-9529cea0e87d",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/bdaaa023-b65e-4829-b95b-688cbbd7defd_Go-Biz_20240323_160400.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/bdaaa023-b65e-4829-b95b-688cbbd7defd_Go-Biz_20240323_160400.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie Kuah Ori",
+                    "price": "12000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2070252942,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "1695b099-70dc-463e-a984-a850276e8271"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie Goreng +Ayam Geprek+Lalapan",
+                    "id": "a901d2b2-022c-456c-8ae8-55b7e3b1dce7",
+                    "image_id": "4274eabd-736d-4dcc-96d3-121d7d279b6d",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f2073599-abea-4365-b1b9-34a82f878c6b_Go-Biz_20240221_114806.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f2073599-abea-4365-b1b9-34a82f878c6b_Go-Biz_20240221_114806.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie A",
+                    "price": "19999.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996238,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "ec746d2a-0b2e-4ea5-9e60-487e45c35b42"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie kuah toping ayam geprek yang dimasak dengan bumbu ketulusan dan boleh reques level sehingga anda makan dengan tenang tanpa memikirkan masak lagi..",
+                    "id": "308913a7-edb9-4eb3-81a0-b24a591563fb",
+                    "image_id": "d28049f8-7e29-4088-b7ff-6c7469f31490",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a241f911-c576-4519-9481-fc98e7732581_Go-Biz_20240323_160502.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a241f911-c576-4519-9481-fc98e7732581_Go-Biz_20240323_160502.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie Kuah A",
+                    "price": "20000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2070252943,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "5f4455c8-9f9f-4b9c-ae38-583294d9cbcd"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie kuah toping tahu tempe dan telur yang dimasak dengan bumbu ketulusan dan boleh reques level sehingga anda makan dengan tenang tanpa memikirkan masak lagi..",
+                    "id": "aef5a2bf-71dd-4c34-950e-e314340c26b0",
+                    "image_id": "b2f7d782-7cf7-44b0-bfb3-88eed702a44c",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4b59ad99-8561-423b-87ff-3950751810b3_Go-Biz_20240323_160557.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4b59ad99-8561-423b-87ff-3950751810b3_Go-Biz_20240323_160557.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie Kuah C",
+                    "price": "18000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2070252944,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "b7f7ffeb-6557-46f4-9ca3-d49c40c5ea03"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie Goreng +Tahu Geprek+Tempe Geprek+Lalapan",
+                    "id": "d69f4112-520b-498c-9a7f-a1ddd6b9d201",
+                    "image_id": "4011e566-0cb1-4297-9222-95cd618275de",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a2e9170a-d370-43ca-86c9-92914967f2cc_Go-Biz_20240221_114826.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a2e9170a-d370-43ca-86c9-92914967f2cc_Go-Biz_20240221_114826.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie C",
+                    "price": "16000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996239,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "d8d68856-225c-4e78-ac41-ba005b61612b"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie Goreng +Udang Geprek+Lalapan",
+                    "id": "dc80e0c7-e311-4e92-872d-a5967f3c03b5",
+                    "image_id": "34b765df-2ce2-470a-b3d3-3fbba0dad248",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/140e0f62-f889-42fc-91a0-99cdadec3a41_Go-Biz_20240221_114842.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/140e0f62-f889-42fc-91a0-99cdadec3a41_Go-Biz_20240221_114842.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie E",
+                    "price": "18000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996240,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "f98a3dc2-13f9-4b80-9b56-0f600337c8f9"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie kuah toping udang geprek yang dimasak dengan bumbu ketulusan dan boleh reques level sehingga anda makan dengan tenang tanpa memikirkan masak lagi..",
+                    "id": "bd25c36e-e9b4-4956-b9ff-91b522ecc70c",
+                    "image_id": "9033f303-437e-42e1-b31d-1a3183797f60",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c3a8cb08-429e-4dc9-9a16-c55884745c3a_Go-Biz_20240323_160722.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c3a8cb08-429e-4dc9-9a16-c55884745c3a_Go-Biz_20240323_160722.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie Kuah E",
+                    "price": "18000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2070252945,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "a15a2b14-9147-4c16-87bc-e4a6b8d6df19"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie Goreng+Ayam Geprek +Udang Geprek+Lalapan",
+                    "id": "50ff9217-cfd3-4afb-81a2-1d835974f767",
+                    "image_id": "ec413baf-832a-470b-b8c5-ea1030f58e7b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e8103db8-afdf-45e4-b449-565b6df3bdfc_Go-Biz_20240221_114858.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e8103db8-afdf-45e4-b449-565b6df3bdfc_Go-Biz_20240221_114858.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie Mix",
+                    "price": "28000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996241,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "f11c80ba-62da-4d53-ac0d-0d193d99290e"
+                },
+                {
+                    "active": true,
+                    "description": "Indomie kuah dengan toping ayam geprek mix udang geprek yang dimasak dengan bumbu ketulusan dan boleh reques level sehingga anda makan dengan tenang tanpa memikirkan masak lagi..",
+                    "id": "bc6994b0-a8e2-4db7-94e2-e99faf29a9b1",
+                    "image_id": "11822c59-b45d-4922-a4cf-d93eccb04bc8",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/53107b14-1858-412b-a714-7aa6b4219780_Go-Biz_20240323_160804.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/53107b14-1858-412b-a714-7aa6b4219780_Go-Biz_20240323_160804.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "6e8ddb9c-6e53-45b5-ac76-929d2a3609c6",
+                    "name": "Indomie Kuah Mix",
+                    "price": "25000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996181,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "fe37f496-61b1-48f8-ae6f-ccc0c2b39cc9"
+                }
+            ]
+        },
+        {
+            "id": "382a84a5-0831-4e01-9633-41d714aa680e",
+            "common_id": "5cb16268-01ea-433c-a7bb-7cebdf46c5c9",
+            "name": "Pelengkap Sajian",
+            "sku": "PELENGKAP_SAJIAN",
+            "active": true,
+            "weight": 6,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 6,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "7d7792d6-b367-4eef-92bb-a808bdcc37e8",
+                    "image_id": "811f4ec5-638e-4c1f-b36d-4366f43d021d",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e0becae9-231c-4887-bc65-58df4786534b_Go-Biz_20240221_114918.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e0becae9-231c-4887-bc65-58df4786534b_Go-Biz_20240221_114918.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "382a84a5-0831-4e01-9633-41d714aa680e",
+                    "name": "Nasi",
+                    "price": "8000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83058029,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "e84a2e84-0d55-4c6e-904b-0b9460d57d1c"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "0dc30a36-932b-4b17-9b13-11f3786efb53",
+                    "image_id": "b8614eec-514d-4431-ac1f-9c423ef5a0f5",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/660cdede-b2fb-489c-b830-54d926ca115d_Go-Biz_20240221_114938.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/660cdede-b2fb-489c-b830-54d926ca115d_Go-Biz_20240221_114938.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "382a84a5-0831-4e01-9633-41d714aa680e",
+                    "name": "Tahu",
+                    "price": "3000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996195,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "66c27ad4-7008-4b5b-9933-b60ffba51da0"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "a797e03a-99aa-40f2-9b9a-2bcc755ebef9",
+                    "image_id": "6bada8ab-87a1-4012-b1b2-e32e3641f7ae",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/181a2e01-2fe6-4fc3-8e1a-cfcf29676a3d_Go-Biz_20240221_114950.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/181a2e01-2fe6-4fc3-8e1a-cfcf29676a3d_Go-Biz_20240221_114950.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "382a84a5-0831-4e01-9633-41d714aa680e",
+                    "name": "Tempe",
+                    "price": "3000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996196,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "8aee2505-7962-4db9-9fe2-06d8e9259734"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "d7d4ca84-12db-4419-95f8-3a802db41865",
+                    "image_id": "178d593d-ff18-42ae-971a-6c2c586cc104",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5de493b4-eacb-44fe-88cf-a2c50fb9b862_Go-Biz_20240221_115003.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5de493b4-eacb-44fe-88cf-a2c50fb9b862_Go-Biz_20240221_115003.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "382a84a5-0831-4e01-9633-41d714aa680e",
+                    "name": "Telur",
+                    "price": "5000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996197,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "3fd06d63-4de4-4f33-a621-9aa0029e8595"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "ab30264d-7ced-423c-8e71-4c564aa5b1a1",
+                    "image_id": "410b16ec-73a3-4803-ab61-72c09711dd01",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/28471f1a-eb69-44a7-9a29-cabcbef2f009_Go-Biz_20240221_115026.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/28471f1a-eb69-44a7-9a29-cabcbef2f009_Go-Biz_20240221_115026.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "382a84a5-0831-4e01-9633-41d714aa680e",
+                    "name": "Keju Parut",
+                    "price": "5000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996200,
+                    "signature": false,
+                    "weight": 7,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "a900b8d2-20fe-45ca-8bf3-c95e31943c35"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "a13a535c-42ce-42b0-b483-a68ca4a23c30",
+                    "image_id": "0adf7d6a-4da2-4949-9c2f-2854cf5e3625",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/37e30c86-77f2-434a-aff3-08f52fb6d9dd_Go-Biz_20240221_115037.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/37e30c86-77f2-434a-aff3-08f52fb6d9dd_Go-Biz_20240221_115037.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "382a84a5-0831-4e01-9633-41d714aa680e",
+                    "name": "Keju Mozzarella",
+                    "price": "10000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996201,
+                    "signature": false,
+                    "weight": 8,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "0998a862-9305-47a4-bcf2-26a7cfea5ba7"
+                }
+            ]
+        },
+        {
+            "id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+            "common_id": "e12977f8-34bd-4302-91b8-17f1a447132c",
+            "name": "Teman Nyemil",
+            "sku": "TEMAN_NYEMIL",
+            "active": true,
+            "weight": 7,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 8,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "ddd5ef56-052e-4ea0-8436-1c711f87ed7f",
+                    "image_id": "c1f2a9c7-c501-459b-a7b7-73fc2bd5fed7",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/2c7f24fb-1aab-4a6d-b152-a9cf33f1aff1_Go-Biz_20240219_170203.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/2c7f24fb-1aab-4a6d-b152-a9cf33f1aff1_Go-Biz_20240219_170203.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+                    "name": "Tahu Krispi",
+                    "price": "15000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83058001,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "64e49715-eab0-4c7e-9048-61971e61e03f"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "6e32819e-a387-4b38-bbdb-f8a5452876b8",
+                    "image_id": "b00060b1-4f43-4cac-9a3e-933294a6bf6b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b52132e0-276a-4f9f-a30d-a6b9b7e098be_Go-Biz_20240219_170223.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b52132e0-276a-4f9f-a30d-a6b9b7e098be_Go-Biz_20240219_170223.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+                    "name": "Kentang Krispi",
+                    "price": "15000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996228,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "3ce4102f-398c-4f7c-9fe4-efe6dce957ec"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "c2b72f09-56c5-4d25-8442-7024d03443d2",
+                    "image_id": "6cf03394-60fc-47ec-8860-832498e68540",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/75bf92ac-5204-4f78-8109-f26b7ac6b47f_Go-Biz_20240219_170243.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/75bf92ac-5204-4f78-8109-f26b7ac6b47f_Go-Biz_20240219_170243.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+                    "name": "Jamur Krispi",
+                    "price": "15000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996229,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "cbe89ea7-93bb-4174-a05b-e7bae324aa45"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "6a184974-d16e-4dfb-a14d-f13dd8009c80",
+                    "image_id": "c5469f5d-ad15-42d7-a050-2bac8267e9db",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6a4089d8-2378-42e4-b269-4d1c1b08520d_Go-Biz_20240219_170301.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6a4089d8-2378-42e4-b269-4d1c1b08520d_Go-Biz_20240219_170301.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+                    "name": "Kulit Krispi",
+                    "price": "15000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996230,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "70de0c1f-b98b-4a6b-9223-de24fdd074aa"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "0ba09cc6-dab5-4efd-9871-b0d22c3f4c8c",
+                    "image_id": "235ac19b-9898-49ae-9642-aadafab95f3f",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/2cb3c877-9449-41a9-be39-490c15943ecf_Go-Biz_20240219_170321.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/2cb3c877-9449-41a9-be39-490c15943ecf_Go-Biz_20240219_170321.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+                    "name": "Kol Goreng",
+                    "price": "15000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996190,
+                    "signature": false,
+                    "weight": 13,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "84332060-3b1e-4a98-9a76-342614dc6c5e"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "ae140060-3836-4c15-9305-63d68ffbe51a",
+                    "image_id": "c1117fd0-75a5-441f-b667-3c759dd3eb32",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/746bc85b-c7c7-45a0-8f00-ba4f10463ab0_Go-Biz_20240219_170340.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/746bc85b-c7c7-45a0-8f00-ba4f10463ab0_Go-Biz_20240219_170340.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+                    "name": "Onion Ring",
+                    "price": "15000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996191,
+                    "signature": false,
+                    "weight": 14,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "b8a19c0b-84c3-4410-930f-7116a9569a8a"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "f0054032-99fc-480b-8cc7-b192d08afb4d",
+                    "image_id": "75e6943f-6b0e-4a82-853b-e44f0cf63eba",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c82b7b07-85ba-42b3-b3fb-c0bb7a579ef4_Go-Biz_20240219_170357.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/c82b7b07-85ba-42b3-b3fb-c0bb7a579ef4_Go-Biz_20240219_170357.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+                    "name": "Tempe Mendoan",
+                    "price": "15000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 69203679,
+                    "signature": false,
+                    "weight": 15,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "ec2567bb-5ed6-4916-adb8-fb91b886c69e"
+                },
+                {
+                    "active": false,
+                    "description": "",
+                    "id": "7795d4b8-24df-4382-b883-d5beb4c32e8a",
+                    "image_id": "c21bc4ca-9614-4558-aa64-bc36ea1d4b71",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/44871eee-38e9-46a8-9387-898816b8b80b_Go-Biz_20240219_170423.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/44871eee-38e9-46a8-9387-898816b8b80b_Go-Biz_20240219_170423.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "f727eea1-f9c4-4d98-b7c4-0dffa7ce8a8c",
+                    "name": "Tahu Gejrot",
+                    "price": "15000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 101883408,
+                    "signature": false,
+                    "weight": 16,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "bccabafd-fbc1-4c42-9462-617b83fbf00e"
+                }
+            ]
+        },
+        {
+            "id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+            "common_id": "f5b42c89-646d-40e8-82f6-ddbc370566f0",
+            "name": "Solusi Hausmu!",
+            "sku": "SOLUSI_HAUSMU_",
+            "active": true,
+            "weight": 8,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 9,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Es Teh Yang Menyegarkan",
+                    "id": "4fcce521-08cd-4b1a-a569-3c85a076929d",
+                    "image_id": "e9fdd20c-6ed2-49f0-b90b-6ff3f428b29b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5e750f92-b1dc-4a8b-847d-4270587da1df_Go-Biz_20240409_040848.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5e750f92-b1dc-4a8b-847d-4270587da1df_Go-Biz_20240409_040848.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Hot/Cool Tea",
+                    "price": "8000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996211,
+                    "signature": false,
+                    "weight": 8,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "1555633b-fb8f-44b2-8c0a-1c4df201b530"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "4625dc15-577f-49ab-afd0-dd6b166c3254",
+                    "image_id": "186e9b00-0e37-4e7c-acfd-b25ed8c55377",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/74674c4b-5556-4a72-ab08-bc18a8317732_Go-Biz_20240413_054206.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/74674c4b-5556-4a72-ab08-bc18a8317732_Go-Biz_20240413_054206.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Hot/cool Jeruk Nipis",
+                    "price": "10000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67316172,
+                    "signature": false,
+                    "weight": 9,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "6e667989-f5e7-4dbb-a478-dfc137a26b10"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "000bdfc6-2e01-414a-afea-257e694f1e87",
+                    "image_id": "00f81f4d-2387-41df-8158-9b128c0dde11",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/62b1c9a9-830e-45fb-98f8-f81168378e0f_Go-Biz_20240413_054232.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/62b1c9a9-830e-45fb-98f8-f81168378e0f_Go-Biz_20240413_054232.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Hot/Cool Susu Putih",
+                    "price": "10000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996215,
+                    "signature": false,
+                    "weight": 10,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "bf883a04-4208-422e-9699-bac8689e7648"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "ad9cc2de-2e40-4bb0-904f-a79c5808fc59",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Hot/Cool White Coffe",
+                    "price": "6000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996212,
+                    "signature": false,
+                    "weight": 11,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "7621c525-04d9-43e8-985b-868a63b7b2a5"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "c031f9af-0de0-44cf-8d59-e62179b7e29b",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Hot/Cool Good Day",
+                    "price": "9000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996213,
+                    "signature": false,
+                    "weight": 12,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "39cb2a72-1110-4371-87f2-ef99846340d5"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "c14476af-a958-4924-8e04-ec106042337e",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Hot/Cool Milo",
+                    "price": "9000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996214,
+                    "signature": false,
+                    "weight": 14,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "764aa52e-303b-4e95-a957-6dbe1e922a65"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "b3500187-2c3d-48d4-a521-a95e6cb60a6e",
+                    "image_id": "2d84bdd7-6661-4c75-9e1e-75304999f699",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a6e00bc2-09f9-4578-88ef-82d011698ebc_Go-Biz_20240413_054610.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/a6e00bc2-09f9-4578-88ef-82d011698ebc_Go-Biz_20240413_054610.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Hot/Cool Nutrisari",
+                    "price": "8000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996216,
+                    "signature": false,
+                    "weight": 15,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "3d1c1ae5-f1f0-4fe4-b3e6-2be5d0aaefa0",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "99c88ae7-0132-4432-bf7c-2cf20683c993"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "a8fa74c5-2903-40bd-a519-d461d84e7109",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Joshua",
+                    "price": "10000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996223,
+                    "signature": false,
+                    "weight": 23,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "5e1ba8d1-c75d-41e8-af23-08a3bd111198"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "41a6c995-af3a-4297-ac1b-9c017b2ed2b1",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d12f31bf-b52b-464c-aa84-5730e905afc0",
+                    "name": "Pop Ice",
+                    "price": "6000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67977291,
+                    "signature": false,
+                    "weight": 26,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "df657933-50d8-4000-bebf-ec8c3b054d1e",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "d8bff64c-4103-4c02-9026-e5911361e7c7"
+                }
+            ]
+        },
+        {
+            "id": "18ee248e-a5e5-4e94-86e7-156fbf1bc4e0",
+            "common_id": "9755afee-5e4b-4f9f-acbd-e70ee43b4ead",
+            "name": "Promo Akhir Tahun",
+            "sku": "PROMO_AKHIR_TAHUN",
+            "active": true,
+            "weight": 9,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 3,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Maaf Es Selasih Nya Di Ganti Es Teh Ya..",
+                    "id": "6f3345ce-2175-4d52-a09b-1c3171a08dde",
+                    "image_id": "9cbaff89-42f5-4311-bcf4-63f89f04529e",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/69ae2509-b750-4b34-9470-b1278b35898c_Go-Biz_20231226_113750.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/69ae2509-b750-4b34-9470-b1278b35898c_Go-Biz_20231226_113750.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "18ee248e-a5e5-4e94-86e7-156fbf1bc4e0",
+                    "name": "Kenyang 1",
+                    "price": "75000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 99335573,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "1d6f7266-8566-4d9d-a183-adc2bda2d04e",
+                        "71281cfa-48eb-4bd7-88c5-8df2af3d555b"
+                    ],
+                    "common_id": "53077bc3-3150-48bc-a41e-124a1927a09f"
+                },
+                {
+                    "active": true,
+                    "description": "Maaf Es Selasih Nya Di Ganti Es Teh Ya..",
+                    "id": "d7ff9c90-e521-46c2-bc79-cada0722d1c4",
+                    "image_id": "d3602498-ea8c-467b-be13-82e1c054b56d",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/50570cac-3185-4b58-822f-7fb44d14b427_Go-Biz_20231226_113911.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/50570cac-3185-4b58-822f-7fb44d14b427_Go-Biz_20231226_113911.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "18ee248e-a5e5-4e94-86e7-156fbf1bc4e0",
+                    "name": "Kenyang 2",
+                    "price": "85000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 99335698,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "1d6f7266-8566-4d9d-a183-adc2bda2d04e",
+                        "71281cfa-48eb-4bd7-88c5-8df2af3d555b"
+                    ],
+                    "common_id": "a6d7e6f1-a7ad-4394-9526-d67de6147a16"
+                },
+                {
+                    "active": true,
+                    "description": "Maaf Es Selasih Nya Di Ganti Es Teh Ya..",
+                    "id": "e0a93ba5-149e-4abc-8569-0ebd949ab74b",
+                    "image_id": "693ccb64-75f9-4c4a-b3c5-18f8c19a4f27",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7f7aab75-e075-4e6e-b444-0444a12f8291_Go-Biz_20231226_113942.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7f7aab75-e075-4e6e-b444-0444a12f8291_Go-Biz_20231226_113942.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "18ee248e-a5e5-4e94-86e7-156fbf1bc4e0",
+                    "name": "Kenyang 3",
+                    "price": "110000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 99335711,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "71281cfa-48eb-4bd7-88c5-8df2af3d555b"
+                    ],
+                    "common_id": "63b47697-6435-4fa2-ac85-1633e599c71a"
+                }
+            ]
+        },
+        {
+            "id": "cf32711a-fa9a-41a7-8f01-8bec3074df20",
+            "common_id": "423380e1-a486-44b2-982f-b85a2dfc5740",
+            "name": "Kombo Kids",
+            "sku": "KOMBO_KIDS",
+            "active": true,
+            "weight": 10,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 3,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Nasi ayam crispy tahu tempe telur saus sambel/tomat + es nutrisari",
+                    "id": "313af277-b96d-4eef-985a-4aed8dde4225",
+                    "image_id": "1be05b50-61a2-4aa8-9972-8cb608087dad",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/417b85ae-ea6f-48cd-8cb4-107d91690dd0_Go-Biz_20240219_171952.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/417b85ae-ea6f-48cd-8cb4-107d91690dd0_Go-Biz_20240219_171952.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "cf32711a-fa9a-41a7-8f01-8bec3074df20",
+                    "name": "Kombo Kids 1",
+                    "price": "31000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 101884392,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "fce7aefa-f25a-45ef-a3ba-8cf872aacd78"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi + 2ayam crispy + telur + es nutrisari",
+                    "id": "8b1b1db1-c71e-4163-92c4-d72b78cac929",
+                    "image_id": "420a98f8-2b91-4451-ba2f-7f7491051e52",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5007132d-3e9d-4407-a884-ffc6fe886d2a_Go-Biz_20240219_172341.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5007132d-3e9d-4407-a884-ffc6fe886d2a_Go-Biz_20240219_172341.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "cf32711a-fa9a-41a7-8f01-8bec3074df20",
+                    "name": "Kombo Kids 2",
+                    "price": "41000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 101884490,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "271aefe4-a061-4f64-b21e-591a1810136b"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi + 2ayam crispy + tahu tempe + saus sambal/tomat + es nutrisari",
+                    "id": "27045c29-a607-4195-966e-706601143476",
+                    "image_id": "348c690d-28e5-4731-8cca-d3aaad6d4093",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/52d48ad3-ec7e-422c-8ad9-6ad1595e9a68_Go-Biz_20240219_172538.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/52d48ad3-ec7e-422c-8ad9-6ad1595e9a68_Go-Biz_20240219_172538.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "cf32711a-fa9a-41a7-8f01-8bec3074df20",
+                    "name": "Kombo Kids 3",
+                    "price": "37000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 101884628,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "1fe27907-09ba-415e-97e2-67488e2a45d1"
+                }
+            ]
+        },
+        {
+            "id": "9286a7e8-1c36-4637-8809-e4068eeea07a",
+            "common_id": "9c4c50f0-48d4-44ed-8f86-6f32ca63fc68",
+            "name": "Udang",
+            "sku": "UDANG",
+            "active": true,
+            "weight": 11,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 5,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "a851e5ac-859f-49fa-ba4f-30948e0a6c1b",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9286a7e8-1c36-4637-8809-e4068eeea07a",
+                    "name": "Nasi Udang Saus Asam Manis",
+                    "price": "22000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67789655,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "6503aded-61d3-4fd6-aead-9a10f9e1659f"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "08d97081-0289-48ad-b10e-48d2fb2ebf91",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9286a7e8-1c36-4637-8809-e4068eeea07a",
+                    "name": "Nasi Udang Saus Padang",
+                    "price": "22000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67789757,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "3e84b708-2465-4d9c-b12a-b1b1267ddd2a"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "f2343654-60e3-4970-b9ed-acd89dac5517",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9286a7e8-1c36-4637-8809-e4068eeea07a",
+                    "name": "Nasi Udang Saus Lada Hitam",
+                    "price": "22000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67789790,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "6382f781-4cde-48a5-a93c-cc4072a26138"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "6cf32df5-9c9a-45b3-aa15-cda91f07a60c",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9286a7e8-1c36-4637-8809-e4068eeea07a",
+                    "name": "Nasi Udang Saus Telur Asin",
+                    "price": "20000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67789953,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "521f0d9d-0de7-4dfb-aeb5-2f62ce654213"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "3f3a2442-53fa-4e88-a442-84ee9c0e5319",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "9286a7e8-1c36-4637-8809-e4068eeea07a",
+                    "name": "Nasi Udang Sambal Matah",
+                    "price": "20000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67789983,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "bf1fb501-ee9d-4324-832a-c1547da4d440"
+                }
+            ]
+        },
+        {
+            "id": "1e0db403-10f5-4eb0-8404-6adbe1d31eb1",
+            "common_id": "0d3fdc47-9d6c-4afd-92da-25d501f23a70",
+            "name": "Bento",
+            "sku": "BENTO",
+            "active": true,
+            "weight": 12,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 7,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Nasi+ Ayam Geprek Sambal Mangga +Udang Geprek Sambel Ory",
+                    "id": "870892c3-d25a-49bb-aa2b-5f94175b37a5",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "1e0db403-10f5-4eb0-8404-6adbe1d31eb1",
+                    "name": "Hemat 1",
+                    "price": "31000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053250,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "252de9e6-c82e-4e69-a2a9-e55cdca4db24"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi ayam geprek saus asam manis dan ayam geprek saus lada hitam",
+                    "id": "df5781f9-9787-4744-9f1f-8d0f398e59db",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "1e0db403-10f5-4eb0-8404-6adbe1d31eb1",
+                    "name": "Hemat 2",
+                    "price": "41000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053253,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "cd5da18f-7e41-46ed-a661-55d8a94b96ae"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi ayam geprek + indomie goreng + lalapan",
+                    "id": "e74adf16-9b43-452e-bf31-10410bfbc0f3",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "1e0db403-10f5-4eb0-8404-6adbe1d31eb1",
+                    "name": "Hemat 3",
+                    "price": "31000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 83053252,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "bf88d5b9-db89-46f0-9b1a-326ea98d4400"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi Ayam Geprek + Seafood+Es Susu",
+                    "id": "50e378f8-15aa-4967-afca-5291251d1eb8",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "1e0db403-10f5-4eb0-8404-6adbe1d31eb1",
+                    "name": "Kaka",
+                    "price": "41000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996235,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "29b9a5bc-81be-43d6-938d-93a0373bb33c"
+                },
+                {
+                    "active": false,
+                    "description": "Nasi + Nuget Ayam + Kentang Crispy + ES Susu",
+                    "id": "e360ff90-5a5d-4c41-9128-a6f723c1a502",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "1e0db403-10f5-4eb0-8404-6adbe1d31eb1",
+                    "name": "Adik",
+                    "price": "41000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2141996236,
+                    "signature": false,
+                    "weight": 6,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "3ce5b15d-9e0f-4d30-bfb3-c7b1892729a0"
+                },
+                {
+                    "active": false,
+                    "description": "Bento hemat 3 + bento adik + jamur crispy + milo",
+                    "id": "b24f0300-a154-447b-91cf-f436cba7b759",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "1e0db403-10f5-4eb0-8404-6adbe1d31eb1",
+                    "name": "Family Meal 1",
+                    "price": "89000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2142800136,
+                    "signature": false,
+                    "weight": 7,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "1936b6b2-5a30-4bc5-bd0b-b13771667655"
+                },
+                {
+                    "active": false,
+                    "description": "Indomie A + paket A + 2 jamur + 2 es teh",
+                    "id": "34bcf246-fa6c-408e-b6b0-149f6d3237b5",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "1e0db403-10f5-4eb0-8404-6adbe1d31eb1",
+                    "name": "Family Meal 2",
+                    "price": "67000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 2142800135,
+                    "signature": false,
+                    "weight": 8,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "7be14331-170a-4878-b6b1-008aeca583a8"
+                }
+            ]
+        },
+        {
+            "id": "36269d2a-dbad-44c4-b0f7-98638d672ee4",
+            "common_id": "d1161433-64ac-4868-be42-9499417b2206",
+            "name": "Seafood",
+            "sku": "SEAFOOD",
+            "active": true,
+            "weight": 13,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 5,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Masakan Laut Yang Disajikan Dengan Bumbu2 Kehidupan .. Ada Asam Manis .Padang Dan Lada Hitam . Yang Memberikan Warna Dalam Hidup Mu..",
+                    "id": "67bd9cb4-9558-4eb5-90d8-32e6cf71eb7f",
+                    "image_id": "7fd74c06-ed11-4449-8da2-72fe32beef67",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/de655e02-c19e-4a05-9d78-69d8539758b4_Go-Biz_20240120_212112.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/de655e02-c19e-4a05-9d78-69d8539758b4_Go-Biz_20240120_212112.jpeg"
+                    },
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "36269d2a-dbad-44c4-b0f7-98638d672ee4",
+                    "name": "Kerang",
+                    "price": "20000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 100580496,
+                    "signature": true,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "7ea4109e-e1d8-49d5-b37b-d9a9b537e909"
+                },
+                {
+                    "active": true,
+                    "description": "Masakan Laut Yang Disajikan Dengan Bumbu2 Kehidupan .. Ada Asam Manis .Padang Dan Lada Hitam . Yang Memberikan Warna Dalam Hidup Mu..",
+                    "id": "e49c091d-84a5-4271-8f9d-c48739da14e8",
+                    "image_id": "65bc53e2-50bb-4bc1-8404-4d221af2ca65",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3162c71d-cca9-49d3-962f-5f467712d8a4_Go-Biz_20240120_212424.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3162c71d-cca9-49d3-962f-5f467712d8a4_Go-Biz_20240120_212424.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "36269d2a-dbad-44c4-b0f7-98638d672ee4",
+                    "name": "Udang Goreng Saus",
+                    "price": "35000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 100580523,
+                    "signature": true,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "a8eb89e6-975f-4772-a455-c1ff04c6c126"
+                },
+                {
+                    "active": true,
+                    "description": "Masakan Laut Yang Disajikan Dengan Bumbu2 Kehidupan .. Ada Asam Manis .Padang Dan Lada Hitam . Yang Memberikan Warna Dalam Hidup Mu..",
+                    "id": "13be5929-3a61-4f6a-a9a1-5a06adb59c03",
+                    "image_id": "5825f91a-c1a0-42cd-9c29-0b5f1666a00f",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/88c48ac8-9391-4529-97e7-c61785b9e605_Go-Biz_20240120_213319.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/88c48ac8-9391-4529-97e7-c61785b9e605_Go-Biz_20240120_213319.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "36269d2a-dbad-44c4-b0f7-98638d672ee4",
+                    "name": "Cumi",
+                    "price": "35000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 100580646,
+                    "signature": true,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "bb673db6-5327-4266-a271-ba926fea6429"
+                },
+                {
+                    "active": true,
+                    "description": "Masakan Laut Yang Disajikan Dengan Bumbu2 Kehidupan .. Ada Asam Manis .Padang Dan Lada Hitam . Yang Memberikan Warna Dalam Hidup Mu..",
+                    "id": "9dbc9945-12a9-4513-bf51-682c7176595c",
+                    "image_id": "e8cfbe43-8836-49fe-9604-4518510469fe",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6785ed30-7ef1-4bee-b51b-a25984b41a88_Go-Biz_20240120_213353.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6785ed30-7ef1-4bee-b51b-a25984b41a88_Go-Biz_20240120_213353.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "36269d2a-dbad-44c4-b0f7-98638d672ee4",
+                    "name": "Pirang Cuk (Kepiting, Kerang, Udang, Cumi)",
+                    "price": "75000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 100580665,
+                    "signature": true,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "7ac763c3-db6e-4fac-9989-93fcef7e71ed"
+                },
+                {
+                    "active": true,
+                    "description": "Masakan Laut Yang Disajikan Dengan Bumbu2 Kehidupan .. Ada Asam Manis .Padang Dan Lada Hitam . Yang Memberikan Warna Dalam Hidup Mu..",
+                    "id": "385e3601-ed25-4008-afc9-a247e74fee03",
+                    "image_id": "e7464e2f-497f-4145-9113-fd1fa492d889",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f36c536b-59f1-433d-9b10-a254032ee7ce_Go-Biz_20240120_213516.jpeg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f36c536b-59f1-433d-9b10-a254032ee7ce_Go-Biz_20240120_213516.jpeg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "36269d2a-dbad-44c4-b0f7-98638d672ee4",
+                    "name": "Kepiting",
+                    "price": "50000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 100580674,
+                    "signature": true,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "b2d38ce6-2dd0-4be9-864d-aea25509db7f"
+                }
+            ]
+        },
+        {
+            "id": "e0d274e6-8059-4e7c-b488-8c625ec1013c",
+            "common_id": "e113886c-8cba-42a1-8f26-dc997baea354",
+            "name": "Sambal",
+            "sku": "SAMBAL",
+            "active": true,
+            "weight": 14,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 5,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "f47426fd-0fa4-472e-9c3d-2f9991e31250",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "e0d274e6-8059-4e7c-b488-8c625ec1013c",
+                    "name": "Sambal Ori",
+                    "price": "8000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67581240,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "dd4c712e-7ce7-458a-90dd-0b715e5a9fcc"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "4caa438b-d291-48ed-8fa3-b22f9ff2905a",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "e0d274e6-8059-4e7c-b488-8c625ec1013c",
+                    "name": "Sambal Matah",
+                    "price": "8000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67581252,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "e3c00ec3-a347-4c4c-9b48-f9710935bfd6"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "20400e09-ea15-4d66-bdc2-364905df1aef",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "e0d274e6-8059-4e7c-b488-8c625ec1013c",
+                    "name": "Sambal Pete",
+                    "price": "8000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67581268,
+                    "signature": false,
+                    "weight": 3,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "db665bc9-6719-4efe-967a-12224b0d553c"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "b50693c0-c6f4-463c-b6f0-6bb88392f1cf",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "e0d274e6-8059-4e7c-b488-8c625ec1013c",
+                    "name": "Sambal Mangga",
+                    "price": "8000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67581275,
+                    "signature": false,
+                    "weight": 4,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "9e49c713-4e36-4abb-abc2-32fe080e3ef8"
+                },
+                {
+                    "active": true,
+                    "description": "",
+                    "id": "2c87cc41-ef7a-4486-b59d-ab7d4384ba02",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "e0d274e6-8059-4e7c-b488-8c625ec1013c",
+                    "name": "Sambal Kecap",
+                    "price": "1500.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 67581283,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "78b2cc02-6f24-43e9-939c-140de31e7648"
+                }
+            ]
+        },
+        {
+            "id": "5f06da64-f386-474a-87a3-f9ca5d6ff855",
+            "common_id": "2b657af0-9d3d-4d8b-b8ab-e3fd32ea16fa",
+            "name": "Aneka Ayam Goreng",
+            "sku": "ANEKA_AYAM_GORENG",
+            "active": true,
+            "weight": 15,
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "master_menu_category_id": "",
+            "menu_items_count": 2,
+            "menu_items": [
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Goreng Serai Khas Ags . Sekali Coba Dijamin Ketagihan",
+                    "id": "1f9eca7a-675c-4753-8aed-99a83fd03d28",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5f06da64-f386-474a-87a3-f9ca5d6ff855",
+                    "name": "Ayam Goreng Serai",
+                    "price": "30000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 94315783,
+                    "signature": false,
+                    "weight": 1,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "ff9d0b3c-4196-443d-b544-746570aea0d9"
+                },
+                {
+                    "active": true,
+                    "description": "Nasi Ayam Goreng Kelapa Dengan Sambel Tomat",
+                    "id": "3384cf86-4faa-4719-b536-c48466a587f5",
+                    "image_id": "",
+                    "image": null,
+                    "image_cover": {},
+                    "in_stock": false,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "5f06da64-f386-474a-87a3-f9ca5d6ff855",
+                    "name": "Ayam Goreng Kelapa",
+                    "price": "30000.00",
+                    "promotion": null,
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "shopping_item_id": 94315819,
+                    "signature": false,
+                    "weight": 2,
+                    "brand_id": null,
+                    "variant_category_ids": [
+                        "4b6548dc-1bb0-4b99-953a-0662c10c2c45"
+                    ],
+                    "common_id": "70c7765b-f218-4030-9e5c-d8c869b3037a"
+                }
+            ]
+        }
+    ]
+}

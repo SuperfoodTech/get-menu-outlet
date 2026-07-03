@@ -1,10 +1,10 @@
 {
     "variant_categories": [
         {
-            "id": "d037ccf9-1384-4338-8192-e673c446e50e",
-            "master_variant_category_id": "b243f255-2efb-4816-b2ee-4cd4aa712c60",
+            "id": "b5256d62-89d2-4557-b2a9-b82434070a44",
+            "master_variant_category_id": "798ab68b-308a-410e-a5ab-a5abe645f865",
             "restaurant_id": "a548ac8a-8d08-4fe4-b2ed-7c15e93c7069",
-            "name": "Pilihan topping",
+            "name": "Extra Isian Kebab",
             "internal_name": "",
             "rules": {
                 "selection": {
@@ -16,47 +16,86 @@
             },
             "variants": [
                 {
-                    "id": "ddb6e232-4ab8-4a3f-bd65-4aa5a5647fcc",
-                    "variant_category_id": "d037ccf9-1384-4338-8192-e673c446e50e",
-                    "master_variant_id": "0ec9d296-3df0-42a4-9c7f-054c3d17840b",
+                    "id": "df35e63c-eb20-4cf7-9af1-80198ea3d301",
+                    "variant_category_id": "b5256d62-89d2-4557-b2a9-b82434070a44",
+                    "master_variant_id": "f9c48a14-5e27-4789-af40-ee9c567ef41b",
                     "restaurant_id": "a548ac8a-8d08-4fe4-b2ed-7c15e93c7069",
-                    "name": "Keju",
+                    "name": "Extra Telur",
                     "active": true,
-                    "price": 4000,
+                    "price": 4500,
                     "weight": 1,
                     "in_stock": true
                 },
                 {
-                    "id": "0eb61df6-b647-4873-83c7-478a10875cc4",
-                    "variant_category_id": "d037ccf9-1384-4338-8192-e673c446e50e",
-                    "master_variant_id": "a125fd89-8bbf-494f-8515-e63b31496bb9",
+                    "id": "39c26a5b-7881-425c-9d3f-74698dda280b",
+                    "variant_category_id": "b5256d62-89d2-4557-b2a9-b82434070a44",
+                    "master_variant_id": "d4bfecb9-a84b-4442-8b27-367cd59725b0",
                     "restaurant_id": "a548ac8a-8d08-4fe4-b2ed-7c15e93c7069",
-                    "name": "Telur",
+                    "name": "Extra Keju",
                     "active": true,
-                    "price": 4000,
+                    "price": 4500,
                     "weight": 2,
                     "in_stock": true
                 },
                 {
-                    "id": "ebd7188c-ea10-459b-887e-f4b077396b34",
-                    "variant_category_id": "d037ccf9-1384-4338-8192-e673c446e50e",
-                    "master_variant_id": "d776e7f2-715d-46f3-a6a4-ac0f959723c2",
+                    "id": "5d330a96-d66b-44f3-b541-e5f395f185a7",
+                    "variant_category_id": "b5256d62-89d2-4557-b2a9-b82434070a44",
+                    "master_variant_id": "f0b9a405-0e26-4b1c-9e34-9f61010e86ea",
                     "restaurant_id": "a548ac8a-8d08-4fe4-b2ed-7c15e93c7069",
-                    "name": "mazorella",
+                    "name": "Extra Mozarella",
                     "active": true,
-                    "price": 8000,
+                    "price": 7500,
                     "weight": 3,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "113eb416-d46f-4f56-94d1-348ac048b51b",
+            "master_variant_category_id": "e5689dda-4384-43a2-8523-27d7e4110f5b",
+            "restaurant_id": "a548ac8a-8d08-4fe4-b2ed-7c15e93c7069",
+            "name": "Extra Topping",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_MANY",
+                    "required": false,
+                    "min_quantity": 0,
+                    "max_quantity": null
+                }
+            },
+            "variants": [
+                {
+                    "id": "ec80a8b7-66c3-4303-874b-64ac99d69c1b",
+                    "variant_category_id": "113eb416-d46f-4f56-94d1-348ac048b51b",
+                    "master_variant_id": "f8c72546-dec7-4a18-b2fd-f4a50985b6de",
+                    "restaurant_id": "a548ac8a-8d08-4fe4-b2ed-7c15e93c7069",
+                    "name": "Extra Telur",
+                    "active": true,
+                    "price": 6000,
+                    "weight": 1,
                     "in_stock": true
                 },
                 {
-                    "id": "13fbbebf-9bc3-4c8d-bf6b-c2eca82b6062",
-                    "variant_category_id": "d037ccf9-1384-4338-8192-e673c446e50e",
-                    "master_variant_id": "1553fe94-9d90-4efd-9b2f-785ab5ccf3c6",
+                    "id": "dbd6b7b7-072b-4d19-9491-09210e847502",
+                    "variant_category_id": "113eb416-d46f-4f56-94d1-348ac048b51b",
+                    "master_variant_id": "ef0385f4-fba3-4d57-a671-2396d03c5265",
                     "restaurant_id": "a548ac8a-8d08-4fe4-b2ed-7c15e93c7069",
-                    "name": "dobel keju mozarella",
+                    "name": "Extra Keju",
                     "active": true,
-                    "price": 15000,
-                    "weight": 4,
+                    "price": 6000,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "b8490342-3333-4230-a645-ac379960f9ad",
+                    "variant_category_id": "113eb416-d46f-4f56-94d1-348ac048b51b",
+                    "master_variant_id": "d1c47d7d-8fc2-49fc-8c6e-2b41b1086b3a",
+                    "restaurant_id": "a548ac8a-8d08-4fe4-b2ed-7c15e93c7069",
+                    "name": "Extra Mozarella",
+                    "active": true,
+                    "price": 7500,
+                    "weight": 3,
                     "in_stock": true
                 }
             ]

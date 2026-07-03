@@ -130,7 +130,7 @@
                     "active": true,
                     "price": 0,
                     "weight": 3,
-                    "in_stock": true
+                    "in_stock": false
                 }
             ]
         },

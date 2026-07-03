@@ -1,0 +1,669 @@
+{
+    "variant_categories": [
+        {
+            "id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+            "master_variant_category_id": "72e8a314-a0f4-4239-a077-b01c128bb1da",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Extra Toping",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_MANY",
+                    "required": false,
+                    "min_quantity": 0,
+                    "max_quantity": null
+                }
+            },
+            "variants": [
+                {
+                    "id": "2b0392fd-91b4-46d0-a1af-36e84257deb9",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "0d8ffd4f-1b72-4990-ac98-9465c5f0885b",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Nasi",
+                    "active": true,
+                    "price": 6000,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "d5975309-e173-4593-833b-d53be60c2bd2",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "22f00f2f-10ce-4860-b7b9-e2d8ae7415c2",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Telor Ceplok/dadar",
+                    "active": true,
+                    "price": 5000,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "6225e8a7-ba16-4b07-bfa2-6c0c3e038928",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "fd9ba102-571e-4489-be1a-86eb52d44cf1",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Tahu(2pcs)",
+                    "active": true,
+                    "price": 4000,
+                    "weight": 3,
+                    "in_stock": true
+                },
+                {
+                    "id": "96e546cc-5d36-46c8-af0e-c8d867f74243",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "6d6e3a70-4732-48b5-bc24-8e5d0dac6fd2",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Tempe(2pcs)",
+                    "active": true,
+                    "price": 4000,
+                    "weight": 4,
+                    "in_stock": true
+                },
+                {
+                    "id": "14e0d4b9-4668-443d-b1e7-df6208bdc120",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "d36f1a08-48b4-4fe2-9568-22a3864f2516",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Keju Parut",
+                    "active": true,
+                    "price": 5000,
+                    "weight": 5,
+                    "in_stock": true
+                },
+                {
+                    "id": "0ec4201e-0046-4ca2-b6c9-eb65fb5e8d9f",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "cf27c6d6-b9e8-4960-bb04-a9f4f0fcaa52",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Keju Mozzarella",
+                    "active": true,
+                    "price": 10000,
+                    "weight": 6,
+                    "in_stock": true
+                },
+                {
+                    "id": "eeaaa52c-8ec3-44be-acd7-39663de009d1",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "ef8df321-9ff9-4f39-9881-650da07eee0b",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Pete",
+                    "active": true,
+                    "price": 8000,
+                    "weight": 7,
+                    "in_stock": true
+                },
+                {
+                    "id": "3e4bc56c-0058-488e-8561-f4467f3e3e7b",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "fc509d6a-66cf-4441-8c0a-cb4d0a58848e",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "3T(tahu ,Tempe , Telur)",
+                    "active": true,
+                    "price": 8000,
+                    "weight": 8,
+                    "in_stock": true
+                },
+                {
+                    "id": "452cf3af-954b-4649-b37c-5e90c4c4ce20",
+                    "variant_category_id": "504a8f25-1d27-4a47-8f81-5ee8e672c564",
+                    "master_variant_id": "dff37255-6f6d-4cc8-989c-e8a201a71c9e",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Kerupuk",
+                    "active": true,
+                    "price": 2000,
+                    "weight": 9,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+            "master_variant_category_id": "1d9c984a-615a-4102-8b7e-57afb42be6f5",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Level",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_ONE",
+                    "required": true,
+                    "min_quantity": 1,
+                    "max_quantity": 1
+                }
+            },
+            "variants": [
+                {
+                    "id": "9c86f523-3c48-4268-93a7-17644d9ebe93",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "cc96b274-cbea-401f-9a30-d48720f09e5a",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Tidak Pedas/Sambal Pisah",
+                    "active": true,
+                    "price": 0,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "930696f0-7ee7-4cb6-9915-8a87d09ec8ff",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "45e2df00-884b-4cb6-850e-37409382e618",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 1",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "bc704d96-5f8d-4a47-8f57-8e67941ddfdf",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "000c5d1f-2e85-476e-8cf6-85e4bd0dca9c",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 2",
+                    "active": true,
+                    "price": 0,
+                    "weight": 3,
+                    "in_stock": true
+                },
+                {
+                    "id": "8fa7827f-ab2f-45bb-a38a-7da13dc0a0da",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "8260dd52-bf6f-487f-a715-0e9e14280420",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 3",
+                    "active": true,
+                    "price": 0,
+                    "weight": 4,
+                    "in_stock": true
+                },
+                {
+                    "id": "09f7a930-25c8-4871-8245-483ec08bef58",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "084e88fc-d6db-4732-b0f3-6ca80e4de5f6",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 4",
+                    "active": true,
+                    "price": 0,
+                    "weight": 5,
+                    "in_stock": true
+                },
+                {
+                    "id": "c5cb3b29-6e20-4109-a2c7-2214c7b299b1",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "c0e28941-c5bc-4d96-a060-1ceac46e8c1b",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 5",
+                    "active": true,
+                    "price": 0,
+                    "weight": 6,
+                    "in_stock": true
+                },
+                {
+                    "id": "a5158d0e-77b4-4f0c-bc16-83cd3593136d",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "212e873f-b5fa-4909-859c-5ffeb99b236d",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 6",
+                    "active": true,
+                    "price": 2000,
+                    "weight": 7,
+                    "in_stock": false
+                },
+                {
+                    "id": "d903e860-5691-40e1-8768-ee18903c2260",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "7aa26732-09f3-4734-a38e-9a590da623f0",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 7",
+                    "active": true,
+                    "price": 2000,
+                    "weight": 8,
+                    "in_stock": false
+                },
+                {
+                    "id": "4a551813-c158-4921-9a67-910cbcc23ed3",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "364f78e9-e539-47f1-b5a1-d083b1f2841d",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 8",
+                    "active": true,
+                    "price": 3000,
+                    "weight": 9,
+                    "in_stock": false
+                },
+                {
+                    "id": "cecaf905-367c-4a6c-9c04-0ab2a56deff3",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "96117098-064b-4036-82bd-c08e2a91d439",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 9",
+                    "active": true,
+                    "price": 3000,
+                    "weight": 10,
+                    "in_stock": false
+                },
+                {
+                    "id": "a8d449e5-00c4-4c89-a508-28a6af281dc9",
+                    "variant_category_id": "cf70a7c4-a289-43ea-8ff3-7102dc4db6f9",
+                    "master_variant_id": "dfff0f4b-a1de-40a8-bf19-94077fc07009",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Level 10",
+                    "active": true,
+                    "price": 3000,
+                    "weight": 11,
+                    "in_stock": false
+                }
+            ]
+        },
+        {
+            "id": "4b6548dc-1bb0-4b99-953a-0662c10c2c45",
+            "master_variant_category_id": "22e33450-b38a-4500-978d-3b1a1810b880",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Perlengkapan Dan Kemasan",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_MANY",
+                    "required": false,
+                    "min_quantity": 0,
+                    "max_quantity": null
+                }
+            },
+            "variants": [
+                {
+                    "id": "ed6c6630-cbb0-470b-8661-041e1f357dbb",
+                    "variant_category_id": "4b6548dc-1bb0-4b99-953a-0662c10c2c45",
+                    "master_variant_id": "d92289e6-bb4c-4078-a3cf-d9cc8f6902c3",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Set Alat Makan",
+                    "active": true,
+                    "price": 1000,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "0e12b930-59dc-47a8-9c9e-e19112313b74",
+                    "variant_category_id": "4b6548dc-1bb0-4b99-953a-0662c10c2c45",
+                    "master_variant_id": "7ff896c2-6a43-4cf9-ae90-01f14b0906ec",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Kemasan Foam",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "9371312f-f37d-421c-bb1a-6e78c0611336",
+                    "variant_category_id": "4b6548dc-1bb0-4b99-953a-0662c10c2c45",
+                    "master_variant_id": "565cfa77-5acf-4dbc-bd56-82cdf94cd11b",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Kemasan Lunch Box",
+                    "active": true,
+                    "price": 1500,
+                    "weight": 3,
+                    "in_stock": true
+                },
+                {
+                    "id": "17e21482-1a55-4182-b48a-ab69aa948ee9",
+                    "variant_category_id": "4b6548dc-1bb0-4b99-953a-0662c10c2c45",
+                    "master_variant_id": "247ecf38-0722-4ecf-9103-9280598fa018",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Kemasan Tinwal",
+                    "active": true,
+                    "price": 2000,
+                    "weight": 4,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+            "master_variant_category_id": "518daaf5-72f2-4770-88a1-40e621753884",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Pilihan",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_ONE",
+                    "required": true,
+                    "min_quantity": 1,
+                    "max_quantity": 1
+                }
+            },
+            "variants": [
+                {
+                    "id": "80697c6f-aa5c-4b29-a3b8-5673330b96a1",
+                    "variant_category_id": "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+                    "master_variant_id": "3e85d317-b1bc-4edd-9027-db757366fb12",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Pete",
+                    "active": true,
+                    "price": 0,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "bb3ecaf9-d1d7-4e72-8a85-d956501e2f9f",
+                    "variant_category_id": "7d80f7f3-cd3b-4c4d-8a33-bc3011a05190",
+                    "master_variant_id": "32b096e9-1daf-4d85-bb47-70bd0777b1d2",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Keju",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "1d6f7266-8566-4d9d-a183-adc2bda2d04e",
+            "master_variant_category_id": "7a9a5bff-c4eb-42ea-af80-0d614198413e",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Pilihan Lauk",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_ONE",
+                    "required": true,
+                    "min_quantity": 1,
+                    "max_quantity": 1
+                }
+            },
+            "variants": [
+                {
+                    "id": "e0224070-28ac-46ab-ac1f-f993d7bd2b4f",
+                    "variant_category_id": "1d6f7266-8566-4d9d-a183-adc2bda2d04e",
+                    "master_variant_id": "f5729afc-d7f3-44c0-be46-99899670eb66",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Ayam + Ayam",
+                    "active": true,
+                    "price": 5000,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "b048b6ec-5b83-4f3a-a0a1-2515bf5ef6f4",
+                    "variant_category_id": "1d6f7266-8566-4d9d-a183-adc2bda2d04e",
+                    "master_variant_id": "9ca67414-2015-4dd9-858f-3e6a11064a21",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Ayam +udang",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": false
+                },
+                {
+                    "id": "e34c9f30-b6ed-45df-a10c-4290ffb01825",
+                    "variant_category_id": "1d6f7266-8566-4d9d-a183-adc2bda2d04e",
+                    "master_variant_id": "456fe84e-037e-499c-91e2-f5f27b27714a",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Ayam + Telur",
+                    "active": true,
+                    "price": 0,
+                    "weight": 3,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "71281cfa-48eb-4bd7-88c5-8df2af3d555b",
+            "master_variant_category_id": "9360b211-a33d-4080-ae15-51b7701f2218",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Pilihan es",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_ONE",
+                    "required": true,
+                    "min_quantity": 1,
+                    "max_quantity": 1
+                }
+            },
+            "variants": [
+                {
+                    "id": "e5f28f8f-08ef-4727-a0f5-411d30f23aa0",
+                    "variant_category_id": "71281cfa-48eb-4bd7-88c5-8df2af3d555b",
+                    "master_variant_id": "a7b8d10c-a3c9-4091-8c6f-0a3151672a82",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Es Teh",
+                    "active": true,
+                    "price": 0,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "28c7a09a-8153-49ce-8511-7d694e2ee74e",
+                    "variant_category_id": "71281cfa-48eb-4bd7-88c5-8df2af3d555b",
+                    "master_variant_id": "966c98bd-8f4c-4579-a969-ef525f04cf19",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Es Slasih",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": false
+                }
+            ]
+        },
+        {
+            "id": "df657933-50d8-4000-bebf-ec8c3b054d1e",
+            "master_variant_category_id": "a17f1185-f450-4432-a68e-7d461c5f168a",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Rasa",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_MANY",
+                    "required": false,
+                    "min_quantity": 0,
+                    "max_quantity": null
+                }
+            },
+            "variants": [
+                {
+                    "id": "a91398cc-7b69-4515-9022-007623877964",
+                    "variant_category_id": "df657933-50d8-4000-bebf-ec8c3b054d1e",
+                    "master_variant_id": "4ed2ef85-2212-433a-bb75-f771c976f499",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Coklat",
+                    "active": true,
+                    "price": 0,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "660174e8-cb9b-48b2-8b36-c0612c154af6",
+                    "variant_category_id": "df657933-50d8-4000-bebf-ec8c3b054d1e",
+                    "master_variant_id": "dd2814b7-9999-481f-9676-ce94aae69208",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Grape",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "7a335361-1e2c-4b7e-a71f-4abd9a1e564f",
+                    "variant_category_id": "df657933-50d8-4000-bebf-ec8c3b054d1e",
+                    "master_variant_id": "1dfc1e76-06e5-49b1-abf9-ba72d204580a",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Strawberry",
+                    "active": true,
+                    "price": 0,
+                    "weight": 3,
+                    "in_stock": true
+                },
+                {
+                    "id": "b5aecc28-6b65-4a2c-bed3-e39173a94171",
+                    "variant_category_id": "df657933-50d8-4000-bebf-ec8c3b054d1e",
+                    "master_variant_id": "3334e1e9-9972-46ce-8cfe-787f0d34a6bf",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Permen Karet",
+                    "active": true,
+                    "price": 0,
+                    "weight": 4,
+                    "in_stock": true
+                },
+                {
+                    "id": "8e2b04ad-93c5-4b53-9116-07994d09ff62",
+                    "variant_category_id": "df657933-50d8-4000-bebf-ec8c3b054d1e",
+                    "master_variant_id": "514295a1-e99e-461a-990f-be77d04e9f0f",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Thunder Coklat Moca",
+                    "active": true,
+                    "price": 0,
+                    "weight": 5,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "3d1c1ae5-f1f0-4fe4-b3e6-2be5d0aaefa0",
+            "master_variant_category_id": "ce144219-65e9-46c3-8130-493caa58c4cf",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Rasaa",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_MANY",
+                    "required": false,
+                    "min_quantity": 0,
+                    "max_quantity": null
+                }
+            },
+            "variants": [
+                {
+                    "id": "eb84f02f-c1b7-440d-ae85-aa124bd156cf",
+                    "variant_category_id": "3d1c1ae5-f1f0-4fe4-b3e6-2be5d0aaefa0",
+                    "master_variant_id": "feaf2c2b-c53d-4a5b-90fe-d3e4270efe3d",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Jeruk",
+                    "active": true,
+                    "price": 0,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "7b6e6e6f-a983-4a28-81ff-c23e08f0923f",
+                    "variant_category_id": "3d1c1ae5-f1f0-4fe4-b3e6-2be5d0aaefa0",
+                    "master_variant_id": "687639b8-9516-4b4d-86d3-772b700a5540",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Sirsak",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "560fc14b-10ff-4d07-810b-74c47a2d8488",
+                    "variant_category_id": "3d1c1ae5-f1f0-4fe4-b3e6-2be5d0aaefa0",
+                    "master_variant_id": "2f28f2cf-7201-4220-bc49-1f5d95f0d59b",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Kelapa Muda",
+                    "active": true,
+                    "price": 0,
+                    "weight": 3,
+                    "in_stock": true
+                },
+                {
+                    "id": "dbba5d08-991d-43fd-a367-9ea09522cb82",
+                    "variant_category_id": "3d1c1ae5-f1f0-4fe4-b3e6-2be5d0aaefa0",
+                    "master_variant_id": "b518bd20-c617-4c43-bc98-2617dbcccde4",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Mangga",
+                    "active": true,
+                    "price": 0,
+                    "weight": 4,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "c22850a5-876a-4143-b0f8-4fa3bfbc5be0",
+            "master_variant_category_id": "0a21fde3-d741-40d2-8e64-13362230cb75",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Rasaaa",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_ONE",
+                    "required": false,
+                    "min_quantity": 0,
+                    "max_quantity": 1
+                }
+            },
+            "variants": [
+                {
+                    "id": "499acfb9-c359-4810-8326-1349d2b33da5",
+                    "variant_category_id": "c22850a5-876a-4143-b0f8-4fa3bfbc5be0",
+                    "master_variant_id": "0abfff9a-917d-456d-a947-fa0ca902324b",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Coklat",
+                    "active": true,
+                    "price": 0,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "0bedac79-d786-4a43-be99-4e0d8919910e",
+                    "variant_category_id": "c22850a5-876a-4143-b0f8-4fa3bfbc5be0",
+                    "master_variant_id": "3f050bc4-0ab6-4d98-a1fa-abcec1f5c823",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Matcha",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "e8aa729b-aa59-4beb-8396-351657d20a1b",
+            "master_variant_category_id": "4e0eb480-b2cd-4263-beca-bd6949d0af0c",
+            "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+            "name": "Varian Saus",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_ONE",
+                    "required": true,
+                    "min_quantity": 1,
+                    "max_quantity": 1
+                }
+            },
+            "variants": [
+                {
+                    "id": "2e96e8d2-f1ef-4928-b0ad-e34d6ddc7239",
+                    "variant_category_id": "e8aa729b-aa59-4beb-8396-351657d20a1b",
+                    "master_variant_id": "84606639-cc8e-4ede-9af2-ce6ef05db3d1",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Saus Ladah Hitam",
+                    "active": true,
+                    "price": 0,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "9650b7f6-4462-427d-8942-5bf16366e431",
+                    "variant_category_id": "e8aa729b-aa59-4beb-8396-351657d20a1b",
+                    "master_variant_id": "6a366cdc-2e2b-4277-ac80-700e070a7b0c",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Saus Asam Manis",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "5840fa24-441f-449e-8ecc-a7a3c31cd4cb",
+                    "variant_category_id": "e8aa729b-aa59-4beb-8396-351657d20a1b",
+                    "master_variant_id": "af5ee7c4-3292-4aa9-b5de-f993c75e23d5",
+                    "restaurant_id": "577078b8-ba9c-4c59-b27f-3b4d8c9b8ec3",
+                    "name": "Saus Padang",
+                    "active": true,
+                    "price": 0,
+                    "weight": 3,
+                    "in_stock": true
+                }
+            ]
+        }
+    ]
+}

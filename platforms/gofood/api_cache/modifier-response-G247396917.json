@@ -1,0 +1,170 @@
+{
+    "variant_categories": [
+        {
+            "id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+            "master_variant_category_id": "51aa8654-dcd6-49af-a6fd-f3968d695266",
+            "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+            "name": "Extra Toping",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_MANY",
+                    "required": false,
+                    "min_quantity": 0,
+                    "max_quantity": null
+                }
+            },
+            "variants": [
+                {
+                    "id": "f7bd6237-8059-40dd-9583-d9b718aa1a3f",
+                    "variant_category_id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+                    "master_variant_id": "550b0264-7873-4604-8c2c-c7fcbeeece89",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Nasi",
+                    "active": true,
+                    "price": 6000,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "bac0a06e-a268-4401-8990-a40003731bfb",
+                    "variant_category_id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+                    "master_variant_id": "b9d33a8d-7146-4c13-a217-53a87e7e15d4",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Telur Ceplok/dadar",
+                    "active": true,
+                    "price": 7000,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "35c69ab3-46e8-4884-a8f4-71329143c948",
+                    "variant_category_id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+                    "master_variant_id": "5bf205f5-3527-4836-b072-550f4f920464",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Tahu (2Pcs)",
+                    "active": true,
+                    "price": 4000,
+                    "weight": 3,
+                    "in_stock": true
+                },
+                {
+                    "id": "4bfd6c49-9d82-47c4-a594-6f75c555993c",
+                    "variant_category_id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+                    "master_variant_id": "906ec025-4bde-4ecf-bb9f-9acb7f74cf3e",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Tempe(2pcs)",
+                    "active": true,
+                    "price": 4000,
+                    "weight": 4,
+                    "in_stock": true
+                },
+                {
+                    "id": "e4ab4068-44e7-4e82-9079-3a3b875d7f17",
+                    "variant_category_id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+                    "master_variant_id": "a8bd6047-f983-4385-b7cd-7506f83b8da3",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Keju Parut",
+                    "active": true,
+                    "price": 5000,
+                    "weight": 5,
+                    "in_stock": true
+                },
+                {
+                    "id": "e956f2d8-2ade-4568-905c-553b237e280a",
+                    "variant_category_id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+                    "master_variant_id": "022dfcc5-3c4c-4241-8ed8-8ddc120d7fa8",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Keju Mozzarella",
+                    "active": true,
+                    "price": 10000,
+                    "weight": 6,
+                    "in_stock": true
+                },
+                {
+                    "id": "6990b4af-f389-4046-84e9-c85b0f816285",
+                    "variant_category_id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+                    "master_variant_id": "82de110a-253b-4213-8a2f-931e7c377623",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "3T(tahu,tempe,telur)",
+                    "active": true,
+                    "price": 8000,
+                    "weight": 7,
+                    "in_stock": true
+                },
+                {
+                    "id": "5bc65da5-b5ef-4b11-91fc-3b9778c2d9be",
+                    "variant_category_id": "2cd4e156-79ea-45fd-ba5f-332360d8f033",
+                    "master_variant_id": "9da80624-a014-4446-963f-6b60d8d6dd0e",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Pete",
+                    "active": true,
+                    "price": 8000,
+                    "weight": 8,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "5fe48d8c-8a1f-4f53-bac9-b364fd4043b3",
+            "master_variant_category_id": "dfe4e420-cbf9-4571-b682-de7e3a4fdcfb",
+            "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+            "name": "Pilihan Level",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_ONE",
+                    "required": true,
+                    "min_quantity": 1,
+                    "max_quantity": 1
+                }
+            },
+            "variants": [
+                {
+                    "id": "2a57741f-72ec-422a-88af-6c2eed57f5a4",
+                    "variant_category_id": "5fe48d8c-8a1f-4f53-bac9-b364fd4043b3",
+                    "master_variant_id": "b3e16f5a-6103-4879-b18a-9556dc6c539c",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Tidak Pedas",
+                    "active": true,
+                    "price": 0,
+                    "weight": 1,
+                    "in_stock": true
+                },
+                {
+                    "id": "42efc470-a3d1-4842-88dc-5ed9c9c6d7b8",
+                    "variant_category_id": "5fe48d8c-8a1f-4f53-bac9-b364fd4043b3",
+                    "master_variant_id": "5bad77ab-3cb6-4653-8bf1-813aa6719835",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Pedas",
+                    "active": true,
+                    "price": 0,
+                    "weight": 2,
+                    "in_stock": true
+                },
+                {
+                    "id": "883fd4aa-55b6-4916-bcac-5f06244c07cf",
+                    "variant_category_id": "5fe48d8c-8a1f-4f53-bac9-b364fd4043b3",
+                    "master_variant_id": "b31e0c28-6a15-4c57-9690-2c41993386ce",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Pedas Sedang",
+                    "active": true,
+                    "price": 0,
+                    "weight": 3,
+                    "in_stock": true
+                },
+                {
+                    "id": "ae7ced18-b238-4342-9bfc-a91e9248bfb3",
+                    "variant_category_id": "5fe48d8c-8a1f-4f53-bac9-b364fd4043b3",
+                    "master_variant_id": "249712eb-7afd-4049-a504-7cca92dc7b23",
+                    "restaurant_id": "2f059fe2-0b17-4556-8124-f22e7f72cb8e",
+                    "name": "Pedas Banget",
+                    "active": true,
+                    "price": 4000,
+                    "weight": 4,
+                    "in_stock": true
+                }
+            ]
+        }
+    ]
+}
