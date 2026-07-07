@@ -209,28 +209,31 @@ def tutup_semua_popup(page):
     
     # 1. Cookie consent
     cookie_selectors = [
+        'text="Terima Semua Cookie"',
+        'text="Accept All Cookies"',
         'button:has-text("Terima Semua Cookie")',
-        'button:has-text("Accept All Cookies")',
         'button:has-text("Terima")',
         'button:has-text("Accept")'
     ]
     for sel in cookie_selectors:
         try:
             loc = page.locator(sel)
-            if loc.count() > 0 and loc.first.is_visible():
-                loc.first.click(timeout=1500)
-                print(f"   ✅ Cookie banner ditutup ({sel})")
-                time.sleep(0.5)
+            for i in range(loc.count()):
+                candidate = loc.nth(i)
+                if candidate.is_visible():
+                    candidate.click(timeout=1500, force=True)
+                    print(f"   ✅ Cookie banner ditutup ({sel})")
+                    time.sleep(0.5)
         except Exception:
             pass
 
     # 2. Tutorial / Lewati / Onboarding
     dismiss_selectors = [
-        'button:has-text("Lewati")',
-        'button:has-text("Lewati Tutorial")',
-        'button:has-text("Selesai")',
+        'text="Lewati"',
+        'text="Lewati Tutorial"',
+        'text="Selesai"',
+        'text="Nanti Saja"',
         'button:has-text("Tutup")',
-        'button:has-text("Nanti Saja")',
         '[aria-label="close"]',
         '[aria-label="Close"]',
         'button.close',
@@ -245,11 +248,41 @@ def tutup_semua_popup(page):
             for i in range(loc.count()):
                 candidate = loc.nth(i)
                 if candidate.is_visible():
-                    candidate.click(timeout=1500)
+                    candidate.click(timeout=1500, force=True)
                     print(f"   ✅ Pop-up/Tutorial ditutup ({sel})")
                     time.sleep(0.5)
         except Exception:
             pass
+            
+    # 3. Fallback Eksekusi Javascript (Bypass Playwright actionability checks)
+    js_click_script = """
+    () => {
+        const texts = ["terima semua cookie", "accept all cookies", "terima", "accept", "lewati", "lewati tutorial", "selesai", "tutup", "nanti saja"];
+        const elements = document.querySelectorAll('button, a, span, div, p');
+        let clicked = false;
+        for (const el of elements) {
+            const text = (el.innerText || el.textContent || "").toLowerCase().trim();
+            if (texts.includes(text)) {
+                try { 
+                    el.click(); 
+                    clicked = true;
+                } catch(e) {}
+            }
+        }
+        return clicked;
+    }
+    """
+    try:
+        frames = [page] + page.frames
+        for frame in frames:
+            try:
+                is_clicked = frame.evaluate(js_click_script)
+                if is_clicked:
+                    print(f"   ✅ Pop-up ditutup via Javascript fallback di frame: {frame.name or 'main'}")
+            except Exception:
+                pass
+    except Exception:
+        pass
 
 
 SESSION_FILE = MENU_DIR / "platforms" / "gofood" / "sessions" / "gofood_sessions.json"
@@ -787,6 +820,7 @@ def login_outlet(outlet_info, proxy_config=None):
                     
                     try:
                         page.goto(target_url, wait_until="domcontentloaded", timeout=20000)
+                        page.wait_for_timeout(3000) # Tunggu React render pop-up
                     except Exception as e:
                         print(f"   ⚠️ Gagal navigasi langsung: {e}")
                         
@@ -797,9 +831,15 @@ def login_outlet(outlet_info, proxy_config=None):
                     max_refreshes = 2
                     for attempt_refresh in range(max_refreshes + 1):
                         start_wait = time.time()
+                        last_popup_check = time.time()
+                        
                         while captured_menu is None and (time.time() - start_wait) < 15:
-                            page.wait_for_timeout(500)
-                            
+                            page.wait_for_timeout(1000)
+                            # Cek pop-up lagi setiap 4 detik (jika telat muncul)
+                            if time.time() - last_popup_check > 4:
+                                tutup_semua_popup(page)
+                                last_popup_check = time.time()
+                                
                         if captured_menu is not None:
                             break
                             
@@ -807,7 +847,7 @@ def login_outlet(outlet_info, proxy_config=None):
                             print(f"   🔄 Menu belum tertangkap. Melakukan refresh halaman (percobaan {attempt_refresh + 1}/{max_refreshes})...")
                             try:
                                 page.reload(wait_until="domcontentloaded", timeout=30000)
-                                page.wait_for_timeout(3000)
+                                page.wait_for_timeout(3000) # Tunggu render
                                 tutup_semua_popup(page)
                             except Exception as e:
                                 print(f"   ⚠️ Gagal melakukan refresh: {e}")
