@@ -781,175 +781,17 @@ def login_outlet(outlet_info, proxy_config=None):
                     
                     page.on("response", handle_response)
                     
-                    # 1. Coba klik Menu tab di sidebar dengan selector href yang presisi
-                    print("   🤖 Mengklik tab Menu di sidebar...")
-                    tutup_semua_popup(page)
-                    menu_clicked = False
-                    sidebar_locators = [
-                        'a[href="/gofood"]',
-                        'a[href*="/gofood"]',
-                        "aside a:has-text('Menu')",
-                        "nav a:has-text('Menu')",
-                        "a:has-text('Menu')",
-                        "text=Menu"
-                    ]
-                    for sel in sidebar_locators:
-                        try:
-                            loc = page.locator(sel)
-                            for i in range(loc.count()):
-                                candidate = loc.nth(i)
-                                if candidate.is_visible():
-                                    candidate.click(force=True)
-                                    menu_clicked = True
-                                    break
-                            if menu_clicked:
-                                break
-                        except Exception:
-                            continue
-                            
-                    if not menu_clicked:
-                        print("   🤖 Tab Menu tidak ditemukan di sidebar, mencoba navigasi langsung...")
-                        page.goto("https://portal.gofoodmerchant.co.id/gofood", wait_until="domcontentloaded")
-                    else:
-                        try:
-                            page.wait_for_url("**/gofood**", timeout=8000)
-                        except Exception:
-                            # Fallback jika click tidak memicu perpindahan URL
-                            page.goto("https://portal.gofoodmerchant.co.id/gofood", wait_until="domcontentloaded")
+                    # 1. Akses halaman outlet secara langsung melalui URL
+                    target_url = f"https://portal.gofoodmerchant.co.id/gofood/{store_id_clean}/"
+                    print(f"   🤖 Navigasi langsung ke menu outlet: {target_url}")
                     
-                    # Cek apakah sudah otomatis ter-redirect ke halaman menu items (untuk single-branch)
-                    current_url = page.url
-                    if "/menu-items" in current_url:
-                        print("   🤖 Halaman otomatis beralih ke Menu Items (Single Branch). Menunggu capture...")
-                    else:
-                        # 2. Kita berada di halaman list cabang, cari baris outlet target
-                        print("   🤖 Menunggu daftar cabang/outlet dimuat...")
-                        try:
-                            page.wait_for_selector(".loader, [role='progressbar']", state="hidden", timeout=30000)
-                        except Exception:
-                            pass
-                            
-                        try:
-                            page.wait_for_selector("tr, button:has-text('Pengaturan GoFood'), a[href*='/gofood/merchant']", timeout=15000)
-                        except Exception:
-                            print("   ⚠️ Daftar cabang belum termuat dalam 15 detik. Mencoba reload halaman...")
-                            try:
-                                page.reload(wait_until="domcontentloaded")
-                                page.wait_for_selector(".loader, [role='progressbar']", state="hidden", timeout=15000)
-                                page.wait_for_selector("tr, button:has-text('Pengaturan GoFood'), a[href*='/gofood/merchant']", timeout=15000)
-                            except Exception:
-                                print("   ⚠️ Masih gagal memuat daftar cabang setelah reload.")
+                    try:
+                        page.goto(target_url, wait_until="domcontentloaded", timeout=20000)
+                    except Exception as e:
+                        print(f"   ⚠️ Gagal navigasi langsung: {e}")
                         
-                        digits_only = "".join(c for c in store_id_clean if c.isdigit())
-                        row_loc = None
-                        
-                        # A. Cari berdasarkan angka ID (karena prefix M/G bisa berbeda di sheet vs portal)
-                        if digits_only:
-                            tr_loc = page.locator(f"tr:has-text('{digits_only}')")
-                            if tr_loc.count() > 0:
-                                row_loc = tr_loc.first
-                                print(f"   🤖 Menemukan baris berdasarkan ID angka: {digits_only}")
-                        
-                        # B. Cari berdasarkan nama outlet jika belum ketemu
-                        search_name = outlet_info.get('nama_resto_final') or outlet_info.get('nama_outlet') or ''
-                        if not row_loc and search_name and search_name.lower() != 'nan':
-                            words = [w.strip() for w in search_name.replace(',', ' ').split() if len(w.strip()) > 2]
-                            common_words = {'rm', 'depot', 'warung', 'sate', 'resto', 'restaurant', 'kuliner', 'kedai'}
-                            filtered_words = [w for w in words if w.lower() not in common_words]
-                            search_keyword = ""
-                            if filtered_words:
-                                search_keyword = filtered_words[0]
-                            elif words:
-                                search_keyword = words[0]
-                                
-                            if search_keyword:
-                                tr_loc = page.locator(f"tr:has-text('{search_keyword}')")
-                                if tr_loc.count() > 0:
-                                    row_loc = tr_loc.first
-                                    print(f"   🤖 Menemukan baris berdasarkan kata nama outlet: {search_keyword}")
-                                        
-                        # C. Jika hanya ada 1 baris data di tabel (selain header), pilih otomatis
-                        if not row_loc:
-                            rows = page.locator("tr")
-                            if rows.count() == 2:  # header + 1 data row
-                                row_loc = rows.nth(1)
-                                print("   🤖 Hanya ada satu outlet di tabel, memilih otomatis...")
-                                
-                        # D. Jika masih tidak ketemu, gunakan search input field dengan kata kunci nama yang dibersihkan
-                        if not row_loc:
-                            search_input = page.locator("input[placeholder*='Cari nama' i], input[placeholder*='Cari' i]").first
-                            if search_input.count() > 0 and search_input.is_visible():
-                                # Buat kata kunci pencarian yang bersih
-                                search_keyword = ""
-                                if search_name and search_name.lower() != 'nan':
-                                    words = [w.strip() for w in search_name.replace(',', ' ').split() if len(w.strip()) > 2]
-                                    common_words = {'rm', 'depot', 'warung', 'sate', 'resto', 'restaurant', 'kuliner', 'kedai'}
-                                    filtered_words = [w for w in words if w.lower() not in common_words]
-                                    if filtered_words:
-                                        search_keyword = " ".join(filtered_words[:2])
-                                    elif words:
-                                        search_keyword = " ".join(words[:2])
-                                if not search_keyword:
-                                    search_keyword = digits_only
-                                    
-                                print(f"   🤖 Mencari outlet di search bar menggunakan kata kunci: {search_keyword}")
-                                search_input.fill(search_keyword)
-                                time.sleep(0.5)
-                                page.keyboard.press("Enter")
-                                cari_btn = page.locator("button:has-text('Cari')").first
-                                if cari_btn.count() > 0 and cari_btn.is_visible():
-                                    cari_btn.click()
-                                time.sleep(3)
-                                
-                                # Cek ulang hasil pencarian
-                                if digits_only:
-                                    tr_loc = page.locator(f"tr:has-text('{digits_only}')")
-                                    if tr_loc.count() > 0:
-                                        row_loc = tr_loc.first
-                                if not row_loc and search_keyword:
-                                    tr_loc = page.locator(f"tr:has-text('{search_keyword.split()[0]}')")
-                                    if tr_loc.count() > 0:
-                                        row_loc = tr_loc.first
-                                if not row_loc:
-                                    rows = page.locator("tr")
-                                    if rows.count() == 2:
-                                        row_loc = rows.nth(1)
-                                        
-                        # E. Klik tombol Pengaturan GoFood
-                        tutup_semua_popup(page)
-                        
-                        # Debugging: Dump DOM elements to see what we actually have after wait
-                        page.screenshot(path="debug_gofood_after_wait.png")
-                        with open("debug_gofood_after_wait.html", "w") as f:
-                            f.write(page.content())
-                            
-                        if row_loc:
-                            button_locator = row_loc.locator("button:has-text('Pengaturan GoFood'), a:has-text('Pengaturan GoFood'), button:has-text('Pengaturan'), a:has-text('Pengaturan')").first
-                        else:
-                            button_locator = page.locator("button:has-text('Pengaturan GoFood'), a:has-text('Pengaturan GoFood')").first
-                            
-                        # Avoid clicking the sidebar Pengaturan by ensuring it's not in the sidebar
-                        sidebar_nav = page.locator("nav, aside").locator("text='Pengaturan'")
-                        
-                        # Find a button in the main content
-                        if row_loc:
-                            button_locator = row_loc.locator("button, a").last
-                            print("   🤖 Mencoba klik tombol di dalam baris...")
-                            if button_locator.count() > 0 and button_locator.is_visible():
-                                button_locator.click(force=True)
-                            else:
-                                print("   ⚠️ Tidak ada tombol di dalam baris.")
-                        elif button_locator.count() > 0 and button_locator.is_visible():
-                            print("   🤖 Mengklik tombol 'Pengaturan GoFood'...")
-                            button_locator.click(force=True)
-                        else:
-                            # Fallback just click the row
-                            if row_loc:
-                                print("   🤖 Mengklik baris outlet...")
-                                row_loc.click(force=True)
-                            else:
-                                print("   ⚠️ Tombol 'Pengaturan GoFood' tidak ditemukan/tidak dapat diklik.")
-                            
+                    tutup_semua_popup(page)
+                    
                     # Tunggu hingga captured_menu terisi
                     print("   🤖 Menunggu response API Menu ditangkap...")
                     max_refreshes = 2
@@ -967,20 +809,9 @@ def login_outlet(outlet_info, proxy_config=None):
                                 page.reload(wait_until="domcontentloaded", timeout=30000)
                                 page.wait_for_timeout(3000)
                                 tutup_semua_popup(page)
-                                
-                                current_url = page.url
-                                if "/menu-items" not in current_url:
-                                    if row_loc:
-                                        btn = row_loc.locator("button:has-text('Pengaturan GoFood'), a:has-text('Pengaturan GoFood')").first
-                                    else:
-                                        btn = page.locator("button:has-text('Pengaturan GoFood'), a:has-text('Pengaturan GoFood')").first
-                                        
-                                    if btn.count() > 0 and btn.is_visible():
-                                        print("   🤖 Mengklik ulang tombol 'Pengaturan GoFood' setelah refresh...")
-                                        btn.click(force=True)
                             except Exception as e:
                                 print(f"   ⚠️ Gagal melakukan refresh: {e}")
-                        
+                                
                     # Beri waktu tambahan 5 detik untuk menangkap pemanggilan API variant_categories
                     if captured_menu is not None:
                         print("   🤖 Menu ditangkap, menunggu 5 detik tambahan untuk mengintersepsi semua modifier...")
