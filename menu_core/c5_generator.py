@@ -98,20 +98,38 @@ def generate_c5_from_dir(output_dir: str, raw_outlet: str, applicator: str):
         ws_item = wb['Item']
         ws_item.delete_rows(2, ws_item.max_row)
 
-        item_headers = [cell.value for cell in ws_item[1]]
+        item_headers_raw = [cell.value for cell in ws_item[1]]
+        pct_cols_item = []
+        for c_idx, val in enumerate(item_headers_raw, start=1):
+            text = val.text if hasattr(val, 'text') else str(val)
+            if '%' in text:
+                pct_cols_item.append(c_idx)
+
         for r_idx, row in enumerate(items_out.to_dict('records'), start=2):
-            for c_idx, header in enumerate(item_headers, start=1):
+            for c_idx, header in enumerate(item_headers_raw, start=1):
                 if header in row and pd.notna(row[header]):
                     ws_item.cell(row=r_idx, column=c_idx, value=row[header])
+            
+            for c_idx in pct_cols_item:
+                ws_item.cell(row=r_idx, column=c_idx).number_format = '0%'
 
         ws_mod = wb['Modifier']
         ws_mod.delete_rows(2, ws_mod.max_row)
 
-        mod_headers = [cell.value for cell in ws_mod[1]]
+        mod_headers_raw = [cell.value for cell in ws_mod[1]]
+        pct_cols_mod = []
+        for c_idx, val in enumerate(mod_headers_raw, start=1):
+            text = val.text if hasattr(val, 'text') else str(val)
+            if '%' in text:
+                pct_cols_mod.append(c_idx)
+
         for r_idx, row in enumerate(mods_out.to_dict('records'), start=2):
-            for c_idx, header in enumerate(mod_headers, start=1):
+            for c_idx, header in enumerate(mod_headers_raw, start=1):
                 if header in row and pd.notna(row[header]):
                     ws_mod.cell(row=r_idx, column=c_idx, value=row[header])
+                    
+            for c_idx in pct_cols_mod:
+                ws_mod.cell(row=r_idx, column=c_idx).number_format = '0%'
 
         # Ambil nama cabang dari data mentah untuk penamaan file
         nama_cabang = str(df_items['Nama panjang'].iloc[0]).strip() if ('Nama panjang' in df_items and not df_items.empty) else raw_outlet
