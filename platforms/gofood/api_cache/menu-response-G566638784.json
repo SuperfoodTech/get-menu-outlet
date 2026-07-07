@@ -67,10 +67,10 @@
                     "active": true,
                     "description": "Nasi Putih + Pork Belly + Extra Bacon + Extra Pork + Telur Setengah Matang + Sambal Matah",
                     "id": "d8a36604-884e-4474-a833-88324f3cc967",
-                    "image_id": "b12ea9a7-ae13-40aa-b80f-e2c54222fec3",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b360e157-c881-4ca0-a0bb-788740ff1ab9_Go-Biz_20260608_094028.jpeg",
+                    "image_id": "4e76f4ec-b0b7-41f6-a4bb-55f1ad85cf64",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/956cbcfe-631a-4492-a13b-ce9635ccf509_Go-Biz_20260622_114031.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/b360e157-c881-4ca0-a0bb-788740ff1ab9_Go-Biz_20260608_094028.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/956cbcfe-631a-4492-a13b-ce9635ccf509_Go-Biz_20260622_114031.jpeg"
                     },
                     "in_stock": true,
                     "stock": null,
@@ -92,10 +92,10 @@
                     "active": true,
                     "description": "Indomie goreng yang nikmat berpadu dengan pork belly dan sambal matah segar",
                     "id": "5ece8b7f-cef3-4aad-b648-a663813669bd",
-                    "image_id": "67fa7a82-43b9-48f7-be3f-459c3dd3942e",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d695dcb9-f5cd-4ce5-91b1-ff0c00122c21_Go-Biz_20260608_094738.jpeg",
+                    "image_id": "b04ee82d-d13e-459f-a370-f6ac8487917b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f16bd1de-3aba-46fc-b973-da913a23b797_Go-Biz_20260622_114101.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d695dcb9-f5cd-4ce5-91b1-ff0c00122c21_Go-Biz_20260608_094738.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f16bd1de-3aba-46fc-b973-da913a23b797_Go-Biz_20260622_114101.jpeg"
                     },
                     "in_stock": true,
                     "stock": null,
@@ -155,14 +155,15 @@
                     "active": true,
                     "description": "Nasi hangat dengan babi bali goreng dengan telur setengah matang dan sambal matah",
                     "id": "80fc3a07-a199-4d58-a6d0-5317b01c6377",
-                    "image_id": "bc7f613e-ad23-4a8c-b911-d1713c6053a2",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/815196bb-0e50-4c70-9509-55a5e7f23457_Go-Biz_20260608_094555.jpeg",
+                    "image_id": "4cd2b563-8440-4aa3-b51f-9cb9e5866f84",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/45e7d42a-d19e-48bc-ae53-8508e735b990_Go-Biz_20260622_114628.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/815196bb-0e50-4c70-9509-55a5e7f23457_Go-Biz_20260608_094555.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/45e7d42a-d19e-48bc-ae53-8508e735b990_Go-Biz_20260622_114628.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
+                    "restock_at": "2026-07-02T00:00:00+07:00",
                     "master_menu_item_id": "",
                     "menu_id": "4c86ae08-60af-4589-a8b1-1afc149d7ee5",
                     "name": "Babi Goreng Rice Box 1",
@@ -180,14 +181,15 @@
                     "active": true,
                     "description": "Nasi hangat dengan babi bali goreng dengan extra bacon, telur setengah matang, dan sambal matah",
                     "id": "a0474cd0-76a0-4924-adb7-75a11d4d1f77",
-                    "image_id": "a8845075-10f2-4bed-85ef-aa9f083fd3bd",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d5c97384-8d0a-48cf-a018-6dd2c6a6c99f_Go-Biz_20260608_094616.jpeg",
+                    "image_id": "a7bc69ec-01a0-421f-8e95-7a65eda81b9f",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8ca15d95-de9a-44f5-9fb9-47a7104be3b1_Go-Biz_20260622_114906.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d5c97384-8d0a-48cf-a018-6dd2c6a6c99f_Go-Biz_20260608_094616.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8ca15d95-de9a-44f5-9fb9-47a7104be3b1_Go-Biz_20260622_114906.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
+                    "restock_at": "2026-07-02T00:00:00+07:00",
                     "master_menu_item_id": "",
                     "menu_id": "4c86ae08-60af-4589-a8b1-1afc149d7ee5",
                     "name": "Babi Goreng Rice Box 2",
@@ -205,12 +207,12 @@
                     "active": true,
                     "description": "Nasi hangat dengan babi bali goreng dengan extra bacon + extra pork bell, makin nikmat bareng telur setengah matang dan sambal matah",
                     "id": "a6263149-eb32-44c3-ac6f-f8c579b062b3",
-                    "image_id": "e0afd5fd-0c33-464a-b57b-d4007d3531af",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/56cf821a-4dd7-42d1-8059-57cefe3d58b5_Go-Biz_20260608_094639.jpeg",
+                    "image_id": "92cb1c4f-ea13-483e-90d0-5fdcb5d97931",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8550ed3e-fc28-4702-8456-bf6945e4dc9c_Go-Biz_20260622_114936.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/56cf821a-4dd7-42d1-8059-57cefe3d58b5_Go-Biz_20260608_094639.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8550ed3e-fc28-4702-8456-bf6945e4dc9c_Go-Biz_20260622_114936.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -243,12 +245,12 @@
                     "active": true,
                     "description": "Tender bbq pork (550 gr) dengan bumbu bbq manis gurih yang meresap sempurna.",
                     "id": "bb8354a2-70cd-49ff-8fff-a559c0fe2000",
-                    "image_id": "f512f8bd-3439-4666-bb9d-d6558f4bd995",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3046bcb9-96c4-4f63-9934-9504e7a991e8_Go-Biz_20260608_094200.jpeg",
+                    "image_id": "7e73e4ca-4b4d-43d0-afb5-f8538334079e",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1356d126-a463-4798-a0ed-9486ecc1e3c9_Go-Biz_20260622_115020.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3046bcb9-96c4-4f63-9934-9504e7a991e8_Go-Biz_20260608_094200.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1356d126-a463-4798-a0ed-9486ecc1e3c9_Go-Biz_20260622_115020.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -268,12 +270,12 @@
                     "active": true,
                     "description": "Tender BBQ pork (550 gr) dengan saus khas BBQ dipadukan truffle fries gurih dan aromatik.",
                     "id": "05813c90-de8d-44f3-8963-2a8ae9ee3cc0",
-                    "image_id": "1e0f6126-b63a-40e6-965d-cd0d61b3fec7",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5e334e9f-2cee-4711-a25b-77ecdbbfe4a6_Go-Biz_20260608_094217.jpeg",
+                    "image_id": "d19a1585-b493-4a3b-b505-f6804303bab4",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/511e3c82-177a-4d92-b6f9-6e375775b19e_Go-Biz_20260622_115103.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5e334e9f-2cee-4711-a25b-77ecdbbfe4a6_Go-Biz_20260608_094217.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/511e3c82-177a-4d92-b6f9-6e375775b19e_Go-Biz_20260622_115103.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -293,12 +295,12 @@
                     "active": true,
                     "description": "Samcan panggang (250 gr) dengan tender pork ribs (550 gr) dinikmati bareng sambal matah dan saus",
                     "id": "b6ea0311-495c-41a8-bde4-9fdf668b8dad",
-                    "image_id": "e24ff773-977d-407b-a7e8-f6f1134e2448",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/06be2f29-e80e-46f3-bbf9-c1f90723bb94_Go-Biz_20260608_094442.jpeg",
+                    "image_id": "a2ed9032-674a-49cf-b4e3-a7092142254f",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/2af4353d-1a16-4e22-809e-69db5229579f_Go-Biz_20260622_115238.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/06be2f29-e80e-46f3-bbf9-c1f90723bb94_Go-Biz_20260608_094442.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/2af4353d-1a16-4e22-809e-69db5229579f_Go-Biz_20260622_115238.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -323,7 +325,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8efa91de-b34e-402b-802d-e4ef8fa5a091_Go-Biz_20260608_094504.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -356,14 +358,15 @@
                     "active": true,
                     "description": "Nikmatnya babi goreng yang juicy di dalam bareng sambal matah, hoisin, dan sambal bawang",
                     "id": "e298ef88-1738-49e2-a5e6-90ae1ebe68a2",
-                    "image_id": "ad47c381-17a9-4fc0-bd85-9573789033dd",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0f616736-8b7b-4285-b9de-4ef27697517a_Go-Biz_20260608_094700.jpeg",
+                    "image_id": "92cb118f-e7f3-4b07-858c-600f0853b452",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4a9db2d5-4949-4194-a92b-5ed24be2d028_Go-Biz_20260622_115402.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0f616736-8b7b-4285-b9de-4ef27697517a_Go-Biz_20260608_094700.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4a9db2d5-4949-4194-a92b-5ed24be2d028_Go-Biz_20260622_115402.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
+                    "restock_at": "2026-07-02T00:00:00+07:00",
                     "master_menu_item_id": "",
                     "menu_id": "3513a667-0a57-4343-97f4-286f4ef8b2dc",
                     "name": "Babi Goreng Crispy 250gr",
@@ -381,14 +384,15 @@
                     "active": true,
                     "description": "Nikmatnya babi goreng yang juicy di dalam bareng sambal matah, hoisin, dan sambal bawang",
                     "id": "97b761da-85b5-44f5-b37e-ebcae92914aa",
-                    "image_id": "76c8a739-0d43-4fee-bcb0-b65c4b00f7ab",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8c803367-293d-4261-8ae9-a08a83f79c9c_Go-Biz_20260608_094716.jpeg",
+                    "image_id": "ef1c4618-c1c0-4378-ade2-874d9eea5410",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cad1116b-5bd6-4d42-b43a-f8e174df4b64_Go-Biz_20260622_115424.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8c803367-293d-4261-8ae9-a08a83f79c9c_Go-Biz_20260608_094716.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cad1116b-5bd6-4d42-b43a-f8e174df4b64_Go-Biz_20260622_115424.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
+                    "restock_at": "2026-07-02T00:00:00+07:00",
                     "master_menu_item_id": "",
                     "menu_id": "3513a667-0a57-4343-97f4-286f4ef8b2dc",
                     "name": "Babi Goreng Crispy 500gr",
@@ -419,10 +423,10 @@
                     "active": true,
                     "description": "Pork belly dimakan bareng 6 pao, kyuri. negi, sambal matah, dan hoisin, dijamin kenyang dan nikmat",
                     "id": "6d38cb86-99bc-4cff-8443-f7805e59b305",
-                    "image_id": "a70ee5a9-41c3-4efc-b3f7-2db08960ddfb",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/88dba13c-3185-4045-9102-3519ee11a5cd_Go-Biz_20260608_094132.jpeg",
+                    "image_id": "c90c0ab8-8139-434c-9192-9cd3e9b09b4b",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/dc06dbec-e8e8-42d5-8fd1-4220ff548d35_Go-Biz_20260622_115450.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/88dba13c-3185-4045-9102-3519ee11a5cd_Go-Biz_20260608_094132.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/dc06dbec-e8e8-42d5-8fd1-4220ff548d35_Go-Biz_20260622_115450.jpeg"
                     },
                     "in_stock": true,
                     "stock": null,
@@ -444,10 +448,10 @@
                     "active": true,
                     "description": "Pork belly dimakan bareng 6 pao, kyuri. negi, sambal matah, dan hoisin, dijamin kenyang dan nikmat",
                     "id": "bfba4c99-f364-4f58-84c8-03ab5a2e6b82",
-                    "image_id": "de7640a8-0fb7-4440-9cc7-e114ce7deff2",
-                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e7b41553-d073-477e-a8f1-5837d914bb5e_Go-Biz_20260608_094143.jpeg",
+                    "image_id": "7e3ee260-1845-408c-acec-69c8031d8d35",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e51fc5f2-b372-42b8-8dfc-0215d3737318_Go-Biz_20260622_115510.jpeg",
                     "image_cover": {
-                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e7b41553-d073-477e-a8f1-5837d914bb5e_Go-Biz_20260608_094143.jpeg"
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e51fc5f2-b372-42b8-8dfc-0215d3737318_Go-Biz_20260622_115510.jpeg"
                     },
                     "in_stock": true,
                     "stock": null,
@@ -540,7 +544,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/cf42f6d6-0973-46d1-b769-ba7e336658f0_Go-Biz_20260608_094119.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",

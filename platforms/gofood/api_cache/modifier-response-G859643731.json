@@ -1,10 +1,10 @@
 {
     "variant_categories": [
         {
-            "id": "a5bf353d-915f-4401-9edb-d9a2b1bc3d8b",
-            "master_variant_category_id": "536b5125-36a6-4fe7-9b72-6e0c2ac030c6",
+            "id": "52184da2-2945-4596-98a6-009ea5b6cc8d",
+            "master_variant_category_id": "469150f5-3a73-4ea9-b362-f1213bcb2f0d",
             "restaurant_id": "f5146c5a-a08d-4c01-8ff6-270ff95d3d85",
-            "name": "Pilihan topping",
+            "name": "Extra Topping",
             "internal_name": "",
             "rules": {
                 "selection": {
@@ -16,47 +16,75 @@
             },
             "variants": [
                 {
-                    "id": "dc15288d-7663-4151-a07e-7d21a5e0ca92",
-                    "variant_category_id": "a5bf353d-915f-4401-9edb-d9a2b1bc3d8b",
-                    "master_variant_id": "0ef4b3d8-824c-41b9-a75f-c2151f8812c5",
+                    "id": "e54644ec-e435-43ce-aa53-0942f8b56c52",
+                    "variant_category_id": "52184da2-2945-4596-98a6-009ea5b6cc8d",
+                    "master_variant_id": "ad620a1f-da0e-4967-8d16-bd77c2634e53",
                     "restaurant_id": "f5146c5a-a08d-4c01-8ff6-270ff95d3d85",
-                    "name": "Telur Rempah",
+                    "name": "Extra Telur",
                     "active": true,
-                    "price": 3500,
+                    "price": 6000,
                     "weight": 1,
                     "in_stock": true
                 },
                 {
-                    "id": "c2da1fc3-2f8e-40a6-a402-eb8551dd9212",
-                    "variant_category_id": "a5bf353d-915f-4401-9edb-d9a2b1bc3d8b",
-                    "master_variant_id": "744cebe3-55d8-4bcf-a3cd-64554b897549",
+                    "id": "77104395-a3c6-43d7-b601-6c27d0f8485b",
+                    "variant_category_id": "52184da2-2945-4596-98a6-009ea5b6cc8d",
+                    "master_variant_id": "0b8e1452-0110-4562-9dc4-53591cb122bc",
                     "restaurant_id": "f5146c5a-a08d-4c01-8ff6-270ff95d3d85",
-                    "name": "Double Telur ",
+                    "name": "Extra Keju",
                     "active": true,
-                    "price": 7000,
+                    "price": 6000,
                     "weight": 2,
                     "in_stock": true
                 },
                 {
-                    "id": "139a83e3-adc0-4ed1-bb25-1d6b544bc765",
-                    "variant_category_id": "a5bf353d-915f-4401-9edb-d9a2b1bc3d8b",
-                    "master_variant_id": "a03ecdac-df78-45db-b011-a176dadf1c6e",
+                    "id": "c0a3e568-5c1d-4641-b678-bff34f26c516",
+                    "variant_category_id": "52184da2-2945-4596-98a6-009ea5b6cc8d",
+                    "master_variant_id": "cc67f580-8319-4807-b4c2-34aa3620ca97",
                     "restaurant_id": "f5146c5a-a08d-4c01-8ff6-270ff95d3d85",
-                    "name": "Keju Mozarella",
+                    "name": "Extra Mozarella",
                     "active": true,
-                    "price": 8000,
+                    "price": 7500,
                     "weight": 3,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "id": "00ad9285-89ef-409d-a28d-22520f1e7ac1",
+            "master_variant_category_id": "0bc156aa-c75f-42da-b92c-59d21252b6ef",
+            "restaurant_id": "f5146c5a-a08d-4c01-8ff6-270ff95d3d85",
+            "name": "Tambahan Favorit",
+            "internal_name": "",
+            "rules": {
+                "selection": {
+                    "type": "SELECT_MANY",
+                    "required": false,
+                    "min_quantity": 0,
+                    "max_quantity": null
+                }
+            },
+            "variants": [
+                {
+                    "id": "3777a82a-da15-4dad-a859-8ab060434c51",
+                    "variant_category_id": "00ad9285-89ef-409d-a28d-22520f1e7ac1",
+                    "master_variant_id": "66744018-38bc-4f03-8684-b93bab620557",
+                    "restaurant_id": "f5146c5a-a08d-4c01-8ff6-270ff95d3d85",
+                    "name": "Double Egg",
+                    "active": true,
+                    "price": 7500,
+                    "weight": 1,
                     "in_stock": true
                 },
                 {
-                    "id": "24d002fc-e4d3-41c8-bcbd-de296a07c05b",
-                    "variant_category_id": "a5bf353d-915f-4401-9edb-d9a2b1bc3d8b",
-                    "master_variant_id": "e127ef43-7cf2-457c-b23b-b0ba7ef7c4e3",
+                    "id": "6d86a19f-5ca2-4783-8984-c9430f55fec6",
+                    "variant_category_id": "00ad9285-89ef-409d-a28d-22520f1e7ac1",
+                    "master_variant_id": "3df21d3e-d652-41b9-a422-3af560f0fac3",
                     "restaurant_id": "f5146c5a-a08d-4c01-8ff6-270ff95d3d85",
-                    "name": "Keju Parut",
+                    "name": "Mozarella",
                     "active": true,
-                    "price": 3500,
-                    "weight": 4,
+                    "price": 7500,
+                    "weight": 2,
                     "in_stock": true
                 }
             ]

@@ -22,8 +22,9 @@ load_dotenv(os.path.join(_BASE_DIR, ".env"), override=True)
 
 from menu_core.sheets import get_outlets_for_applicator
 from menu_core.shopee import extract_shopee_menu
-from menu_core.grab import extract_grab_menu
+from menu_core.grab import extract_grab_menu, extract_grab_menu_manual
 from menu_core.gofood import extract_gofood_menu
+from menu_core.c5_generator import generate_c5_from_dir
 
 RESET   = "\033[0m"
 BOLD    = "\033[1m"
@@ -274,6 +275,8 @@ def interactive_menu():
             else:
                 print(f"  {RED}Pilihan tidak valid.{RESET}")
                 time.sleep(1)
+                
+
                 
         elif state == "load_all_outlets":
             # Load from all 3 applicators silently to build the full list
@@ -712,20 +715,53 @@ def main():
                 success = False
                 result_data = None
                 
-                try:
-                    if applicator == "shopee":
-                        success, result_data = extract_shopee_menu(o, output_dir)
-                    elif applicator == "grab":
-                        success, result_data = extract_grab_menu(o, output_dir)
-                    elif applicator == "gofood":
-                        success, result_data = extract_gofood_menu(o, output_dir)
-                except Exception as e:
-                    success = False
-                    result_data = f"Exception occurred: {e}"
+                if applicator == "grab":
+                    # Retry up to 5 times for Grab, then offer manual mode
+                    max_retries = 5
+                    for attempt in range(1, max_retries + 1):
+                        try:
+                            success, result_data = extract_grab_menu(o, output_dir)
+                        except Exception as e:
+                            success = False
+                            result_data = f"Exception occurred: {e}"
+                        
+                        if success:
+                            break
+                        
+                        if attempt < max_retries:
+                            print(f"  {YELLOW}[Retry] Percobaan {attempt}/{max_retries} gagal. Mencoba lagi dalam 5 detik...{RESET}")
+                            print(f"  {DIM}  Info: {result_data}{RESET}")
+                            time.sleep(5)
+                        else:
+                            print(f"\n  {RED}{BOLD}✘ Penarikan otomatis gagal setelah {max_retries}x percobaan.{RESET}")
+                            print(f"  {DIM}  Info: {result_data}{RESET}")
+                            print(f"\n  {YELLOW}Apakah Anda ingin login manual via browser?{RESET}")
+                            print(f"    {GREEN}[y]{RESET} Ya, buka browser untuk login manual")
+                            print(f"    {RED}[n]{RESET} Tidak, skip outlet ini")
+                            manual_choice = input(f"  {BOLD}Pilihan (y/n):{RESET} ").strip().lower()
+                            if manual_choice == 'y':
+                                try:
+                                    success, result_data = extract_grab_menu_manual(o, output_dir)
+                                except Exception as e:
+                                    success = False
+                                    result_data = f"Exception manual: {e}"
+                else:
+                    try:
+                        if applicator == "shopee":
+                            success, result_data = extract_shopee_menu(o, output_dir)
+                        elif applicator == "gofood":
+                            success, result_data = extract_gofood_menu(o, output_dir)
+                    except Exception as e:
+                        success = False
+                        result_data = f"Exception occurred: {e}"
                     
                 if success and isinstance(result_data, dict):
                     success_count += 1
                     print(f"  {GREEN}✔ Berhasil! {result_data.get('items_count', 0)} item, {result_data.get('mods_count', 0)} modifier.{RESET}")
+                    
+                    # Generate C5 Excel format
+                    c5_path = generate_c5_from_dir(output_dir, raw_outlet, applicator)
+                    
                     _try_upload_to_drive(output_dir, raw_outlet, applicator)
                 else:
                     fail_count += 1
@@ -758,10 +794,38 @@ def main():
             success = False
             result_data = None
             
-            if applicator == "shopee":
+            if applicator == "grab":
+                # Retry up to 5 times for Grab, then offer manual mode
+                max_retries = 5
+                for attempt in range(1, max_retries + 1):
+                    try:
+                        success, result_data = extract_grab_menu(outlet, output_dir)
+                    except Exception as e:
+                        success = False
+                        result_data = f"Exception occurred: {e}"
+                    
+                    if success:
+                        break
+                    
+                    if attempt < max_retries:
+                        print(f"\n  {YELLOW}[Retry] Percobaan {attempt}/{max_retries} gagal. Mencoba lagi dalam 5 detik...{RESET}")
+                        print(f"  {DIM}  Info: {result_data}{RESET}")
+                        time.sleep(5)
+                    else:
+                        print(f"\n  {RED}{BOLD}✘ Penarikan otomatis gagal setelah {max_retries}x percobaan.{RESET}")
+                        print(f"  {DIM}  Info: {result_data}{RESET}")
+                        print(f"\n  {YELLOW}Apakah Anda ingin login manual via browser?{RESET}")
+                        print(f"    {GREEN}[y]{RESET} Ya, buka browser untuk login manual")
+                        print(f"    {RED}[n]{RESET} Tidak, skip outlet ini")
+                        manual_choice = input(f"  {BOLD}Pilihan (y/n):{RESET} ").strip().lower()
+                        if manual_choice == 'y':
+                            try:
+                                success, result_data = extract_grab_menu_manual(outlet, output_dir)
+                            except Exception as e:
+                                success = False
+                                result_data = f"Exception manual: {e}"
+            elif applicator == "shopee":
                 success, result_data = extract_shopee_menu(outlet, output_dir)
-            elif applicator == "grab":
-                success, result_data = extract_grab_menu(outlet, output_dir)
             elif applicator == "gofood":
                 success, result_data = extract_gofood_menu(outlet, output_dir)
                 
@@ -770,7 +834,12 @@ def main():
                 print(f"  - Total Item     : {result_data['items_count']}")
                 print(f"  - Total Modifier : {result_data['mods_count']}")
                 print(f"  - Hasil disimpan di directory: {output_dir}")
-                print(f"    1. Excel Unified : {result_data['excel']}")
+                
+                # Generate C5 Excel format (ini sekaligus menghapus file raw)
+                c5_path = generate_c5_from_dir(output_dir, raw_outlet, applicator)
+                if c5_path:
+                    print(f"    1. Excel C5 : {c5_path}")
+                
                 _try_upload_to_drive(output_dir, raw_outlet, applicator)
             else:
                 print(f"\n{RED}{BOLD}✘ PENARIKAN MENU GAGAL / STUB{RESET}")

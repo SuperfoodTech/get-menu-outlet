@@ -134,7 +134,7 @@
             "menu_items": [
                 {
                     "active": true,
-                    "description": "nasi geprek+tahu+tempe+terong+es teh/club tanggung",
+                    "description": "nasi geprek+tahu+tempe+es teh/club tanggung",
                     "id": "a396b747-bf7e-4bfb-9970-02f2881ec9de",
                     "image_id": "fba8ad67-c86f-4390-9c57-71c75c81b175",
                     "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/97bbae7b-fe63-4213-9b19-97702c726e12_e9126645-7326-411d-bb96-1fc1d6924500_Go-Biz_20191010_130425.jpeg",
@@ -1177,7 +1177,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/35fa7cca-a343-4a7e-b42e-b841b8338321_Go-Biz_20260513_101550.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -1471,7 +1471,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5c5def80-1a85-4d30-80a1-f8c8c981f766_Go-Biz_20260513_103333.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -1498,7 +1498,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/de442e05-977d-4250-9edc-9f166cc30915_Go-Biz_20260513_103408.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -1648,7 +1648,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5511fe8a-6b89-439f-b6b9-08c8890d8a94_Go-Biz_20260513_104345.jpeg"
                     },
-                    "in_stock": true,
+                    "in_stock": false,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -1859,13 +1859,13 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/06e7a852-6ef1-47d2-bbd5-de2a64632f91_Go-Biz_20260513_105540.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
                     "menu_id": "c4dfac6f-459a-4153-afb2-c3746dea1ad4",
                     "name": "Dorry Steak (Tanpa Nasi)",
-                    "price": "23000.00",
+                    "price": "25999.00",
                     "promotion": null,
                     "restaurant_id": "126c05ea-4497-4cc8-a3ad-290b1f3083fe",
                     "shopping_item_id": 123304924,
@@ -1884,13 +1884,13 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f229d96d-58b8-4906-a3a1-9398dd460200_Go-Biz_20260513_105934.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
                     "menu_id": "c4dfac6f-459a-4153-afb2-c3746dea1ad4",
                     "name": "Dorry Egg Steak (Tanpa Nasi)",
-                    "price": "23000.00",
+                    "price": "28000.00",
                     "promotion": null,
                     "restaurant_id": "126c05ea-4497-4cc8-a3ad-290b1f3083fe",
                     "shopping_item_id": 123304975,
@@ -1909,13 +1909,13 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/ab92a108-2573-45a7-b721-85114f887938_Go-Biz_20260513_110053.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
                     "menu_id": "c4dfac6f-459a-4153-afb2-c3746dea1ad4",
                     "name": "Rice Dorry Steak",
-                    "price": "29000.00",
+                    "price": "34000.00",
                     "promotion": null,
                     "restaurant_id": "126c05ea-4497-4cc8-a3ad-290b1f3083fe",
                     "shopping_item_id": 123305094,
@@ -1959,7 +1959,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/fcae4b9c-d059-4c08-900d-12796e0e0ae9_Go-Biz_20260513_110419.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -2034,7 +2034,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/70a8ba68-f791-493f-b4e6-53baa645e19d_Go-Biz_20260513_110814.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
@@ -2059,7 +2059,7 @@
                     "image_cover": {
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d135b9f6-1adf-4bf9-9d89-8a2d82b2020e_Go-Biz_20260513_110855.jpeg"
                     },
-                    "in_stock": false,
+                    "in_stock": true,
                     "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",

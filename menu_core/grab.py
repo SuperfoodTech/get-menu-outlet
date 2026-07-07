@@ -210,6 +210,188 @@ async def _async_extract(store_metadata: dict, output_dir: str):
     return True, result
 
 
+async def _async_manual_extract(store_metadata: dict, output_dir: str):
+    """
+    Async entry point untuk mode manual — buka browser visible,
+    user login manual, lalu script mengambil data menu dari sesi
+    yang sudah terautentikasi.
+    """
+    from playwright.async_api import async_playwright as _async_pw
+
+    store_id    = store_metadata.get("store_id", "")
+    outlet_name = (store_metadata.get("nama_resto_final") or
+                   store_metadata.get("nama_outlet") or
+                   store_metadata.get("merchant_name") or "Unknown")
+    short_name  = store_metadata.get("nama_pendek") or outlet_name
+
+    LOGIN_URL = (
+        "https://weblogin.grab.com/merchant/login"
+        "?service_id=MEXUSERS&redirect=https%3A%2F%2Fmerchant.grab.com%2Fportal"
+    )
+
+    print(f"\n{'='*60}")
+    print(f"  MODE MANUAL — GrabFood Menu Extractor")
+    print(f"{'='*60}")
+    print(f"  Outlet : {outlet_name} ({store_id})")
+    print(f"\n  Browser akan terbuka. Silakan login secara manual.")
+    print(f"  Setelah berhasil masuk ke dashboard Grab Merchant,")
+    print(f"  kembali ke terminal ini dan tekan ENTER.")
+    print(f"{'='*60}\n")
+
+    p = None
+    browser = None
+    context = None
+    try:
+        p = await _async_pw().start()
+        browser = await p.chromium.launch(headless=False)
+        context = await browser.new_context(
+            user_agent=(
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+            )
+        )
+        page = await context.new_page()
+
+        # Buka halaman login
+        await page.goto(LOGIN_URL, wait_until="domcontentloaded", timeout=60000)
+
+        # Tunggu user login manual — polling sampai user tekan Enter di terminal
+        print("[*] Menunggu Anda login di browser...")
+        print("    Tekan ENTER di terminal ini setelah berhasil login ke dashboard.\n")
+
+        # Gunakan asyncio agar tidak blocking event loop sepenuhnya
+        loop = asyncio.get_event_loop()
+        await loop.run_in_executor(None, input, "    >>> Tekan ENTER untuk melanjutkan... ")
+
+        # Verifikasi bahwa user sudah login (cek apakah bisa ambil merchant group id)
+        from grab_api_scraper import GrabAPI, parse_menu as _parse_menu
+
+        api = GrabAPI(page, "", "")
+        mgid = await api.get_merchant_group_id()
+
+        if not mgid:
+            # Mungkin user belum sampai ke dashboard, coba navigasi manual
+            print("[*] Mencoba navigasi ke dashboard...")
+            try:
+                await page.goto(
+                    "https://merchant.grab.com/dashboard",
+                    wait_until="domcontentloaded",
+                    timeout=30000
+                )
+                await page.wait_for_timeout(3000)
+                mgid = await api.get_merchant_group_id()
+            except Exception:
+                pass
+
+        if not mgid:
+            return False, (
+                "Gagal mendapatkan Merchant Group ID. "
+                "Pastikan Anda sudah login dan berada di halaman dashboard Grab Merchant."
+            )
+
+        print(f"[*] Login berhasil! MGID: {mgid}")
+        print(f"[*] Mengambil data menu...")
+
+        # Navigasi ke /food/menu dan intercept store IDs
+        intercepted = await api.get_merchant_ids_from_page_requests()
+
+        if intercepted:
+            logger.info(f"  [Manual] {len(intercepted)} store(s) via interception.")
+            selector_stores = await api.get_all_merchants_and_stores()
+            name_map = {s["store_id"]: s["store_name"] for s in selector_stores if s["store_id"]}
+            stores = []
+            for item in intercepted:
+                sid = item["store_id"]
+                stores.append({
+                    "group_id":   item["group_id"] or mgid,
+                    "group_name": "",
+                    "store_id":   sid,
+                    "store_name": name_map.get(sid) or sid,
+                })
+        else:
+            stores = await api.get_all_merchants_and_stores()
+            if not stores:
+                stores = [{
+                    "group_id":   mgid,
+                    "group_name": "Default",
+                    "store_id":   mgid,
+                    "store_name": "Default Store",
+                }]
+            try:
+                await page.goto(
+                    "https://merchant.grab.com/food/menu",
+                    wait_until="domcontentloaded",
+                    timeout=30000
+                )
+                await page.wait_for_timeout(2000)
+            except Exception:
+                pass
+
+        all_items = []
+        all_mods  = []
+
+        for s in stores:
+            sid       = s["store_id"]
+            gid       = s["group_id"]
+            sname     = s["store_name"]
+            is_mg     = s.get("is_menu_group", False)
+
+            if len(stores) > 1 and not is_mg:
+                try:
+                    await page.goto(
+                        "https://merchant.grab.com/food/menu",
+                        wait_until="domcontentloaded",
+                        timeout=30000
+                    )
+                    await page.wait_for_timeout(2000)
+                except Exception:
+                    pass
+
+            print(f"  [Fetch] {sname} ({sid})...")
+            menu_data, err = await api.fetch_menu(gid, sid, sname, is_mg)
+            if menu_data:
+                items, mods = _parse_menu(menu_data, sid, sname, "")
+                all_items.extend(items)
+                all_mods.extend(mods)
+                print(f"  ✓ {sname}: {len(items)} items, {len(mods)} modifiers")
+            else:
+                print(f"  ✗ Gagal fetch menu {sname}: {err}")
+
+        if not all_items:
+            return False, "Tidak ada item menu yang berhasil diambil dari sesi manual."
+
+        # Build dataframes dan simpan
+        df_items, df_mods = _build_dataframes(
+            all_items, all_mods, store_id, outlet_name, short_name
+        )
+        result = _save_outputs(df_items, df_mods, output_dir, outlet_name, store_id)
+
+        print(f"   ✅ Berhasil! {result['items_count']} item, {result['mods_count']} modifier.")
+        return True, result
+
+    except KeyboardInterrupt:
+        return False, "Dibatalkan oleh pengguna."
+    except Exception as e:
+        logger.error(f"Error dalam mode manual: {e}")
+        return False, f"Error mode manual: {e}"
+    finally:
+        if context:
+            try:
+                await context.close()
+            except Exception:
+                pass
+        if browser:
+            try:
+                await browser.close()
+            except Exception:
+                pass
+        if p:
+            try:
+                await p.stop()
+            except Exception:
+                pass
+
+
 def extract_grab_menu(store_metadata: dict, output_dir: str):
     """
     Synchronous entry point — dipanggil dari cli.py.
@@ -241,3 +423,37 @@ def extract_grab_menu(store_metadata: dict, output_dir: str):
         return False, "Dibatalkan oleh pengguna."
     except Exception as e:
         return False, f"Error tidak terduga: {e}"
+
+
+def extract_grab_menu_manual(store_metadata: dict, output_dir: str):
+    """
+    Synchronous entry point untuk mode manual — dipanggil dari cli.py
+    setelah penarikan otomatis gagal 5x.
+    Membuka browser visible untuk user login manual.
+    """
+    if not _SCRAPER_OK:
+        return False, (
+            f"Gagal mengimpor GrabFood scraper dari GR/grab: {_SCRAPER_ERR}. "
+            f"Pastikan direktori GR/grab ada dan dependensinya sudah diinstal."
+        )
+
+    store_id    = store_metadata.get("store_id", "")
+    outlet_name = (store_metadata.get("nama_resto_final") or
+                   store_metadata.get("nama_outlet") or "")
+
+    print(f"\n[GrabFood Menu Extractor — MODE MANUAL]")
+    print(f"[-] Target Outlet : {outlet_name} ({store_id})")
+
+    try:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        try:
+            return loop.run_until_complete(
+                _async_manual_extract(store_metadata, output_dir)
+            )
+        finally:
+            loop.close()
+    except KeyboardInterrupt:
+        return False, "Dibatalkan oleh pengguna."
+    except Exception as e:
+        return False, f"Error tidak terduga (manual): {e}"

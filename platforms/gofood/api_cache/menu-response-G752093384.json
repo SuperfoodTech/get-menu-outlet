@@ -348,7 +348,7 @@
             "weight": 2,
             "restaurant_id": "0630db1c-209d-465c-99c6-24b02fb95984",
             "master_menu_category_id": "",
-            "menu_items_count": 4,
+            "menu_items_count": 5,
             "menu_items": [
                 {
                     "active": true,
@@ -449,6 +449,31 @@
                     "brand_id": null,
                     "variant_category_ids": [],
                     "common_id": "c9ac0b30-faa3-4f97-94d0-dfb775b79e95"
+                },
+                {
+                    "active": true,
+                    "description": "Gule kepala kambing utuh dengan kuah melimpah",
+                    "id": "d603d12e-c061-440b-94f1-b2e94022534f",
+                    "image_id": "337617ce-6fa7-47b9-afb1-3c635d628652",
+                    "image": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3f5517e5-56d2-4a8a-af0d-a1047339f533_menu-item-image_1782357205153.jpg",
+                    "image_cover": {
+                        "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3f5517e5-56d2-4a8a-af0d-a1047339f533_menu-item-image_1782357205153.jpg"
+                    },
+                    "in_stock": true,
+                    "stock": null,
+                    "stock_limit": null,
+                    "master_menu_item_id": "",
+                    "menu_id": "d35ad52b-e37b-4176-ae4f-bd510cbe863e",
+                    "name": "Gule Kepala Kambing",
+                    "price": "253750.00",
+                    "promotion": null,
+                    "restaurant_id": "0630db1c-209d-465c-99c6-24b02fb95984",
+                    "shopping_item_id": 144452650,
+                    "signature": false,
+                    "weight": 5,
+                    "brand_id": null,
+                    "variant_category_ids": [],
+                    "common_id": "be10fb08-7ad0-4ed7-815c-cef0e1b89ea0"
                 }
             ]
         },
@@ -837,7 +862,7 @@
                         "url": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5274edc6-1828-474e-862d-485706ce1671_menu-item-image_1781066490602.jpg"
                     },
                     "in_stock": true,
-                    "stock": 1,
+                    "stock": null,
                     "stock_limit": null,
                     "master_menu_item_id": "",
                     "menu_id": "1f74f79f-1ede-408d-ac65-7afb85ccacef",

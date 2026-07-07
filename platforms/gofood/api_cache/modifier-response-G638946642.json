@@ -63,7 +63,7 @@
                     "active": true,
                     "price": 13000,
                     "weight": 2,
-                    "in_stock": false
+                    "in_stock": true
                 },
                 {
                     "id": "e0e9732d-ff61-4c72-a396-30ce49d01d3e",
@@ -85,7 +85,7 @@
                     "active": true,
                     "price": 10000,
                     "weight": 4,
-                    "in_stock": true
+                    "in_stock": false
                 },
                 {
                     "id": "ab09abfc-564e-4661-b8e5-62a87c74dbb0",
@@ -239,7 +239,7 @@
                     "active": true,
                     "price": 2000,
                     "weight": 20,
-                    "in_stock": true
+                    "in_stock": false
                 },
                 {
                     "id": "d249335a-af67-4102-9e0a-7d4cede1dcdc",
@@ -250,7 +250,7 @@
                     "active": true,
                     "price": 5000,
                     "weight": 21,
-                    "in_stock": true
+                    "in_stock": false
                 },
                 {
                     "id": "29d721c0-105d-467e-8770-d46826324e9d",
